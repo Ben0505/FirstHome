@@ -1,0 +1,65 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+.sliderBox{
+  max-width: 100%;
+  position: relative;
+  
+  h2 {
+    color: white;
+    font-size: 1.5em;
+    font-family: sans-serif;
+    font-weight: bold;
+    background-color: #bababa;
+    padding: .25em .5em;
+  }
+  
+  .sliderWrap {
+    overflow: hidden;
+    margin: 0 3em;
+    
+    .sliderContent {
+      counter-reset: items;
+      white-space: nowrap;
+      margin: 1em 0;
+      padding: 0;
+      transition: left 1s;
+      position: relative;
+      left: 0;
+      display: inline-block;
+
+      li {
+        counter-increment: items;
+        display: inline-block;
+        width: 15em;
+        height: 15em;
+        border: 1px dotted #bababa;
+
+        &:before {
+          content: "Item " counter(items);
+        }
+      }
+    }
+  }
+  
+  button {
+    border: none;
+    background: none;
+    font-size: 2em;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    color: #bababa;
+    
+    &:hover {
+      color: #747474;
+    }
+    
+    &.right {
+      left: auto;
+      right: 0;
+    }
+  }
+}

@@ -1,0 +1,57 @@
+/**,
+*:before,
+*:after {
+  box-sizing: border-box;
+}*/
+.sliderBox {
+  max-width: 100%;
+  position: relative;
+}
+.sliderBox h2 {
+  color: white;
+  font-size: 1.5em;
+  font-family: sans-serif;
+  font-weight: bold;
+  background-color: #d9230f;
+  padding: .25em .5em;
+}
+.sliderBox .sliderWrap {
+  overflow: hidden;
+  margin: 0 3em;
+}
+.sliderBox .sliderWrap .sliderContent {
+  counter-reset: items;
+  white-space: nowrap;
+  margin: 1em 0;
+  padding: 0;
+  transition: left 1s;
+  position: relative;
+  left: 0;
+  display: inline-block;
+}
+.sliderBox .sliderWrap .sliderContent li {
+  counter-increment: items;
+  display: inline-block;
+  width: 362px;
+  height: 250px;
+  border: 1px dotted #bababa;
+}
+.sliderBox .sliderWrap .sliderContent li:before {
+}
+.sliderBox button {
+  border: none;
+  background: none;
+  font-size: 2em;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  color: #bababa;
+}
+.sliderBox button:hover {
+  color: #747474;
+}
+.sliderBox button.right {
+  left: auto;
+  right: 0;
+}
