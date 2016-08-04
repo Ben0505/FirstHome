@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="test.aspx.cs" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="test.aspx.cs" Inherits="FirstHome.test" %>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -345,4 +345,3 @@
 </body>
 
 </html>
-

@@ -57,6 +57,19 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="404.aspx" />
+    <Content Include="about.aspx" />
+    <Content Include="App_Data\MYDB.mdf" />
+    <Content Include="App_Data\MYDB_log.ldf">
+      <DependentUpon>MYDB.mdf</DependentUpon>
+    </Content>
+    <Content Include="bankerIndex.aspx" />
+    <Content Include="bankersCalendar.aspx" />
+    <Content Include="bankersRequest.aspx" />
+    <Content Include="bankerSuggest.aspx" />
+    <Content Include="contact.aspx" />
+    <Content Include="faq.aspx" />
+    <Content Include="favHouse.aspx" />
     <Content Include="font-awesome\fonts\fontawesome-webfont.eot" />
     <Content Include="font-awesome\fonts\fontawesome-webfont.ttf" />
     <Content Include="font-awesome\fonts\fontawesome-webfont.woff" />
@@ -95,6 +108,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="HDBindex.aspx" />
     <Content Include="js\material.min.js.map" />
     <Content Include="js\ripples.min.js.map" />
     <Content Include="less\slidingContent.less" />
@@ -106,13 +120,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="404.aspx" />
-    <Content Include="about.aspx" />
-    <Content Include="bankerIndex.aspx" />
-    <Content Include="bankersCalendar.aspx" />
-    <Content Include="bankersRequest.aspx" />
-    <Content Include="bankerSuggest.aspx" />
-    <Content Include="contact.aspx" />
     <Content Include="css\addlist.css" />
     <Content Include="css\bootstrap-material-design.css" />
     <Content Include="css\bootstrap-material-design.min.css" />
@@ -133,14 +140,11 @@
     <Content Include="css\todo.css" />
     <Content Include="css\uploadFile.css" />
     <Content Include="css\userProfile.css" />
-    <Content Include="faq.aspx" />
-    <Content Include="favHouse.aspx" />
     <Content Include="font-awesome\css\font-awesome.css" />
     <Content Include="font-awesome\css\font-awesome.min.css" />
     <Content Include="font-awesome\fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="HDBindex.aspx" />
     <Content Include="hdbLocation.html" />
     <Content Include="index.aspx" />
     <Content Include="js\addlist.js" />
@@ -354,7 +358,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
     <Folder Include="BLL\" />
     <Folder Include="DAL\" />
     <Folder Include="Models\" />

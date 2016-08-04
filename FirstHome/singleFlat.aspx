@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="singleFlat.aspx.cs"  %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="singleFlat.aspx.cs" Inherits="FirstHome.singleFlat" %>
 
 <!DOCTYPE html>
 <html lang="en">

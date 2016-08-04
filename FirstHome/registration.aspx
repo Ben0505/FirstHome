@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="registration.aspx.cs"  %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="registration.aspx.cs" Inherits="FirstHome.registration" %>
 
 <!DOCTYPE html>
 <html lang="en">

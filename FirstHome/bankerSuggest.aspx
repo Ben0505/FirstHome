@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="bankerSuggest.aspx.cs" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="bankerSuggest.aspx.cs" Inherits="FirstHome.bankerSuggest" %>
 
 <!DOCTYPE html>
 <html lang="en">

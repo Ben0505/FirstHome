@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="services.aspx.cs" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="services.aspx.cs" Inherits="FirstHome.services" %>
 
 <!DOCTYPE html>
 <html lang="en">

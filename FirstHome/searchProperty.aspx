@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="searchProperty.aspx.cs"  %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="searchProperty.aspx.cs" Inherits="FirstHome.searchProperty" %>
 
 <!DOCTYPE html>
 <html lang="en">

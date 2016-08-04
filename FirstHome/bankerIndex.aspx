@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="bankerIndex.aspx.cs"  %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="bankerIndex.aspx.cs" Inherits="FirstHome.bankerIndex" %>
 
 <!DOCTYPE html>
 <html lang="en">

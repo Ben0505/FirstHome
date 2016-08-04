@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="HDBindex.aspx.cs" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="HDBindex.aspx.cs" Inherits="FirstHome.HDBindex" %>
 
 <!DOCTYPE html>
 <html lang="en">

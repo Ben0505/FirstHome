@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="favHouse.aspx.cs"  %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="favHouse.aspx.cs" Inherits="FirstHome.favHouse" %>
 
 <!DOCTYPE html>
 <html lang="en">
