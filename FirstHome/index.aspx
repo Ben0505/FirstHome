@@ -34,17 +34,17 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li> <a href="about.aspx">About</a> </li>
-                    <li> <a href="contact.aspx">Contact</a> </li>
-                    <li> <a href="hdbLocation.html"><span class="fa fa-map-marker"></span> HDB Location</a> </li>
-                    <li> <a href="favHouse.aspx"><span class="glyphicon glyphicon-star"></span> Favourite House</a> </li>
-                    <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> John Smith <b class="caret"></b></a>
+                    <li> <asp:HyperLink href="about.aspx" runat="server">About</asp:HyperLink> </li>
+                    <li> <asp:HyperLink href="contact.aspx" runat="server">Contact</asp:HyperLink> </li>
+                    <li> <asp:HyperLink runat="server" href="hdbLocation.aspx"><span class="fa fa-map-marker"></span> HDB Location</asp:HyperLink> </li>
+                    <li> <asp:HyperLink runat="server" href="favHouse.aspx"><span class="glyphicon glyphicon-star"></span> Favourite House</asp:HyperLink> </li>
+                    <li class="dropdown"> <asp:HyperLink runat="server" href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> John Smith <b class="caret"></b></asp:HyperLink>
                     <ul class="dropdown-menu">
-                        <li> <a href="userProfile.aspx"><i class="fa fa-fw fa-user"></i> Profile</a> </li>
-                        <li> <a href="#"><i class="fa fa-fw fa-envelope"></i> Inbox</a> </li>
-                        <li> <a href="#"><i class="fa fa-fw fa-gear"></i> Settings</a> </li>
+                        <li> <asp:HyperLink runat="server" href="userProfile.aspx"><i class="fa fa-fw fa-user"></i> Profile</asp:HyperLink> </li>
+                        <li> <asp:HyperLink runat="server" href="#"><i class="fa fa-fw fa-envelope"></i> Inbox</asp:HyperLink> </li>
+                        <li> <asp:HyperLink runat="server" href="#"><i class="fa fa-fw fa-gear"></i> Settings</asp:HyperLink> </li>
                         <li class="divider"></li>
-                        <li> <a href="#"><i class="fa fa-fw fa-power-off"></i> Log Out</a> </li>
+                        <li> <asp:HyperLink runat="server" href="#"><i class="fa fa-fw fa-power-off"></i> Log Out</asp:HyperLink> </li>
                     </ul>
                 </li>
                 </ul>
@@ -53,6 +53,8 @@
         </div>
         <!-- /.container -->
     </nav>
+
+
     
     <!-- Header Carousel -->
     <header id="myCarousel" class="carousel slide">
@@ -85,8 +87,8 @@
             </div>
         </div>
         <!-- Controls -->
-        <a class="left carousel-control" href="#myCarousel" data-slide="prev"> <span class="icon-prev"></span> </a>
-        <a class="right carousel-control" href="#myCarousel" data-slide="next"> <span class="icon-next"></span> </a>
+        <asp:HyperLink runat="server" class="left carousel-control" href="#myCarousel" data-slide="prev"> <span class="icon-prev"></span> </asp:HyperLink>
+        <asp:HyperLink runat="server" class="right carousel-control" href="#myCarousel" data-slide="next"> <span class="icon-next"></span> </asp:HyperLink>
     </header>
     <!-- Page Content -->
     <div class="container">
@@ -109,9 +111,9 @@
                             <small>Let us help you  analyze your Financial Information <br>and we will match you the Properties according to your Financial Health</small>
                         </h2>
                         <br>
-                        <a href="userProfile.aspx" type="button" class="btn btn-default btn-lg btn-block">PLAN NOW !</a>
+                        <asp:HyperLink runat="server" href="userProfile.aspx" type="button" class="btn btn-default btn-lg btn-block">PLAN NOW !</asp:HyperLink>
                         <br>
-                        <a href="searchProperty.aspx" type="button" class="btn btn-default btn-lg btn-block">Find Matched House</a>
+                        <asp:HyperLink runat="server" href="searchProperty.aspx" type="button" class="btn btn-default btn-lg btn-block">Find Matched House</asp:HyperLink>
                     </div>
                 </div>
                 <div class="panel panel-default">
@@ -194,7 +196,7 @@
                                 <input placeholder="ANY" type="text" class="form-control" placeholder="" aria-describedby="basic-addon2"> <span class="input-group-addon" id="basic-addon2">psf</span> </div>
                         </div>
                         <div class="col-lg-12">
-                            <label></label> <a href="searchProperty.aspx" type="button" class="btn btn-default btn-lg btn-block">Search</a> </div>
+                            <label></label> <asp:HyperLink runat="server" href="searchProperty.aspx" type="button" class="btn btn-default btn-lg btn-block">Search</asp:HyperLink> </div>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -202,7 +204,7 @@
                         <div class="panel-heading">
                             <h4><i class="fa fa-fw fa-home"></i>Looking for Houses?</h4> </div>
                         <div class="panel-body">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p> <a href="#" class="btn btn-default">Learn More</a> </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p> <asp:HyperLink runat="server" href="#" class="btn btn-default">Learn More</asp:HyperLink> </div>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -210,7 +212,7 @@
                         <div class="panel-heading">
                             <h4><i class="fa fa-fw fa-bank"></i> Bank Loans</h4> </div>
                         <div class="panel-body">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p> <a href="#" class="btn btn-default">Learn More</a> </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p> <asp:HyperLink runat="server" href="#" class="btn btn-default">Learn More</asp:HyperLink> </div>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -218,7 +220,7 @@
                         <div class="panel-heading">
                             <h4><i class="fa fa-fw fa-file-text-o "></i> Housing Grants</h4> </div>
                         <div class="panel-body">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p> <a href="http://www.hdb.gov.sg/cs/infoweb/residential/buying-a-flat/new/cpf-housing-grants-for-hdb-flats&rendermode=preview" class="btn btn-default">Learn More</a> </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p> <asp:HyperLink runat="server" href="http://www.hdb.gov.sg/cs/infoweb/residential/buying-a-flat/new/cpf-housing-grants-for-hdb-flats&rendermode=preview" class="btn btn-default">Learn More</asp:HyperLink> </div>
                     </div>
                 </div>
                 
@@ -227,22 +229,22 @@
             <div class="col-lg-12">
                 <h2 class="page-header">New BTO around you</h2> </div>
             <div class="col-md-4 col-sm-6">
-                <a href="portfolio-item.aspx"> <img class="img-responsive img-portfolio img-hover" src="pics/house1.jpg" alt=""> </a>
+                <asp:HyperLink runat="server" href="portfolio-item.aspx"> <img class="img-responsive img-portfolio img-hover" src="pics/house1.jpg" alt=""> </asp:HyperLink>
             </div>
             <div class="col-md-4 col-sm-6">
-                <a href="portfolio-item.aspx"> <img class="img-responsive img-portfolio img-hover" src="pics/house2.jpg" alt=""> </a>
+                <asp:HyperLink runat="server" href="portfolio-item.aspx"> <img class="img-responsive img-portfolio img-hover" src="pics/house2.jpg" alt=""> </asp:HyperLink>
             </div>
             <div class="col-md-4 col-sm-6">
-                <a href="portfolio-item.aspx"> <img class="img-responsive img-portfolio img-hover" src="pics/house3.jpg" alt=""> </a>
+                <asp:HyperLink runat="server" href="portfolio-item.aspx"> <img class="img-responsive img-portfolio img-hover" src="pics/house3.jpg" alt=""> </asp:HyperLink>
             </div>
             <div class="col-md-4 col-sm-6">
-                <a href="portfolio-item.aspx"> <img class="img-responsive img-portfolio img-hover" src="pics/house4.jpg" alt=""> </a>
+                <asp:HyperLink runat="server" href="portfolio-item.aspx"> <img class="img-responsive img-portfolio img-hover" src="pics/house4.jpg" alt=""> </asp:HyperLink>
             </div>
             <div class="col-md-4 col-sm-6">
-                <a href="portfolio-item.aspx"> <img class="img-responsive img-portfolio img-hover" src="pics/house5.jpg" alt=""> </a>
+                <asp:HyperLink runat="server" href="portfolio-item.aspx"> <img class="img-responsive img-portfolio img-hover" src="pics/house5.jpg" alt=""> </asp:HyperLink>
             </div>
             <div class="col-md-4 col-sm-6">
-                <a href="portfolio-item.aspx"> <img class="img-responsive img-portfolio img-hover" src="pics/house6.jpg" alt=""> </a>
+                <asp:HyperLink runat="server" href="portfolio-item.aspx"> <img class="img-responsive img-portfolio img-hover" src="pics/house6.jpg" alt=""> </asp:HyperLink>
             </div>
         </div>
         <!-- /.row -->

@@ -33,17 +33,17 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li> <a href="about.aspx">About</a> </li>
-                    <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Services <b class="caret"></b></a>
+                    <li> <asp:HyperLink runat="server" href="about.aspx">About</asp:HyperLink> </li>
+                    <li class="dropdown"> <asp:HyperLink runat="server" href="#" class="dropdown-toggle" data-toggle="dropdown">Services <b class="caret"></b></asp:HyperLink>
                         <ul class="dropdown-menu">
-                            <li> <a href="blog-home-1.html">Service 1</a> </li>
-                            <li> <a href="blog-home-2.html">Service 2</a> </li>
-                            <li> <a href="blog-post.html">Service 3</a> </li>
+                            <li> <asp:HyperLink runat="server" href="blog-home-1.html">Service 1</asp:HyperLink> </li>
+                            <li> <asp:HyperLink runat="server" href="blog-home-2.html">Service 2</asp:HyperLink> </li>
+                            <li> <asp:HyperLink runat="server" href="blog-post.html">Service 3</asp:HyperLink> </li>
                         </ul>
                     </li>
-                    <li> <a href="contact.aspx">Contact</a> </li>
-                    <li> <a href="login.aspx">Log in</a> </li>
-                    <li> <a href="login.aspx">Sign Up</a> </li>
+                    <li> <asp:HyperLink runat="server" href="contact.aspx">Contact</asp:HyperLink> </li>
+                    <li> <asp:HyperLink runat="server" href="login.aspx">Log in</asp:HyperLink> </li>
+                    <li> <asp:HyperLink runat="server" href="login.aspx">Sign Up</asp:HyperLink> </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -59,7 +59,7 @@
                     <small>Page Not Found</small>
                 </h1>
                 <ol class="breadcrumb">
-                    <li><a href="index.aspx">Home</a> </li>
+                    <li><asp:HyperLink runat="server" href="index.aspx">Home</asp:HyperLink> </li>
                     <li class="active">404</li>
                 </ol>
             </div>
@@ -72,7 +72,7 @@
                     </h1>
                     <p>The page you're looking for could not be found. Here are some helpful links to get you back on track:</p>
                     <ul>
-                        <li> <a href="index.aspx">Home</a> </li>
+                        <li> <asp:HyperLink runat="server" href="index.aspx">Home</asp:HyperLink> </li>
                         <li> <a href="about.aspx">About</a> </li>
                         <li> <a href="services.aspx">Services</a> </li>
                         <li> <a href="contact.aspx">Contact</a> </li>

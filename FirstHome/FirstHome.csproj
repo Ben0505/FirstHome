@@ -109,6 +109,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="HDBindex.aspx" />
+    <Content Include="hdblocation.aspx" />
     <Content Include="js\material.min.js.map" />
     <Content Include="js\ripples.min.js.map" />
     <Content Include="less\slidingContent.less" />
@@ -145,7 +146,6 @@
     <Content Include="font-awesome\fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="hdbLocation.html" />
     <Content Include="index.aspx" />
     <Content Include="js\addlist.js" />
     <Content Include="js\bootstrap.js" />
@@ -270,6 +270,13 @@
     </Compile>
     <Compile Include="HDBindex.aspx.designer.cs">
       <DependentUpon>HDBindex.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="hdblocation.aspx.cs">
+      <DependentUpon>hdblocation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="hdblocation.aspx.designer.cs">
+      <DependentUpon>hdblocation.aspx</DependentUpon>
     </Compile>
     <Compile Include="index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>

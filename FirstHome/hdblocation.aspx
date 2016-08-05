@@ -1,4 +1,8 @@
-﻿<html lang="en">
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="hdblocation.aspx.cs" Inherits="FirstHome.hdblocation" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -110,9 +114,9 @@
 
 
     <script>
-        $(window).load(function() {
+        $(window).load(function () {
             $('#myModal').modal('show');
-            
+
             var bounds = new google.maps.LatLngBounds();
 
             var map = new google.maps.Map(document.getElementById('map'), {
@@ -262,8 +266,8 @@
 
 
                 // Allow each marker to have an info window    
-                google.maps.event.addListener(marker, 'click', (function(marker, i) {
-                    return function() {
+                google.maps.event.addListener(marker, 'click', (function (marker, i) {
+                    return function () {
                         infoWindow.setContent(infoWindowContent[i][0]);
                         infoWindow.open(map, marker);
                     }
@@ -285,8 +289,8 @@
                 });
 
                 // Allow each marker to have an info window    
-                google.maps.event.addListener(marker, 'click', (function(marker, i) {
-                    return function() {
+                google.maps.event.addListener(marker, 'click', (function (marker, i) {
+                    return function () {
                         infoWindow.setContent(BlueinfoWindowContent[i][0]);
                         infoWindow.open(map, marker);
                     }
@@ -294,7 +298,7 @@
 
 
             }
-            
+
             // Display multiple blue markers on a map
             for (i = 0; i < greenmarkers.length; i++) {
                 var position = new google.maps.LatLng(greenmarkers[i][1], greenmarkers[i][2]);
@@ -307,8 +311,8 @@
                 });
 
                 // Allow each marker to have an info window    
-                google.maps.event.addListener(marker, 'click', (function(marker, i) {
-                    return function() {
+                google.maps.event.addListener(marker, 'click', (function (marker, i) {
+                    return function () {
                         infoWindow.setContent(GreeninfoWindowContent[i][0]);
                         infoWindow.open(map, marker);
                     }
@@ -323,3 +327,4 @@
 </body>
 
 </html>
+

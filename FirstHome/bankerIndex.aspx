@@ -50,10 +50,10 @@
             <!-- Top Menu Items -->
             <ul class="nav navbar-right top-nav">
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-envelope"></i> <b class="caret"></b></a>
+                    <asp:HyperLink runat="server" href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-envelope"></i> <b class="caret"></b></asp:HyperLink>
                     <ul class="dropdown-menu message-dropdown">
                         <li class="message-preview">
-                            <a href="#">
+                            <asp:HyperLink runat="server" href="#">
                                 <div class="media">
                                     <span class="pull-left">
                                         <img class="media-object" src="http://placehold.it/50x50" alt="">
@@ -66,10 +66,10 @@
                                         <p>Lorem ipsum dolor sit amet, consectetur...</p>
                                     </div>
                                 </div>
-                            </a>
+                            </asp:HyperLink>
                         </li>
                         <li class="message-preview">
-                            <a href="#">
+                            <asp:HyperLink runat="server" href="#">
                                 <div class="media">
                                     <span class="pull-left">
                                         <img class="media-object" src="http://placehold.it/50x50" alt="">
@@ -82,10 +82,10 @@
                                         <p>Lorem ipsum dolor sit amet, consectetur...</p>
                                     </div>
                                 </div>
-                            </a>
+                            </asp:HyperLink>
                         </li>
                         <li class="message-preview">
-                            <a href="#">
+                            <asp:HyperLink runat="server" href="#">
                                 <div class="media">
                                     <span class="pull-left">
                                         <img class="media-object" src="http://placehold.it/50x50" alt="">
@@ -98,55 +98,55 @@
                                         <p>Lorem ipsum dolor sit amet, consectetur...</p>
                                     </div>
                                 </div>
-                            </a>
+                            </asp:HyperLink>
                         </li>
                         <li class="message-footer">
-                            <a href="#">Read All New Messages</a>
+                            <asp:HyperLink runat="server" href="#">Read All New Messages</asp:HyperLink>
                         </li>
                     </ul>
                 </li>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell"></i> <b class="caret"></b></a>
+                    <asp:HyperLink runat="server" href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell"></i> <b class="caret"></b></asp:HyperLink>
                     <ul class="dropdown-menu alert-dropdown">
                         <li>
-                            <a href="#">Alert Name <span class="label label-default">Alert Badge</span></a>
+                            <asp:HyperLink runat="server" href="#">Alert Name <span class="label label-default">Alert Badge</span></asp:HyperLink>
                         </li>
                         <li>
-                            <a href="#">Alert Name <span class="label label-primary">Alert Badge</span></a>
+                            <asp:HyperLink runat="server" href="#">Alert Name <span class="label label-primary">Alert Badge</span></asp:HyperLink>
                         </li>
                         <li>
-                            <a href="#">Alert Name <span class="label label-success">Alert Badge</span></a>
+                            <asp:HyperLink runat="server" href="#">Alert Name <span class="label label-success">Alert Badge</span></asp:HyperLink>
                         </li>
                         <li>
-                            <a href="#">Alert Name <span class="label label-info">Alert Badge</span></a>
+                            <asp:HyperLink runat="server" href="#">Alert Name <span class="label label-info">Alert Badge</span></asp:HyperLink>
                         </li>
                         <li>
-                            <a href="#">Alert Name <span class="label label-warning">Alert Badge</span></a>
+                            <asp:HyperLink runat="server" href="#">Alert Name <span class="label label-warning">Alert Badge</span></asp:HyperLink>
                         </li>
                         <li>
-                            <a href="#">Alert Name <span class="label label-danger">Alert Badge</span></a>
+                            <asp:HyperLink runat="server" href="#">Alert Name <span class="label label-danger">Alert Badge</span></asp:HyperLink>
                         </li>
                         <li class="divider"></li>
                         <li>
-                            <a href="#">View All</a>
+                            <asp:HyperLink runat="server" href="#">View All</asp:HyperLink>
                         </li>
                     </ul>
                 </li>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> John Smith <b class="caret"></b></a>
+                    <asp:HyperLink runat="server" href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> John Smith <b class="caret"></b></asp:HyperLink>
                     <ul class="dropdown-menu">
                         <li>
-                            <a href="#"><i class="fa fa-fw fa-user"></i> Profile</a>
+                            <asp:HyperLink runat="server" href="#"><i class="fa fa-fw fa-user"></i> Profile</asp:HyperLink>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-fw fa-envelope"></i> Inbox</a>
+                            <asp:HyperLink runat="server" href="#"><i class="fa fa-fw fa-envelope"></i> Inbox</asp:HyperLink>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-fw fa-gear"></i> Settings</a>
+                            <asp:HyperLink runat="server" href="#"><i class="fa fa-fw fa-gear"></i> Settings</asp:HyperLink>
                         </li>
                         <li class="divider"></li>
                         <li>
-                            <a href="#"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
+                            <asp:HyperLink runat="server" href="#"><i class="fa fa-fw fa-power-off"></i> Log Out</asp:HyperLink>
                         </li>
                     </ul>
                 </li>
@@ -155,20 +155,20 @@
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav side-nav">
                     <li class = active>
-                        <a href="bankerIndex.aspx"><i class="fa fa-fw fa-home"></i> Home Page</a>
+                        <asp:HyperLink runat="server" href="bankerIndex.aspx"><i class="fa fa-fw fa-home"></i> Home Page</asp:HyperLink>
                     </li>
                     <li>
-                        <a href="bankersCalendar.aspx"><i class="fa fa-fw fa-calendar"></i> Calendar</a>
+                        <asp:HyperLink runat="server" href="bankersCalendar.aspx"><i class="fa fa-fw fa-calendar"></i> Calendar</asp:HyperLink>
                     </li>
                     
                     <li>
-                        <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> Dropdown <i class="fa fa-fw fa-caret-down"></i></a>
+                        <asp:HyperLink runat="server" href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> Dropdown <i class="fa fa-fw fa-caret-down"></i></asp:HyperLink>
                         <ul id="demo" class="collapse">
                             <li>
-                                <a href="#">Dropdown Item</a>
+                                <asp:HyperLink runat="server" href="#">Dropdown Item</asp:HyperLink>
                             </li>
                             <li>
-                                <a href="#">Dropdown Item</a>
+                                <asp:HyperLink runat="server" href="#">Dropdown Item</asp:HyperLink>
                             </li>
                         </ul>
                     </li>
@@ -191,7 +191,7 @@
                         </h1>
                         <!--<ol class="breadcrumb">
                             <li>
-                                <i class="fa fa-dashboard"></i>  <a href="index.html">Dashboard</a>
+                                <i class="fa fa-dashboard"></i>  <asp:HyperLink runat="server" href="index.html">Dashboard</asp:HyperLink>
                             </li>
                         </ol>-->
                     </div>
@@ -214,13 +214,13 @@
                                     </div>
                                 </div>
                             </div>
-                            <a href="bankersRequest.aspx">
+                            <asp:HyperLink runat="server" href="bankersRequest.aspx">
                                 <div class="panel-footer">
                                     <span class="pull-left">View Details</span>
                                     <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
                                     <div class="clearfix"></div>
                                 </div>
-                            </a>
+                            </asp:HyperLink>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
@@ -236,13 +236,13 @@
                                     </div>
                                 </div>
                             </div>
-                            <a href="bankersCalendar.aspx">
+                            <asp:HyperLink runat="server" href="bankersCalendar.aspx">
                                 <div class="panel-footer">
                                     <span class="pull-left">View Details</span>
                                     <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
                                     <div class="clearfix"></div>
                                 </div>
-                            </a>
+                            </asp:HyperLink>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
@@ -258,13 +258,13 @@
                                     </div>
                                 </div>
                             </div>
-                            <a href="#">
+                            <asp:HyperLink runat="server" href="#">
                                 <div class="panel-footer">
                                     <span class="pull-left">View Details</span>
                                     <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
                                     <div class="clearfix"></div>
                                 </div>
-                            </a>
+                            </asp:HyperLink>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
@@ -280,13 +280,13 @@
                                     </div>
                                 </div>
                             </div>
-                            <a href="#">
+                            <asp:HyperLink runat="server" href="#">
                                 <div class="panel-footer">
                                     <span class="pull-left">View Details</span>
                                     <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
                                     <div class="clearfix"></div>
                                 </div>
-                            </a>
+                            </asp:HyperLink>
                         </div>
                     </div>
                     
@@ -386,7 +386,7 @@
                                     </table>
                                 </div>
                                 <div class="text-right">
-                                    <a href="#">View All Transactions <i class="fa fa-arrow-circle-right"></i></a>
+                                    <asp:HyperLink runat="server" href="#">View All Transactions <i class="fa fa-arrow-circle-right"></i></asp:HyperLink>
                                 </div>
                             </div>
                         </div>
