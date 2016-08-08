@@ -38,23 +38,42 @@
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> <a class="navbar-brand" href="index.html">First Home</a> </div>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"><span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                <a class="navbar-brand" href="index.aspx">First Home</a>
+            </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li> <a href="about.aspx">About</a> </li>
-                    <li> <a href="contact.aspx">Contact</a> </li>
-                    <li> <a href="hdbLocation.html"><span class="fa fa-map-marker"></span> HDB Location</a> </li>
-                    <li> <a href="favHouse.aspx"><span class="glyphicon glyphicon-star"></span> Favourite House</a> </li>
-                    <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> John Smith <b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                        <li> <a href="userProfile.aspx"><i class="fa fa-fw fa-user"></i> Profile</a> </li>
-                        <li> <a href="#"><i class="fa fa-fw fa-envelope"></i> Inbox</a> </li>
-                        <li> <a href="#"><i class="fa fa-fw fa-gear"></i> Settings</a> </li>
-                        <li class="divider"></li>
-                        <li> <a href="#"><i class="fa fa-fw fa-power-off"></i> Log Out</a> </li>
-                    </ul>
-                </li>
+                    <li>
+                        <asp:HyperLink href="about.aspx" runat="server">About</asp:HyperLink>
+                    </li>
+                    <li>
+                        <asp:HyperLink href="contact.aspx" runat="server">Contact</asp:HyperLink>
+                    </li>
+                    <li>
+                        <asp:HyperLink runat="server" href="hdbLocation.aspx"><span class="fa fa-map-marker"></span> HDB Location</asp:HyperLink>
+                    </li>
+                    <li>
+                        <asp:HyperLink runat="server" href="favHouse.aspx"><span class="glyphicon glyphicon-star"></span> Favourite House</asp:HyperLink>
+                    </li>
+                    <li class="dropdown">
+                        <asp:HyperLink runat="server" href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> John Smith <b class="caret"></b></asp:HyperLink>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <asp:HyperLink runat="server" href="userProfile.aspx"><i class="fa fa-fw fa-user"></i> Profile</asp:HyperLink>
+                            </li>
+                            <li>
+                                <asp:HyperLink runat="server" href="#"><i class="fa fa-fw fa-envelope"></i> Inbox</asp:HyperLink>
+                            </li>
+                            <li>
+                                <asp:HyperLink runat="server" href="#"><i class="fa fa-fw fa-gear"></i> Settings</asp:HyperLink>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <asp:HyperLink runat="server" href="#"><i class="fa fa-fw fa-power-off"></i> Log Out</asp:HyperLink>
+                            </li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -96,8 +115,8 @@
                 <div class="panel panel-default text-center">
                     <div class="panel-heading">
                         <span class="fa-stack fa-5x">
-                              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                              <i class="fa fa-tree fa-stack-1x fa-inverse"></i>
+                            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fa fa-tree fa-stack-1x fa-inverse"></i>
                         </span>
                     </div>
                     <div class="panel-body">
@@ -111,8 +130,8 @@
                 <div class="panel panel-default text-center">
                     <div class="panel-heading">
                         <span class="fa-stack fa-5x">
-                              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                              <i class="fa fa-car fa-stack-1x fa-inverse"></i>
+                            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fa fa-car fa-stack-1x fa-inverse"></i>
                         </span>
                     </div>
                     <div class="panel-body">
@@ -126,8 +145,8 @@
                 <div class="panel panel-default text-center">
                     <div class="panel-heading">
                         <span class="fa-stack fa-5x">
-                              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                              <i class="fa fa-support fa-stack-1x fa-inverse"></i>
+                            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fa fa-support fa-stack-1x fa-inverse"></i>
                         </span>
                     </div>
                     <div class="panel-body">
@@ -141,8 +160,8 @@
                 <div class="panel panel-default text-center">
                     <div class="panel-heading">
                         <span class="fa-stack fa-5x">
-                              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                              <i class="fa fa-database fa-stack-1x fa-inverse"></i>
+                            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fa fa-database fa-stack-1x fa-inverse"></i>
                         </span>
                     </div>
                     <div class="panel-body">
@@ -162,13 +181,13 @@
             <div class="col-lg-12">
 
                 <ul id="myTab" class="nav nav-tabs nav-justified">
-                    <li class="active"><a href="#service-one" data-toggle="tab"><i class="fa fa-tree"></i> Service One</a>
+                    <li class="active"><a href="#service-one" data-toggle="tab"><i class="fa fa-tree"></i>Service One</a>
                     </li>
-                    <li class=""><a href="#service-two" data-toggle="tab"><i class="fa fa-car"></i> Service Two</a>
+                    <li class=""><a href="#service-two" data-toggle="tab"><i class="fa fa-car"></i>Service Two</a>
                     </li>
-                    <li class=""><a href="#service-three" data-toggle="tab"><i class="fa fa-support"></i> Service Three</a>
+                    <li class=""><a href="#service-three" data-toggle="tab"><i class="fa fa-support"></i>Service Three</a>
                     </li>
-                    <li class=""><a href="#service-four" data-toggle="tab"><i class="fa fa-database"></i> Service Four</a>
+                    <li class=""><a href="#service-four" data-toggle="tab"><i class="fa fa-database"></i>Service Four</a>
                     </li>
                 </ul>
 
@@ -208,8 +227,8 @@
                 <div class="media">
                     <div class="pull-left">
                         <span class="fa-stack fa-2x">
-                              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                              <i class="fa fa-tree fa-stack-1x fa-inverse"></i>
+                            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fa fa-tree fa-stack-1x fa-inverse"></i>
                         </span>
                     </div>
                     <div class="media-body">
@@ -220,8 +239,8 @@
                 <div class="media">
                     <div class="pull-left">
                         <span class="fa-stack fa-2x">
-                              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                              <i class="fa fa-car fa-stack-1x fa-inverse"></i>
+                            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fa fa-car fa-stack-1x fa-inverse"></i>
                         </span>
                     </div>
                     <div class="media-body">
@@ -232,8 +251,8 @@
                 <div class="media">
                     <div class="pull-left">
                         <span class="fa-stack fa-2x">
-                              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                              <i class="fa fa-support fa-stack-1x fa-inverse"></i>
+                            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fa fa-support fa-stack-1x fa-inverse"></i>
                         </span>
                     </div>
                     <div class="media-body">
@@ -246,8 +265,8 @@
                 <div class="media">
                     <div class="pull-left">
                         <span class="fa-stack fa-2x">
-                              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                              <i class="fa fa-database fa-stack-1x fa-inverse"></i>
+                            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fa fa-database fa-stack-1x fa-inverse"></i>
                         </span>
                     </div>
                     <div class="media-body">
@@ -258,8 +277,8 @@
                 <div class="media">
                     <div class="pull-left">
                         <span class="fa-stack fa-2x">
-                              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                              <i class="fa fa-bomb fa-stack-1x fa-inverse"></i>
+                            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fa fa-bomb fa-stack-1x fa-inverse"></i>
                         </span>
                     </div>
                     <div class="media-body">
@@ -270,8 +289,8 @@
                 <div class="media">
                     <div class="pull-left">
                         <span class="fa-stack fa-2x">
-                              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                              <i class="fa fa-bank fa-stack-1x fa-inverse"></i>
+                            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fa fa-bank fa-stack-1x fa-inverse"></i>
                         </span>
                     </div>
                     <div class="media-body">
@@ -284,8 +303,8 @@
                 <div class="media">
                     <div class="pull-left">
                         <span class="fa-stack fa-2x">
-                              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                              <i class="fa fa-paper-plane fa-stack-1x fa-inverse"></i>
+                            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fa fa-paper-plane fa-stack-1x fa-inverse"></i>
                         </span>
                     </div>
                     <div class="media-body">
@@ -296,8 +315,8 @@
                 <div class="media">
                     <div class="pull-left">
                         <span class="fa-stack fa-2x">
-                              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                              <i class="fa fa-space-shuttle fa-stack-1x fa-inverse"></i>
+                            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fa fa-space-shuttle fa-stack-1x fa-inverse"></i>
                         </span>
                     </div>
                     <div class="media-body">
@@ -308,8 +327,8 @@
                 <div class="media">
                     <div class="pull-left">
                         <span class="fa-stack fa-2x">
-                              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                              <i class="fa fa-recycle fa-stack-1x fa-inverse"></i>
+                            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fa fa-recycle fa-stack-1x fa-inverse"></i>
                         </span>
                     </div>
                     <div class="media-body">

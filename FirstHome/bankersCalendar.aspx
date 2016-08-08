@@ -17,7 +17,7 @@
     <link href="css/calendar.css" rel="stylesheet">
     <link href="css/todo.css" rel="stylesheet">
     <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300,600'>
-<link rel='stylesheet prefetch' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+    <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -34,10 +34,13 @@
         <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> <a class="navbar-brand"><span>First</span> Home</a> </div>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"><span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                <a class="navbar-brand"><span>First</span> Home</a>
+            </div>
             <!-- Top Menu Items -->
             <ul class="nav navbar-right top-nav">
-                <li class="dropdown"> <asp:HyperLink runat="server" href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-envelope"></i> <b class="caret"></b></asp:HyperLink>
+                <li class="dropdown">
+                    <asp:HyperLink runat="server" href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-envelope"></i> <b class="caret"></b></asp:HyperLink>
                     <ul class="dropdown-menu message-dropdown">
                         <li class="message-preview">
                             <asp:HyperLink runat="server" href="#">
@@ -84,28 +87,54 @@
                                 </div>
                             </asp:HyperLink>
                         </li>
-                        <li class="message-footer"> <asp:HyperLink runat="server" href="#">Read All New Messages</asp:HyperLink> </li>
+                        <li class="message-footer">
+                            <asp:HyperLink runat="server" href="#">Read All New Messages</asp:HyperLink>
+                        </li>
                     </ul>
                 </li>
-                <li class="dropdown"> <asp:HyperLink runat="server" href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell"></i> <b class="caret"></b></asp:HyperLink>
+                <li class="dropdown">
+                    <asp:HyperLink runat="server" href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell"></i> <b class="caret"></b></asp:HyperLink>
                     <ul class="dropdown-menu alert-dropdown">
-                        <li> <asp:HyperLink runat="server" href="#">Alert Name <span class="label label-default">Alert Badge</span></asp:HyperLink> </li>
-                        <li> <asp:HyperLink runat="server" href="#">Alert Name <span class="label label-primary">Alert Badge</span></asp:HyperLink> </li>
-                        <li> <asp:HyperLink runat="server" href="#">Alert Name <span class="label label-success">Alert Badge</span></asp:HyperLink> </li>
-                        <li> <asp:HyperLink runat="server" href="#">Alert Name <span class="label label-info">Alert Badge</span></asp:HyperLink> </li>
-                        <li> <asp:HyperLink runat="server" href="#">Alert Name <span class="label label-warning">Alert Badge</span></asp:HyperLink> </li>
-                        <li> <asp:HyperLink runat="server" href="#">Alert Name <span class="label label-danger">Alert Badge</span></asp:HyperLink> </li>
+                        <li>
+                            <asp:HyperLink runat="server" href="#">Alert Name <span class="label label-default">Alert Badge</span></asp:HyperLink>
+                        </li>
+                        <li>
+                            <asp:HyperLink runat="server" href="#">Alert Name <span class="label label-primary">Alert Badge</span></asp:HyperLink>
+                        </li>
+                        <li>
+                            <asp:HyperLink runat="server" href="#">Alert Name <span class="label label-success">Alert Badge</span></asp:HyperLink>
+                        </li>
+                        <li>
+                            <asp:HyperLink runat="server" href="#">Alert Name <span class="label label-info">Alert Badge</span></asp:HyperLink>
+                        </li>
+                        <li>
+                            <asp:HyperLink runat="server" href="#">Alert Name <span class="label label-warning">Alert Badge</span></asp:HyperLink>
+                        </li>
+                        <li>
+                            <asp:HyperLink runat="server" href="#">Alert Name <span class="label label-danger">Alert Badge</span></asp:HyperLink>
+                        </li>
                         <li class="divider"></li>
-                        <li> <asp:HyperLink runat="server" href="#">View All</asp:HyperLink> </li>
+                        <li>
+                            <asp:HyperLink runat="server" href="#">View All</asp:HyperLink>
+                        </li>
                     </ul>
                 </li>
-                <li class="dropdown"> <asp:HyperLink runat="server" href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> John Smith <b class="caret"></b></asp:HyperLink>
+                <li class="dropdown">
+                    <asp:HyperLink runat="server" href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> John Smith <b class="caret"></b></asp:HyperLink>
                     <ul class="dropdown-menu">
-                        <li> <asp:HyperLink runat="server" href="#"><i class="fa fa-fw fa-user"></i> Profile</asp:HyperLink> </li>
-                        <li> <asp:HyperLink runat="server" href="#"><i class="fa fa-fw fa-envelope"></i> Inbox</asp:HyperLink> </li>
-                        <li> <asp:HyperLink runat="server" href="#"><i class="fa fa-fw fa-gear"></i> Settings</asp:HyperLink> </li>
+                        <li>
+                            <asp:HyperLink runat="server" href="#"><i class="fa fa-fw fa-user"></i> Profile</asp:HyperLink>
+                        </li>
+                        <li>
+                            <asp:HyperLink runat="server" href="#"><i class="fa fa-fw fa-envelope"></i> Inbox</asp:HyperLink>
+                        </li>
+                        <li>
+                            <asp:HyperLink runat="server" href="#"><i class="fa fa-fw fa-gear"></i> Settings</asp:HyperLink>
+                        </li>
                         <li class="divider"></li>
-                        <li> <asp:HyperLink runat="server" href="#"><i class="fa fa-fw fa-power-off"></i> Log Out</asp:HyperLink> </li>
+                        <li>
+                            <asp:HyperLink runat="server" href="#"><i class="fa fa-fw fa-power-off"></i> Log Out</asp:HyperLink>
+                        </li>
                     </ul>
                 </li>
             </ul>
@@ -115,13 +144,18 @@
                     <li>
                         <asp:HyperLink runat="server" href="bankerIndex.aspx"><i class="fa fa-fw fa-home"></i> Home Page</asp:HyperLink>
                     </li>
-                    <li class = active>
+                    <li class="active">
                         <asp:HyperLink runat="server" href="bankersCalendar.aspx"><i class="fa fa-fw fa-calendar"></i> Calendar</asp:HyperLink>
                     </li>
-                    <li> <asp:HyperLink runat="server" href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> Dropdown <i class="fa fa-fw fa-caret-down"></i></asp:HyperLink>
+                    <li>
+                        <asp:HyperLink runat="server" href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> Dropdown <i class="fa fa-fw fa-caret-down"></i></asp:HyperLink>
                         <ul id="demo" class="collapse">
-                            <li> <asp:HyperLink runat="server" href="#">Dropdown Item</asp:HyperLink> </li>
-                            <li> <asp:HyperLink runat="server" href="#">Dropdown Item</asp:HyperLink> </li>
+                            <li>
+                                <asp:HyperLink runat="server" href="#">Dropdown Item</asp:HyperLink>
+                            </li>
+                            <li>
+                                <asp:HyperLink runat="server" href="#">Dropdown Item</asp:HyperLink>
+                            </li>
                         </ul>
                     </li>
                 </ul>
@@ -133,8 +167,7 @@
                 <!-- Page Heading -->
                 <div class="row">
                     <div class="col-lg-12">
-                        <h1 class="page-header">
-                            Dashboard
+                        <h1 class="page-header">Dashboard
                         </h1>
                         <!--<ol class="breadcrumb">
                             <li>
@@ -150,7 +183,7 @@
                         <div class="panel panel-primary">
                             <div class="panel-heading">
                                 <div class="row">
-                                    <div class="col-xs-3"> <i class="fa fa-users fa-5x"></i> </div>
+                                    <div class="col-xs-3"><i class="fa fa-users fa-5x"></i></div>
                                     <div class="col-xs-9 text-right">
                                         <div class="huge">8</div>
                                         <div>Users In Contact with</div>
@@ -168,7 +201,7 @@
                         <div class="panel panel-green">
                             <div class="panel-heading">
                                 <div class="row">
-                                    <div class="col-xs-3"> <i class="fa fa-tasks fa-5x"></i> </div>
+                                    <div class="col-xs-3"><i class="fa fa-tasks fa-5x"></i></div>
                                     <div class="col-xs-9 text-right">
                                         <div class="huge">12</div>
                                         <div>New Tasks!</div>
@@ -186,7 +219,7 @@
                         <div class="panel panel-yellow">
                             <div class="panel-heading">
                                 <div class="row">
-                                    <div class="col-xs-3"> <i class="fa fa-shopping-cart fa-5x"></i> </div>
+                                    <div class="col-xs-3"><i class="fa fa-shopping-cart fa-5x"></i></div>
                                     <div class="col-xs-9 text-right">
                                         <div class="huge">124</div>
                                         <div>New Orders!</div>
@@ -204,7 +237,7 @@
                         <div class="panel panel-red">
                             <div class="panel-heading">
                                 <div class="row">
-                                    <div class="col-xs-3"> <i class="fa fa-support fa-5x"></i> </div>
+                                    <div class="col-xs-3"><i class="fa fa-support fa-5x"></i></div>
                                     <div class="col-xs-9 text-right">
                                         <div class="huge">13</div>
                                         <div>Support Tickets!</div>
@@ -221,40 +254,48 @@
                     <div class="col-lg-12">
                         <div class="panel panel-default">
                             <div class="panel-heading">
-                                <h3 class="panel-title"><i class="fa fa-search fa-fw"></i> Buyers' Search Information</h3> </div>
+                                <h3 class="panel-title"><i class="fa fa-search fa-fw"></i>Buyers' Search Information</h3>
+                            </div>
                             <div class="panel-body">
                                 <div class="table-responsive">
                                     <div class="col-lg-6">
                                         <div id="cal01">
                                             <div class="calendar" id="calendar-app">
-                                                <div class="calendar--day-view" id="day-view"> <span class="day-view-exit" id="day-view-exit">&times;</span> <span class="day-view-date" id="day-view-date">MAY 29 2016</span>
+                                                <div class="calendar--day-view" id="day-view">
+                                                    <span class="day-view-exit" id="day-view-exit">&times;</span> <span class="day-view-date" id="day-view-date">MAY 29 2016</span>
                                                     <div class="day-view-content">
-                                                        <div class="day-highlight"> You <span class="day-events" id="day-events">had no events for today</span>. &nbsp; <span tabindex="0" onkeyup="if(event.keyCode != 13) return; this.click();" class="day-events-link" id="add-event" data-date>Add a new event?</span> </div>
+                                                        <div class="day-highlight">You <span class="day-events" id="day-events">had no events for today</span>. &nbsp; <span tabindex="0" onkeyup="if(event.keyCode != 13) return; this.click();" class="day-events-link" id="add-event" data-date>Add a new event?</span> </div>
                                                         <div class="day-add-event" id="add-day-event-box" data-active="false">
                                                             <div class="row01">
                                                                 <div class="half">
-                                                                    <label class="add-event-label"> Name of event
-                                                                        <input type="text" class="add-event-edit add-event-edit--long" placeholder="New event" id="input-add-event-name"> </label>
+                                                                    <label class="add-event-label">
+                                                                        Name of event
+                                                                        <input type="text" class="add-event-edit add-event-edit--long" placeholder="New event" id="input-add-event-name">
+                                                                    </label>
                                                                 </div>
                                                                 <div class="qtr">
-                                                                    <label class="add-event-label"> Start Time
+                                                                    <label class="add-event-label">
+                                                                        Start Time
                                                                         <input type="text" class="add-event-edit" placeholder="8:15" id="input-add-event-start-time" data-options="1,2,3,4,5,6,7,8,9,10,11,12" data-format="datetime">
-                                                                        <input type="text" class="add-event-edit" placeholder="am" id="input-add-event-start-ampm" data-options="a,p,am,pm"> </label>
+                                                                        <input type="text" class="add-event-edit" placeholder="am" id="input-add-event-start-ampm" data-options="a,p,am,pm">
+                                                                    </label>
                                                                 </div>
                                                                 <div class="qtr">
-                                                                    <label class="add-event-label"> End Time
+                                                                    <label class="add-event-label">
+                                                                        End Time
                                                                         <input type="text" class="add-event-edit" placeholder="9" id="input-add-event-end-time" data-options="1,2,3,4,5,6,7,8,9,10,11,12" data-format="datetime">
-                                                                        <input type="text" class="add-event-edit" placeholder="am" id="input-add-event-end-ampm" data-options="a,p,am,pm"> </label>
+                                                                        <input type="text" class="add-event-edit" placeholder="am" id="input-add-event-end-ampm" data-options="a,p,am,pm">
+                                                                    </label>
                                                                 </div>
-                                                                <div class="half"> <a onkeyup="if(event.keyCode != 13) return; this.click();" tabindex="0" id="add-event-save" class="event-btn--save event-btn">save</a> <a tabindex="0" id="add-event-cancel" class="event-btn--cancel event-btn">cancel</a> </div>
+                                                                <div class="half"><a onkeyup="if(event.keyCode != 13) return; this.click();" tabindex="0" id="add-event-save" class="event-btn--save event-btn">save</a> <a tabindex="0" id="add-event-cancel" class="event-btn--cancel event-btn">cancel</a> </div>
                                                             </div>
                                                         </div>
-                                                        <div id="day-events-list" class="day-events-list"> </div>
-                                                        <div class="day-inspiration-quote" id="inspirational-quote"> Every child is an artist. The problem is how to remain an artist once he grows up. –Pablo Picasso </div>
+                                                        <div id="day-events-list" class="day-events-list"></div>
+                                                        <div class="day-inspiration-quote" id="inspirational-quote">Every child is an artist. The problem is how to remain an artist once he grows up. –Pablo Picasso </div>
                                                     </div>
                                                 </div>
                                                 <div class="calendar--view" id="calendar-view">
-                                                    <div class="cview__month"> <span class="cview__month-last" id="calendar-month-last">Apr</span> <span class="cview__month-current" id="calendar-month">May</span> <span class="cview__month-next" id="calendar-month-next">Jun</span> </div>
+                                                    <div class="cview__month"><span class="cview__month-last" id="calendar-month-last">Apr</span> <span class="cview__month-current" id="calendar-month">May</span> <span class="cview__month-next" id="calendar-month-next">Jun</span> </div>
                                                     <div class="cview__header">Sun</div>
                                                     <div class="cview__header">Mon</div>
                                                     <div class="cview__header">Tue</div>
@@ -262,9 +303,10 @@
                                                     <div class="cview__header">Thu</div>
                                                     <div class="cview__header">Fri</div>
                                                     <div class="cview__header">Sat</div>
-                                                    <div class="calendar--view" id="dates"> </div>
+                                                    <div class="calendar--view" id="dates"></div>
                                                 </div>
-                                                <div class="footer01"> <span><span id="footer-date" class="footer01__link">Today is May 30</span></span>
+                                                <div class="footer01">
+                                                    <span><span id="footer-date" class="footer01__link">Today is May 30</span></span>
                                                 </div>
                                             </div>
                                         </div>
@@ -274,8 +316,11 @@
                                             <div class="cont_centrar">
                                                 <div class="cont_todo_list_top">
                                                     <div class="cont_titulo_cont">
-                                                        <h3>THINGS TO DO</h3> </div>
-                                                    <div class="cont_add_titulo_cont"><asp:HyperLink runat="server" href="#" onclick="add_new()"><i class="material-icons">&#xE145;</i></asp:HyperLink> </div>
+                                                        <h3>THINGS TO DO</h3>
+                                                    </div>
+                                                    <div class="cont_add_titulo_cont">
+                                                        <asp:HyperLink runat="server" href="#" onclick="add_new()"><i class="material-icons">&#xE145;</i></asp:HyperLink>
+                                                    </div>
                                                     <!--   End cont_todo_list_top  -->
                                                 </div>
                                                 <div class="cont_crear_new">
@@ -311,7 +356,8 @@
                                                         </tr>
                                                         <tr>
                                                             <td colspan="3">
-                                                                <input type="text" class="input_description" required /> </td>
+                                                                <input type="text" class="input_description" required />
+                                                            </td>
                                                         </tr>
                                                         <tr>
                                                             <td colspan="3">
@@ -337,7 +383,8 @@
                                                                 </div>
                                                                 <div class="cont_btns_options">
                                                                     <ul>
-                                                                        <li><asp:HyperLink runat="server" href="#" onclick="finish_action('0','0_1');"><i class="material-icons">&#xE5CA;</i></asp:HyperLink></li>
+                                                                        <li>
+                                                                            <asp:HyperLink runat="server" href="#" onclick="finish_action('0','0_1');"><i class="material-icons">&#xE5CA;</i></asp:HyperLink></li>
                                                                     </ul>
                                                                 </div>
                                                             </div>
@@ -356,7 +403,9 @@
                                     </div>
                                     <script src="js/calendar.js"></script>
                                 </div>
-                                <div class="text-right"> <asp:HyperLink runat="server" href="#">View All Transactions <i class="fa fa-arrow-circle-right"></i></asp:HyperLink> </div>
+                                <div class="text-right">
+                                    <asp:HyperLink runat="server" href="#">View All Transactions <i class="fa fa-arrow-circle-right"></i></asp:HyperLink>
+                                </div>
                             </div>
                         </div>
                     </div>

@@ -25,11 +25,11 @@
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript">
-        $(document).ready(function() {
+        $(document).ready(function () {
 
             $(".alert").hide()
 
-            $('#button').click(function() {
+            $('#button').click(function () {
                 $('.alert').show()
             })
 
@@ -43,29 +43,32 @@
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> <a class="navbar-brand" href="index.aspx">First Home</a> </div>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"><span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                <a class="navbar-brand" href="index.aspx">First Home</a>
+            </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li> <a href="about.aspx">About</a> </li>
-                    <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Services <b class="caret"></b></a>
+                    <li><a href="about.aspx">About</a> </li>
+                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Services <b class="caret"></b></a>
                         <ul class="dropdown-menu">
-                            <li> <a href="hdbLocation.aspx">HDB Location</a> </li>
-                            <li> <a href="blog-home-2.aspx">Service 2</a> </li>
-                            <li> <a href="blog-post.aspx">Service 3</a> </li>
+                            <li><a href="hdbLocation.aspx">HDB Location</a> </li>
+                            <li><a href="blog-home-2.aspx">Service 2</a> </li>
+                            <li><a href="blog-post.aspx">Service 3</a> </li>
                         </ul>
                     </li>
-                    <li> <a href="contact.aspx">Contact</a> </li>
-                    <li> <a href="login.aspx">Log In</a> </li>
-                    <li> <a href="registration.aspx">Sign Up</a> </li>
+                    <li><a href="contact.aspx">Contact</a> </li>
+                    <li><a href="login.aspx">Log In</a> </li>
+                    <li><a href="registration.aspx">Sign Up</a> </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
         </div>
         <!-- /.container -->
     </nav>
-    <div class="alert alert-success alert-dismissible" style="text-align:center" id="success" role="alert">
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button> Thank you. The reseller will contact you within 3 working days.
+    <div class="alert alert-success alert-dismissible" style="text-align: center" id="success" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        Thank you. The reseller will contact you within 3 working days.
     </div>
 
     <!-- Page Content -->
@@ -77,8 +80,7 @@
                 <h1 class="page-header">4-room resell flat
                     <small></small>
                 </h1>
-                <h2>
-                    226 Choa Chu Kang Central 
+                <h2>226 Choa Chu Kang Central 
                     <br>
                     #08-42
                     <br>
@@ -128,16 +130,16 @@
             <div class="col-md-4">
                 <h2>Flat Details</h2>
                 <h3>
-                <ul>
-                    <li>$335,000.00</li>
-                    <li><i class="glyphicon glyphicon-bed"></i> 3 Bedrooms</li>
-                    <li>2 Bathrooms</li>
-                    <li>1,571 sqft</li>
-                    <li>S$213.29 psf</li>
-                </ul>
+                    <ul>
+                        <li>$335,000.00</li>
+                        <li><i class="glyphicon glyphicon-bed"></i>3 Bedrooms</li>
+                        <li>2 Bathrooms</li>
+                        <li>1,571 sqft</li>
+                        <li>S$213.29 psf</li>
+                    </ul>
                 </h3>
 
-                <br/>
+                <br />
 
                 <button class="btn btn-primary btn-block" id="button">Click here to show your interest</button>
 
@@ -162,7 +164,8 @@
                         </a>
                         <div class="media-body">
 
-                            <h4 class="media-heading user_name">Priya</h4> Wow! this is really great.
+                            <h4 class="media-heading user_name">Priya</h4>
+                            Wow! this is really great.
 
                             <p><small><a href="">Like</a> - <a href="">Share</a></small></p>
                         </div>
@@ -174,7 +177,8 @@
                         </a>
                         <div class="media-body">
 
-                            <h4 class="media-heading user_name">Bryant Tan</h4> Wow! this is really great.
+                            <h4 class="media-heading user_name">Bryant Tan</h4>
+                            Wow! this is really great.
 
                             <p><small><a href="">Like</a> - <a href="">Share</a></small></p>
                         </div>
@@ -186,7 +190,8 @@
                         </a>
                         <div class="media-body">
 
-                            <h4 class="media-heading user_name">Baltej Singh</h4> Wow! this is really great.
+                            <h4 class="media-heading user_name">Baltej Singh</h4>
+                            Wow! this is really great.
 
                             <p><small><a href="">Like</a> - <a href="">Share</a></small></p>
                         </div>
@@ -198,7 +203,8 @@
                         </a>
                         <div class="media-body">
 
-                            <h4 class="media-heading user_name">Chevenne Tan</h4> Wow! this is really great.
+                            <h4 class="media-heading user_name">Chevenne Tan</h4>
+                            Wow! this is really great.
 
                             <p><small><a href="">Like</a> - <a href="">Share</a></small></p>
                         </div>

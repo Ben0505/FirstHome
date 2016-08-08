@@ -154,13 +154,13 @@
             <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav side-nav">
-                    <li class = active>
+                    <li class="active">
                         <asp:HyperLink runat="server" href="bankerIndex.aspx"><i class="fa fa-fw fa-home"></i> Home Page</asp:HyperLink>
                     </li>
                     <li>
                         <asp:HyperLink runat="server" href="bankersCalendar.aspx"><i class="fa fa-fw fa-calendar"></i> Calendar</asp:HyperLink>
                     </li>
-                    
+
                     <li>
                         <asp:HyperLink runat="server" href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> Dropdown <i class="fa fa-fw fa-caret-down"></i></asp:HyperLink>
                         <ul id="demo" class="collapse">
@@ -180,14 +180,13 @@
         <div id="page-wrapper">
 
             <div class="container-fluid">
-                
-                
+
+
 
                 <!-- Page Heading -->
                 <div class="row">
                     <div class="col-lg-12">
-                        <h1 class="page-header">
-                            Dashboard
+                        <h1 class="page-header">Dashboard
                         </h1>
                         <!--<ol class="breadcrumb">
                             <li>
@@ -197,8 +196,8 @@
                     </div>
                 </div>
                 <!-- /.row -->
-                
-                                <!-- /.row -->
+
+                <!-- /.row -->
 
                 <div class="row">
                     <div class="col-lg-3 col-md-6">
@@ -289,11 +288,11 @@
                             </asp:HyperLink>
                         </div>
                     </div>
-                    
+
                     <div class="col-lg-12">
                         <div class="panel panel-default">
                             <div class="panel-heading">
-                                <h3 class="panel-title"><i class="fa fa-search fa-fw"></i> Buyers' Search Information</h3>
+                                <h3 class="panel-title"><i class="fa fa-search fa-fw"></i>Buyers' Search Information</h3>
                             </div>
                             <div class="panel-body">
                                 <div class="table-responsive">
@@ -302,10 +301,10 @@
                                             <tr>
                                                 <th>Buyers #</th>
                                                 <th>Name</th>
-                                                <th><i class="glyphicon glyphicon-calendar"></i> Last Search Date</th>
-                                                <th><i class="glyphicon glyphicon-time"></i> Last Search Time</th>
-                                                <th><i class="glyphicon glyphicon-eye-open"></i> House seen</th>
-                                                <th><i class="glyphicon glyphicon-star"></i> House Favourite</th>
+                                                <th><i class="glyphicon glyphicon-calendar"></i>Last Search Date</th>
+                                                <th><i class="glyphicon glyphicon-time"></i>Last Search Time</th>
+                                                <th><i class="glyphicon glyphicon-eye-open"></i>House seen</th>
+                                                <th><i class="glyphicon glyphicon-star"></i>House Favourite</th>
                                                 <th>Initiated to buy</th>
                                             </tr>
                                         </thead>
@@ -320,7 +319,7 @@
                                                 <td>1</td>
                                             </tr>
                                             <tr>
-                                               <td>0007</td>
+                                                <td>0007</td>
                                                 <td>Mr. Koh</td>
                                                 <td>28/07/2016</td>
                                                 <td>4:13 PM</td>

@@ -29,21 +29,38 @@
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> <a class="navbar-brand" href="index.aspx">First Home</a> </div>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"><span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                <a class="navbar-brand" href="index.aspx">First Home</a>
+            </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li> <asp:HyperLink runat="server" href="about.aspx">About</asp:HyperLink> </li>
-                    <li class="dropdown"> <asp:HyperLink runat="server" href="#" class="dropdown-toggle" data-toggle="dropdown">Services <b class="caret"></b></asp:HyperLink>
+                    <li>
+                        <asp:HyperLink runat="server" href="about.aspx">About</asp:HyperLink>
+                    </li>
+                    <li class="dropdown">
+                        <asp:HyperLink runat="server" href="#" class="dropdown-toggle" data-toggle="dropdown">Services <b class="caret"></b></asp:HyperLink>
                         <ul class="dropdown-menu">
-                            <li> <asp:HyperLink runat="server" href="blog-home-1.html">Service 1</asp:HyperLink> </li>
-                            <li> <asp:HyperLink runat="server" href="blog-home-2.html">Service 2</asp:HyperLink> </li>
-                            <li> <asp:HyperLink runat="server" href="blog-post.html">Service 3</asp:HyperLink> </li>
+                            <li>
+                                <asp:HyperLink runat="server" href="blog-home-1.html">Service 1</asp:HyperLink>
+                            </li>
+                            <li>
+                                <asp:HyperLink runat="server" href="blog-home-2.html">Service 2</asp:HyperLink>
+                            </li>
+                            <li>
+                                <asp:HyperLink runat="server" href="blog-post.html">Service 3</asp:HyperLink>
+                            </li>
                         </ul>
                     </li>
-                    <li> <asp:HyperLink runat="server" href="contact.aspx">Contact</asp:HyperLink> </li>
-                    <li> <asp:HyperLink runat="server" href="login.aspx">Log in</asp:HyperLink> </li>
-                    <li> <asp:HyperLink runat="server" href="login.aspx">Sign Up</asp:HyperLink> </li>
+                    <li>
+                        <asp:HyperLink runat="server" href="contact.aspx">Contact</asp:HyperLink>
+                    </li>
+                    <li>
+                        <asp:HyperLink runat="server" href="login.aspx">Log in</asp:HyperLink>
+                    </li>
+                    <li>
+                        <asp:HyperLink runat="server" href="login.aspx">Sign Up</asp:HyperLink>
+                    </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -59,7 +76,9 @@
                     <small>Page Not Found</small>
                 </h1>
                 <ol class="breadcrumb">
-                    <li><asp:HyperLink runat="server" href="index.aspx">Home</asp:HyperLink> </li>
+                    <li>
+                        <asp:HyperLink runat="server" href="index.aspx">Home</asp:HyperLink>
+                    </li>
                     <li class="active">404</li>
                 </ol>
             </div>
@@ -72,32 +91,34 @@
                     </h1>
                     <p>The page you're looking for could not be found. Here are some helpful links to get you back on track:</p>
                     <ul>
-                        <li> <asp:HyperLink runat="server" href="index.aspx">Home</asp:HyperLink> </li>
-                        <li> <a href="about.aspx">About</a> </li>
-                        <li> <a href="services.aspx">Services</a> </li>
-                        <li> <a href="contact.aspx">Contact</a> </li>
-                        <li> Portfolio
+                        <li>
+                            <asp:HyperLink runat="server" href="index.aspx">Home</asp:HyperLink>
+                        </li>
+                        <li><a href="about.aspx">About</a> </li>
+                        <li><a href="services.aspx">Services</a> </li>
+                        <li><a href="contact.aspx">Contact</a> </li>
+                        <li>Portfolio
                             <ul>
-                                <li> <a href="portfolio-1-col.html">1 Column Portfolio</a> </li>
-                                <li> <a href="portfolio-2-col.html">2 Column Portfolio</a> </li>
-                                <li> <a href="portfolio-3-col.html">3 Column Portfolio</a> </li>
-                                <li> <a href="portfolio-4-col.html">4 Column Portfolio</a> </li>
+                                <li><a href="portfolio-1-col.html">1 Column Portfolio</a> </li>
+                                <li><a href="portfolio-2-col.html">2 Column Portfolio</a> </li>
+                                <li><a href="portfolio-3-col.html">3 Column Portfolio</a> </li>
+                                <li><a href="portfolio-4-col.html">4 Column Portfolio</a> </li>
                             </ul>
                         </li>
-                        <li> Blog
+                        <li>Blog
                             <ul>
-                                <li> <a href="blog-home-1.html">Blog Home 1</a> </li>
-                                <li> <a href="blog-home-2.html">Blog Home 2</a> </li>
-                                <li> <a href="blog-post.html">Blog Post</a> </li>
+                                <li><a href="blog-home-1.html">Blog Home 1</a> </li>
+                                <li><a href="blog-home-2.html">Blog Home 2</a> </li>
+                                <li><a href="blog-post.html">Blog Post</a> </li>
                             </ul>
                         </li>
-                        <li> Other Pages
+                        <li>Other Pages
                             <ul>
-                                <li> <a href="full-width-page.html">Full Width Page</a> </li>
-                                <li> <a href="sidebar.html">Sidebar Page</a> </li>
-                                <li> <a href="faq.aspx">FAQ</a> </li>
-                                <li> <a href="404.aspx">404 Page</a> </li>
-                                <li> <a href="pricing-table.html">Pricing Table</a> </li>
+                                <li><a href="full-width-page.html">Full Width Page</a> </li>
+                                <li><a href="sidebar.html">Sidebar Page</a> </li>
+                                <li><a href="faq.aspx">FAQ</a> </li>
+                                <li><a href="404.aspx">404 Page</a> </li>
+                                <li><a href="pricing-table.html">Pricing Table</a> </li>
                             </ul>
                         </li>
                     </ul>

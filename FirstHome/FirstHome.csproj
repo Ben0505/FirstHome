@@ -112,6 +112,7 @@
     <Content Include="hdblocation.aspx" />
     <Content Include="js\material.min.js.map" />
     <Content Include="js\ripples.min.js.map" />
+    <Content Include="js\slidingButton.js" />
     <Content Include="less\slidingContent.less" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

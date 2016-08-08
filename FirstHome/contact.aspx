@@ -30,30 +30,49 @@
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> <a class="navbar-brand" href="index.aspx">First Home</a> </div>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"><span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                <a class="navbar-brand" href="index.aspx">First Home</a>
+            </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li> <a href="about.aspx">About</a> </li>
-                    <li> <a href="contact.aspx">Contact</a> </li>
-                    <li> <a href="hdbLocation.html"><span class="fa fa-map-marker"></span> HDB Location</a> </li>
-                    <li> <a href="favHouse.aspx"><span class="glyphicon glyphicon-star"></span> Favourite House</a> </li>
-                    <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> John Smith <b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                        <li> <a href="userProfile.aspx"><i class="fa fa-fw fa-user"></i> Profile</a> </li>
-                        <li> <a href="#"><i class="fa fa-fw fa-envelope"></i> Inbox</a> </li>
-                        <li> <a href="#"><i class="fa fa-fw fa-gear"></i> Settings</a> </li>
-                        <li class="divider"></li>
-                        <li> <a href="#"><i class="fa fa-fw fa-power-off"></i> Log Out</a> </li>
-                    </ul>
-                </li>
+                    <li>
+                        <asp:HyperLink href="about.aspx" runat="server">About</asp:HyperLink>
+                    </li>
+                    <li>
+                        <asp:HyperLink href="contact.aspx" runat="server">Contact</asp:HyperLink>
+                    </li>
+                    <li>
+                        <asp:HyperLink runat="server" href="hdbLocation.aspx"><span class="fa fa-map-marker"></span> HDB Location</asp:HyperLink>
+                    </li>
+                    <li>
+                        <asp:HyperLink runat="server" href="favHouse.aspx"><span class="glyphicon glyphicon-star"></span> Favourite House</asp:HyperLink>
+                    </li>
+                    <li class="dropdown">
+                        <asp:HyperLink runat="server" href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> John Smith <b class="caret"></b></asp:HyperLink>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <asp:HyperLink runat="server" href="userProfile.aspx"><i class="fa fa-fw fa-user"></i> Profile</asp:HyperLink>
+                            </li>
+                            <li>
+                                <asp:HyperLink runat="server" href="#"><i class="fa fa-fw fa-envelope"></i> Inbox</asp:HyperLink>
+                            </li>
+                            <li>
+                                <asp:HyperLink runat="server" href="#"><i class="fa fa-fw fa-gear"></i> Settings</asp:HyperLink>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <asp:HyperLink runat="server" href="#"><i class="fa fa-fw fa-power-off"></i> Log Out</asp:HyperLink>
+                            </li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
         </div>
         <!-- /.container -->
     </nav>
-    
+
     <!-- Page Content -->
     <div class="container">
         <!-- Page Heading/Breadcrumbs -->
@@ -79,17 +98,23 @@
             <!-- Contact Details Column -->
             <div class="col-md-4">
                 <h3>Contact Details</h3>
-                <p> 3481 Melrose Place
-                    <br>Beverly Hills, CA 90210
-                    <br> </p>
-                <p><i class="fa fa-phone"></i> <abbr title="Phone">P</abbr>: (123) 456-7890</p>
-                <p><i class="fa fa-envelope-o"></i> <abbr title="Email">E</abbr>: <a href="mailto:name@example.com">name@example.com</a> </p>
-                <p><i class="fa fa-clock-o"></i> <abbr title="Hours">H</abbr>: Monday - Friday: 9:00 AM to 5:00 PM</p>
+                <p>
+                    3481 Melrose Place
+                    <br>
+                    Beverly Hills, CA 90210
+                    <br>
+                </p>
+                <p><i class="fa fa-phone"></i>
+                    <abbr title="Phone">P</abbr>: (123) 456-7890</p>
+                <p><i class="fa fa-envelope-o"></i>
+                    <abbr title="Email">E</abbr>: <a href="mailto:name@example.com">name@example.com</a> </p>
+                <p><i class="fa fa-clock-o"></i>
+                    <abbr title="Hours">H</abbr>: Monday - Friday: 9:00 AM to 5:00 PM</p>
                 <ul class="list-unstyled list-inline list-social-icons">
-                    <li> <a href="#"><i class="fa fa-facebook-square fa-2x"></i></a> </li>
-                    <li> <a href="#"><i class="fa fa-linkedin-square fa-2x"></i></a> </li>
-                    <li> <a href="#"><i class="fa fa-twitter-square fa-2x"></i></a> </li>
-                    <li> <a href="#"><i class="fa fa-google-plus-square fa-2x"></i></a> </li>
+                    <li><a href="#"><i class="fa fa-facebook-square fa-2x"></i></a></li>
+                    <li><a href="#"><i class="fa fa-linkedin-square fa-2x"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter-square fa-2x"></i></a></li>
+                    <li><a href="#"><i class="fa fa-google-plus-square fa-2x"></i></a></li>
                 </ul>
             </div>
         </div>
@@ -110,17 +135,19 @@
                     <div class="control-group form-group">
                         <div class="controls">
                             <label>Phone Number:</label>
-                            <input type="tel" class="form-control" id="phone" required data-validation-required-message="Please enter your phone number."> </div>
+                            <input type="tel" class="form-control" id="phone" required data-validation-required-message="Please enter your phone number.">
+                        </div>
                     </div>
                     <div class="control-group form-group">
                         <div class="controls">
                             <label>Email Address:</label>
-                            <input type="email" class="form-control" id="email" required data-validation-required-message="Please enter your email address."> </div>
+                            <input type="email" class="form-control" id="email" required data-validation-required-message="Please enter your email address.">
+                        </div>
                     </div>
                     <div class="control-group form-group">
                         <div class="controls">
                             <label>Message:</label>
-                            <textarea rows="10" cols="100" class="form-control" id="message" required data-validation-required-message="Please enter your message" maxlength="999" style="resize:none"></textarea>
+                            <textarea rows="10" cols="100" class="form-control" id="message" required data-validation-required-message="Please enter your message" maxlength="999" style="resize: none"></textarea>
                         </div>
                     </div>
                     <div id="success"></div>

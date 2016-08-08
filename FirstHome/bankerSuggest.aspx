@@ -50,7 +50,7 @@
             <!-- Top Menu Items -->
             <ul class="nav navbar-right top-nav">
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-envelope"></i> <b class="caret"></b></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-envelope"></i><b class="caret"></b></a>
                     <ul class="dropdown-menu message-dropdown">
                         <li class="message-preview">
                             <a href="#">
@@ -62,7 +62,7 @@
                                         <h5 class="media-heading">
                                             <strong>John Smith</strong>
                                         </h5>
-                                        <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
+                                        <p class="small text-muted"><i class="fa fa-clock-o"></i>Yesterday at 4:32 PM</p>
                                         <p>Lorem ipsum dolor sit amet, consectetur...</p>
                                     </div>
                                 </div>
@@ -78,7 +78,7 @@
                                         <h5 class="media-heading">
                                             <strong>John Smith</strong>
                                         </h5>
-                                        <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
+                                        <p class="small text-muted"><i class="fa fa-clock-o"></i>Yesterday at 4:32 PM</p>
                                         <p>Lorem ipsum dolor sit amet, consectetur...</p>
                                     </div>
                                 </div>
@@ -94,7 +94,7 @@
                                         <h5 class="media-heading">
                                             <strong>John Smith</strong>
                                         </h5>
-                                        <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
+                                        <p class="small text-muted"><i class="fa fa-clock-o"></i>Yesterday at 4:32 PM</p>
                                         <p>Lorem ipsum dolor sit amet, consectetur...</p>
                                     </div>
                                 </div>
@@ -106,7 +106,7 @@
                     </ul>
                 </li>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell"></i> <b class="caret"></b></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell"></i><b class="caret"></b></a>
                     <ul class="dropdown-menu alert-dropdown">
                         <li>
                             <a href="#">Alert Name <span class="label label-default">Alert Badge</span></a>
@@ -133,20 +133,20 @@
                     </ul>
                 </li>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> John Smith <b class="caret"></b></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i>John Smith <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                         <li>
-                            <a href="#"><i class="fa fa-fw fa-user"></i> Profile</a>
+                            <a href="#"><i class="fa fa-fw fa-user"></i>Profile</a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-fw fa-envelope"></i> Inbox</a>
+                            <a href="#"><i class="fa fa-fw fa-envelope"></i>Inbox</a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-fw fa-gear"></i> Settings</a>
+                            <a href="#"><i class="fa fa-fw fa-gear"></i>Settings</a>
                         </li>
                         <li class="divider"></li>
                         <li>
-                            <a href="#"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
+                            <a href="#"><i class="fa fa-fw fa-power-off"></i>Log Out</a>
                         </li>
                     </ul>
                 </li>
@@ -154,15 +154,15 @@
             <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav side-nav">
-                    <li >
-                        <a href="bankerIndex.aspx"><i class="fa fa-fw fa-home"></i> Home Page</a>
+                    <li>
+                        <a href="bankerIndex.aspx"><i class="fa fa-fw fa-home"></i>Home Page</a>
                     </li>
                     <li>
-                        <a href="bankersCalendar.aspx"><i class="fa fa-fw fa-calendar"></i> Calendar</a>
+                        <a href="bankersCalendar.aspx"><i class="fa fa-fw fa-calendar"></i>Calendar</a>
                     </li>
-                    
+
                     <li>
-                        <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> Dropdown <i class="fa fa-fw fa-caret-down"></i></a>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i>Dropdown <i class="fa fa-fw fa-caret-down"></i></a>
                         <ul id="demo" class="collapse">
                             <li>
                                 <a href="#">Dropdown Item</a>
@@ -180,14 +180,13 @@
         <div id="page-wrapper">
 
             <div class="container-fluid">
-                
-                
+
+
 
                 <!-- Page Heading -->
                 <div class="row">
                     <div class="col-lg-12">
-                        <h1 class="page-header">
-                            Dashboard
+                        <h1 class="page-header">Dashboard
                         </h1>
                         <!--<ol class="breadcrumb">
                             <li>
@@ -197,8 +196,8 @@
                     </div>
                 </div>
                 <!-- /.row -->
-                
-                                <!-- /.row -->
+
+                <!-- /.row -->
 
                 <div class="row">
                     <div class="col-lg-3 col-md-6">
@@ -289,194 +288,194 @@
                             </a>
                         </div>
                     </div>
-                    
 
-            <!-- Blog Entries Column -->
-            <div class="col-md-12">
 
-                <!-- First Blog Post -->
-                <h2>
-                    <a href="#"> Mr. Lee's Profile</a>
-                </h2>
-                <p class="lead">
-                    Main Applicant: <a href="#">Mr. Lee</a>
-                    <br>
-                    Salary (incl. CPF): <a href="#">S$5,000</a>
-                </p>
-                <p class="lead">
-                    Co-Applicant: <a href="#">Mrs. Lee</a>
-                    <br>
-                    Salary (incl. CPF): <a href="#">S$3,000</a>
-                </p>
-                <div class="lead">
-                    Total Savings: <a href="#">S$120,000</a>
-                    <br>
-                    Total Expenses: <a type="button" data-toggle="collapse" data-target="#demo1">S$3,000</a>
-                    <div id="demo1" class="collapse in">
-                        <p>
-                            <small>
-                                - UtilityS$300
-                                <br>
-                                - Insurance: S$300
-                                <br>
-                                - Food: S$500
-                                <br>
-                                - Education: S$900
-                                <br>
-                                - Taxes: S$1,000
-                            </small>
+                    <!-- Blog Entries Column -->
+                    <div class="col-md-12">
+
+                        <!-- First Blog Post -->
+                        <h2>
+                            <a href="#">Mr. Lee's Profile</a>
+                        </h2>
+                        <p class="lead">
+                            Main Applicant: <a href="#">Mr. Lee</a>
+                            <br>
+                            Salary (incl. CPF): <a href="#">S$5,000</a>
                         </p>
-                    </div>
-                    <br>
-                    Outstanding Loans: <a>S$1,500 / Month</a>
-                </div>
-                <h5><span class="glyphicon glyphicon-eye-open"></span> Seen: <a>5  Houses</a></h5>
-                <h5><span class="glyphicon glyphicon-star"></span> Liked: <a>3  Houses</a></h5>
-                <p><i class="fa fa-clock-o"></i> Last updated on 27 July 2016 at 10:00 PM</p>
-                <hr>
-                <div class="col-lg-12">
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h3 class="panel-title"><i class="fa fa-search fa-fw"></i> Buyer's Search History</h3>
+                        <p class="lead">
+                            Co-Applicant: <a href="#">Mrs. Lee</a>
+                            <br>
+                            Salary (incl. CPF): <a href="#">S$3,000</a>
+                        </p>
+                        <div class="lead">
+                            Total Savings: <a href="#">S$120,000</a>
+                            <br>
+                            Total Expenses: <a type="button" data-toggle="collapse" data-target="#demo1">S$3,000</a>
+                            <div id="demo1" class="collapse in">
+                                <p>
+                                    <small>- UtilityS$300
+                                <br>
+                                        - Insurance: S$300
+                                <br>
+                                        - Food: S$500
+                                <br>
+                                        - Education: S$900
+                                <br>
+                                        - Taxes: S$1,000
+                                    </small>
+                                </p>
                             </div>
-                            <div class="panel-body">
-                                <div class="table-responsive">
-                                    <table class="table table-bordered table-hover table-striped">
-                                        <thead>
-                                            <tr><th><i class="glyphicon glyphicon-star"></i></th>
-                                                <th>Launch</th>
-                                                <th>Type</th>
-                                                <th>Estate</th>
-                                                <th><i class="glyphicon glyphicon-map-marker"></i>Address</th>
-                                                <th><i class="fa fa-usd"></i> Price</th>
-                                                <th><i class="glyphicon glyphicon-bed"></i> Bedrooms</th>
-                                                <th><i class="glyphicon glyphicon"></i> Bathrooms</th>
-                                                <th><i class="glyphicon glyphicon-resize-full"></i> Size (sqft)</th>
-                                                <th><i class="fa fa-usd"></i> Price/sqft</th>
-                                                <th><i class="glyphicon glyphicon-calendar"></i> Search Date</th>
-                                                <th><i class="glyphicon glyphicon-time"></i> Search Time</th>
-                                                
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td><i class="fa fa-check" style="color:green"></i></td>
-                                                <td>BTO</td>
-                                                <td>HDB</td>
-                                                <td>Marine Parade</td>
-                                                <td>Caribbean At Keppel Bay</td>
-                                                <td>S$3,263,260</td>
-                                                <td>4</td>
-                                                <td>2</td>
-                                                <td>2,282 sqft</td>
-                                                <td>S$1,430.00 psf</td>
-                                                <td>28/07/2016</td>
-                                                <td>4:31 PM</td>
-                                            </tr>
-                                            <tr>
-                                               <td><i class="fa fa-times" style="color:red"></i></td>
-                                                <td>Resale</td>
-                                                <td>HDB</td>
-                                                <td>Clementi</td>
-                                                <td>The Orient </td>
-                                                <td>S$970,000</td>
-                                                <td>3</td>
-                                                <td>2</td>
-                                                <td>581 sqft</td>
-                                                <td>S$1,669.54 psf</td>
-                                                <td>28/07/2016</td>
-                                                <td>4:13 PM</td>
-                                            </tr>
-                                            <tr>
-                                                <td><i class="fa fa-check" style="color:green"></i></td>
-                                                <td>BTO</td>
-                                                <td>HDB</td>
-                                                <td>Serangoon</td>
-                                                <td>Sturdee Residences</td>
-                                                <td>S$1,297,428</td>
-                                                <td>2</td>
-                                                <td>2</td>
-                                                <td>829 sqft</td>
-                                                <td>S$1,565.05 psf</td>
-                                                <td>28/07/2016</td>
-                                                <td>4:05 PM</td>
-                                            </tr>
-                                            <tr>
-                                                <td><i class="fa fa-check" style="color:green" ></i></td>
-                                                <td>Resale</td>
-                                                <td>Condo</td>
-                                                <td>Tampines</td>
-                                                <td>Edelweiss Park Condominium</td>
-                                                <td>S$1,080,000</td>
-                                                <td>4</td>
-                                                <td>2</td>
-                                                <td>1,281 sqft </td>
-                                                <td> S$843.09 psf</td>
-                                                <td>28/07/2016</td>
-                                                <td>3:58 PM</td>
-                                            </tr>
-                                            <tr>
-                                                <td><i class="fa fa-times" style="color:red"></i></td>
-                                                <td>Resale</td>
-                                                <td>HDB</td>
-                                                <td>Ang Mo Kio</td>
-                                                <td>Ang Mo Kio Impressions</td>
-                                                <td>S$1,401,700</td>
-                                                <td>3</td>
-                                                <td>2</td>
-                                                <td>1,055 sqft</td>
-                                                <td>S$1,328.63 psf</td>
-                                                <td>28/07/2016</td>
-                                                <td>3:51 PM</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                                <div class="text-right">
-                                    <a href="#">View All Transactions <i class="fa fa-arrow-circle-right"></i></a>
-                                </div>
-                            </div>
-                            
-                            
-                            
+                            <br>
+                            Outstanding Loans: <a>S$1,500 / Month</a>
                         </div>
-                    </div>
-                <p>Text123abc</p>
-                <label class="control-label">Select File</label>
-                <input id="input-1a" type="file" class="file" data-show-preview="false">
-                <hr>
-                
-                <a class="btn btn-primary" href="#" data-toggle="modal" data-target="#myModal">SEND SUGGESTION  <i class="fa fa-angle-right"></i></a>
-                
-                <!-- Pop Up -->
-                <div class="container">
-                    <!-- Modal -->
-                    <div class="modal fade" id="myModal" role="dialog">
-                        <div class="modal-dialog modal-sm">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                        <h4 class="modal-title">SENT SUGGESTION</h4>
+                        <h5><span class="glyphicon glyphicon-eye-open"></span>Seen: <a>5  Houses</a></h5>
+                        <h5><span class="glyphicon glyphicon-star"></span>Liked: <a>3  Houses</a></h5>
+                        <p><i class="fa fa-clock-o"></i>Last updated on 27 July 2016 at 10:00 PM</p>
+                        <hr>
+                        <div class="col-lg-12">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title"><i class="fa fa-search fa-fw"></i>Buyer's Search History</h3>
                                 </div>
-                                <div class="modal-body">
-                                    <p>FILE SENT SUCCESSFULLY</p>
+                                <div class="panel-body">
+                                    <div class="table-responsive">
+                                        <table class="table table-bordered table-hover table-striped">
+                                            <thead>
+                                                <tr>
+                                                    <th><i class="glyphicon glyphicon-star"></i></th>
+                                                    <th>Launch</th>
+                                                    <th>Type</th>
+                                                    <th>Estate</th>
+                                                    <th><i class="glyphicon glyphicon-map-marker"></i>Address</th>
+                                                    <th><i class="fa fa-usd"></i>Price</th>
+                                                    <th><i class="glyphicon glyphicon-bed"></i>Bedrooms</th>
+                                                    <th><i class="glyphicon glyphicon"></i>Bathrooms</th>
+                                                    <th><i class="glyphicon glyphicon-resize-full"></i>Size (sqft)</th>
+                                                    <th><i class="fa fa-usd"></i>Price/sqft</th>
+                                                    <th><i class="glyphicon glyphicon-calendar"></i>Search Date</th>
+                                                    <th><i class="glyphicon glyphicon-time"></i>Search Time</th>
+
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><i class="fa fa-check" style="color: green"></i></td>
+                                                    <td>BTO</td>
+                                                    <td>HDB</td>
+                                                    <td>Marine Parade</td>
+                                                    <td>Caribbean At Keppel Bay</td>
+                                                    <td>S$3,263,260</td>
+                                                    <td>4</td>
+                                                    <td>2</td>
+                                                    <td>2,282 sqft</td>
+                                                    <td>S$1,430.00 psf</td>
+                                                    <td>28/07/2016</td>
+                                                    <td>4:31 PM</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><i class="fa fa-times" style="color: red"></i></td>
+                                                    <td>Resale</td>
+                                                    <td>HDB</td>
+                                                    <td>Clementi</td>
+                                                    <td>The Orient </td>
+                                                    <td>S$970,000</td>
+                                                    <td>3</td>
+                                                    <td>2</td>
+                                                    <td>581 sqft</td>
+                                                    <td>S$1,669.54 psf</td>
+                                                    <td>28/07/2016</td>
+                                                    <td>4:13 PM</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><i class="fa fa-check" style="color: green"></i></td>
+                                                    <td>BTO</td>
+                                                    <td>HDB</td>
+                                                    <td>Serangoon</td>
+                                                    <td>Sturdee Residences</td>
+                                                    <td>S$1,297,428</td>
+                                                    <td>2</td>
+                                                    <td>2</td>
+                                                    <td>829 sqft</td>
+                                                    <td>S$1,565.05 psf</td>
+                                                    <td>28/07/2016</td>
+                                                    <td>4:05 PM</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><i class="fa fa-check" style="color: green"></i></td>
+                                                    <td>Resale</td>
+                                                    <td>Condo</td>
+                                                    <td>Tampines</td>
+                                                    <td>Edelweiss Park Condominium</td>
+                                                    <td>S$1,080,000</td>
+                                                    <td>4</td>
+                                                    <td>2</td>
+                                                    <td>1,281 sqft </td>
+                                                    <td>S$843.09 psf</td>
+                                                    <td>28/07/2016</td>
+                                                    <td>3:58 PM</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><i class="fa fa-times" style="color: red"></i></td>
+                                                    <td>Resale</td>
+                                                    <td>HDB</td>
+                                                    <td>Ang Mo Kio</td>
+                                                    <td>Ang Mo Kio Impressions</td>
+                                                    <td>S$1,401,700</td>
+                                                    <td>3</td>
+                                                    <td>2</td>
+                                                    <td>1,055 sqft</td>
+                                                    <td>S$1,328.63 psf</td>
+                                                    <td>28/07/2016</td>
+                                                    <td>3:51 PM</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="text-right">
+                                        <a href="#">View All Transactions <i class="fa fa-arrow-circle-right"></i></a>
+                                    </div>
                                 </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Collapse -->
-                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                    asdasd
-                </div>
 
 
-            </div>
-                    
+
+                            </div>
+                        </div>
+                        <p>Text123abc</p>
+                        <label class="control-label">Select File</label>
+                        <input id="input-1a" type="file" class="file" data-show-preview="false">
+                        <hr>
+
+                        <a class="btn btn-primary" href="#" data-toggle="modal" data-target="#myModal">SEND SUGGESTION  <i class="fa fa-angle-right"></i></a>
+
+                        <!-- Pop Up -->
+                        <div class="container">
+                            <!-- Modal -->
+                            <div class="modal fade" id="myModal" role="dialog">
+                                <div class="modal-dialog modal-sm">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            <h4 class="modal-title">SENT SUGGESTION</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>FILE SENT SUCCESSFULLY</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Collapse -->
+                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                            asdasd
+                        </div>
+
+
+                    </div>
+
                 </div>
                 <!-- /.row -->
 
