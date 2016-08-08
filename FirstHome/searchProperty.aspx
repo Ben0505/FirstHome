@@ -31,7 +31,7 @@
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"><span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-                <a class="navbar-brand" href="index.aspx">First Home</a>
+                <asp:HyperLink runat="server" class="navbar-brand" href="index.aspx">First Home</asp:HyperLink>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -76,11 +76,11 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <form role="search">
+                <form role="search" runat="server">
                     <div class="col-lg-10">
-                        <input type="text" class="form-control" placeholder="Search">
+                        <asp:TextBox ID="SearchHseTextBox" runat="server" type="text" class="form-control" placeholder="Search" />
                     </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <asp:Button ID="SubmitSearchHseBtn" runat="server" type="submit" class="btn btn-primary" Text="Submit" ></asp:Button>
                 </form>
             </div>
         </div>
@@ -90,22 +90,25 @@
                 <div class="panel panel-default">
                     <div class="media">
                         <div class="media-left media-middle">
-                            <a href="singleFlat.aspx">
-                                <img class="media-object" src="http://placehold.it/350x250" alt="...">
-                            </a>
+                            <asp:HyperLink runat="server" href="singleFlat.aspx">
+                                <asp:Image runat="server" class="media-object" src="http://placehold.it/350x250" alt="..." />
+                            </asp:HyperLink>
                         </div>
                         <div class="media-body">
-                            <h4 class="media-heading">123 Kovan Road</h4>
-                            Flat Type: 5-Room
+
+                            <asp:Label ID="PropertyAddress" runat="server"><h4 class="media-heading">123 Kovan Road</h4></asp:Label>
+
+                            <asp:Label ID="FlatType" runat="server" Text="Flat Type: 5-Room" />
                             <br />
-                            Unit number: #08-41
+                            <asp:Label ID="Unit" runat="server" Text="Unit Number: #08-04" />
                             <br />
-                            Postal Code: 201123
+                            <asp:Label ID="PostalCode" runat="server" Text="Postal Code: 201123" />
+
                             <br />
                             <br />
-                            Price: $300.000
+                            <asp:Label ID="Price" runat="server" Text="Price: $300,000" />
                             <br />
-                            Size: 1,471 sqft
+                            <asp:Label ID="size" runat="server" Text="Size: 1,471 sqft" />
                         </div>
                     </div>
 
@@ -117,22 +120,25 @@
                 <div class="panel panel-default">
                     <div class="media">
                         <div class="media-left media-middle">
-                            <a href="singleFlat.aspx">
-                                <img class="media-object" src="http://placehold.it/350x250" alt="...">
-                            </a>
+                            <asp:HyperLink runat="server" href="singleFlat.aspx">
+                                <asp:Image runat="server" class="media-object" src="http://placehold.it/350x250" alt="..." />
+                            </asp:HyperLink>
                         </div>
                         <div class="media-body">
-                            <h4 class="media-heading">Blk 47 Marine Parade Street 81</h4>
-                            Flat Type: 5-Room
+
+                            <asp:Label ID="Label1" runat="server"><h4 class="media-heading">Blk 47 Marine Parade Street 81</h4></asp:Label>
+
+                            <asp:Label ID="Label2" runat="server" Text="Flat Type: 5-Room" />
                             <br />
-                            Unit number: #11-15
+                            <asp:Label ID="Label3" runat="server" Text="Unit Number: #11-15" />
                             <br />
-                            Postal Code: 201123
+                            <asp:Label ID="Label4" runat="server" Text="Postal Code: 201123" />
+
                             <br />
                             <br />
-                            Price: $300.000
+                            <asp:Label ID="Label5" runat="server" Text="Price: $300,000" />
                             <br />
-                            Size: 1,471 sqft
+                            <asp:Label ID="Label6" runat="server" Text="Size: 1,471 sqft" />
                         </div>
                     </div>
                 </div>
@@ -143,9 +149,9 @@
                 <div class="panel panel-default">
                     <div class="media">
                         <div class="media-left media-middle">
-                            <a href="singleFlat.aspx">
-                                <img class="media-object" src="http://placehold.it/350x250" alt="...">
-                            </a>
+                            <asp:HyperLink runat="server" href="singleFlat.aspx">
+                                <asp:Image runat="server" class="media-object" src="http://placehold.it/350x250" alt="..." />
+                            </asp:HyperLink>
                         </div>
                         <div class="media-body">
                             <h4 class="media-heading">254 Sambawang Street</h4>
@@ -169,9 +175,9 @@
                 <div class="panel panel-default">
                     <div class="media">
                         <div class="media-left media-middle">
-                            <a href="singleFlat.aspx">
-                                <img class="media-object" src="http://placehold.it/350x250" alt="...">
-                            </a>
+                            <asp:HyperLink runat="server" href="singleFlat.aspx">
+                                <asp:Image runat="server" class="media-object" src="http://placehold.it/350x250" alt="..." />
+                            </asp:HyperLink>
                         </div>
                         <div class="media-body">
                             <h4 class="media-heading">321 Jalan Kululut</h4>
@@ -195,9 +201,9 @@
                 <div class="panel panel-default">
                     <div class="media">
                         <div class="media-left media-middle">
-                            <a href="singleFlat.aspx">
-                                <img class="media-object" src="http://placehold.it/350x250" alt="...">
-                            </a>
+                            <asp:HyperLink runat="server" href="singleFlat.aspx">
+                                <asp:Image runat="server" class="media-object" src="http://placehold.it/350x250" alt="..." />
+                            </asp:HyperLink>
                         </div>
                         <div class="media-body">
                             <h4 class="media-heading">Blk 150 Lorong 11 Bidadari,</h4>
@@ -221,9 +227,9 @@
                 <div class="panel panel-default">
                     <div class="media">
                         <div class="media-left media-middle">
-                            <a href="singleFlat.aspx">
-                                <img class="media-object" src="http://placehold.it/350x250" alt="...">
-                            </a>
+                            <asp:HyperLink runat="server" href="singleFlat.aspx">
+                                <asp:Image runat="server" class="media-object" src="http://placehold.it/350x250" alt="..." />
+                            </asp:HyperLink>
                         </div>
                         <div class="media-body">
                             <h4 class="media-heading">6 Jalan Rindu</h4>

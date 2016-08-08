@@ -134,7 +134,7 @@
                             </p>
                             <p>
                                 <label for="main-applicant">Salary (incl CPF):</label>
-                                <br>
+                                <br />
                                 <label class="$sign">S$</label>
                                 <asp:TextBox runat="server" class="salary" type="text" value="3,000" />
                             </p>
@@ -152,24 +152,32 @@
                             </p>
                             <div id="table" class="table-editable">
                                 <span class="table-add glyphicon glyphicon-plus"></span>
-                                <table class="table">
-                                    <tr>
-                                        <th>Name</th>
-                                        <th>S$</th>
-                                        <th></th>
-                                    </tr>
-                                    <tr>
-                                        <td contenteditable="true">Utilities</td>
-                                        <td contenteditable="true">300</td>
-                                        <td><span class="table-remove glyphicon glyphicon-remove"></span></td>
-                                    </tr>
-                                    <!-- This is our clonable table line -->
-                                    <tr class="hide">
-                                        <td contenteditable="true">Untitled</td>
-                                        <td contenteditable="true">undefined</td>
-                                        <td><span class="table-remove glyphicon glyphicon-remove"></span></td>
-                                    </tr>
-                                </table>
+                                <asp:Table ID="totalExpenses" runat="server" class="table">
+                                    <asp:TableRow>
+                                        <asp:TableHeaderCell>Name</asp:TableHeaderCell>
+                                        <asp:TableHeaderCell>S$</asp:TableHeaderCell>
+                                        <asp:TableHeaderCell></asp:TableHeaderCell>
+                                    </asp:TableRow>
+                                    <asp:TableRow>
+                                        <asp:TableCell>
+                                            <asp:TextBox ID="expenses" runat="server">Utilities</asp:TextBox>
+                                        </asp:TableCell>
+                                        <asp:TableCell>
+                                            <asp:TextBox ID="expensesVal" runat="server">300</asp:TextBox>
+                                        </asp:TableCell>
+                                        <asp:TableCell><span class="table-remove glyphicon glyphicon-remove"></span></asp:TableCell>
+                                    </asp:TableRow>
+
+                                    <asp:TableRow CssClass="hide">
+                                        <asp:TableCell>
+                                            <asp:TextBox ID="expenses2" runat="server">Untitled</asp:TextBox>
+                                        </asp:TableCell>
+                                        <asp:TableCell>
+                                            <asp:TextBox ID="expensesVal2" runat="server">Undefined</asp:TextBox>
+                                        </asp:TableCell>
+                                        <asp:TableCell><span class="table-remove glyphicon glyphicon-remove"></span></asp:TableCell>
+                                    </asp:TableRow>
+                                </asp:Table>
                             </div>
                             <!--<button id="export-btn" class="btn btn-primary">Export Data</button>
                             <p id="export"></p>-->
@@ -182,24 +190,32 @@
                             </p>
                             <div id="table" class="table-editable">
                                 <span class="table-add glyphicon glyphicon-plus"></span>
-                                <table class="table">
-                                    <tr>
-                                        <th>Name</th>
-                                        <th>S$</th>
-                                        <th></th>
-                                    </tr>
-                                    <tr>
-                                        <td contenteditable="true">Car Loan</td>
-                                        <td contenteditable="true">1,000</td>
-                                        <td><span class="table-remove glyphicon glyphicon-remove"></span></td>
-                                    </tr>
-                                    <!-- This is our clonable table line -->
-                                    <tr class="hide">
-                                        <td contenteditable="true">Untitled</td>
-                                        <td contenteditable="true">undefined</td>
-                                        <td><span class="table-remove glyphicon glyphicon-remove"></span></td>
-                                    </tr>
-                                </table>
+                                <asp:Table ID="outstandingLoan" runat="server" class="table">
+                                    <asp:TableRow>
+                                        <asp:TableHeaderCell>Name</asp:TableHeaderCell>
+                                        <asp:TableHeaderCell>S$</asp:TableHeaderCell>
+                                        <asp:TableHeaderCell></asp:TableHeaderCell>
+                                    </asp:TableRow>
+                                    <asp:TableRow>
+                                        <asp:TableCell>
+                                            <asp:TextBox ID="loan" runat="server">Auto Loan</asp:TextBox>
+                                        </asp:TableCell>
+                                        <asp:TableCell>
+                                            <asp:TextBox ID="loanVal" runat="server">400</asp:TextBox>
+                                        </asp:TableCell>
+                                        <asp:TableCell><span class="table-remove glyphicon glyphicon-remove"></span></asp:TableCell>
+                                    </asp:TableRow>
+
+                                    <asp:TableRow CssClass="hide">
+                                        <asp:TableCell>
+                                            <asp:TextBox ID="loan2" runat="server">Untitled</asp:TextBox>
+                                        </asp:TableCell>
+                                        <asp:TableCell>
+                                            <asp:TextBox ID="loanVal2" runat="server">Undefined</asp:TextBox>
+                                        </asp:TableCell>
+                                        <asp:TableCell><span class="table-remove glyphicon glyphicon-remove"></span></asp:TableCell>
+                                    </asp:TableRow>
+                                </asp:Table>
                             </div>
                             <!--<button id="export-btn" class="btn btn-primary">Export Data</button>
                             <p id="export"></p>-->
@@ -212,15 +228,15 @@
                     </legend>
                     <p>
                         <label for="upfront-payment">Budget for Upfront Payment: S$ </label>
-                        <asp:TextBox runat="server" class="input02" type="text" value="3,000" style="width: 20%;" />
+                        <asp:TextBox runat="server" class="input02" type="text" value="3,000" Style="width: 20%;" />
                     </p>
                     <p>
                         <label for="main-applicant">How long would you prefer to service your Loan? (5-30 Years): </label>
-                        <asp:TextBox runat="server" type="number" value="5" style="width: 10%;" />
+                        <asp:TextBox runat="server" type="number" value="5" Style="width: 10%;" />
                         <label>Years</label>
                     </p>
                     <div class="col-md-12">
-                        <label for="upfront-payment">Budget for Upfront Payment: S$ </label>
+                        <label for="upfront-payment">Use CPF to Service Loan? </label>
                         <div class="switch switch-yellow">
                             <input type="radio" class="switch-input" name="view3" value="week3" id="week3" checked>
                             <label for="week3" class="switch-label switch-label-off">YES</label>

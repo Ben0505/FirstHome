@@ -146,17 +146,20 @@
                             </a>
                         </div>
                         <div class="media-body">
-                            <h4 class="media-heading">123 Kovan Road</h4>
-                            Flat Type: 5-Room
+
+                            <asp:Label ID="PropertyAddress" runat="server"><h4 class="media-heading">123 Kovan Road</h4></asp:Label>
+
+                            <asp:Label ID="FlatType" runat="server" Text="Flat Type: 5-Room" />
                             <br />
-                            Unit number: #08-41
+                            <asp:Label ID="Unit" runat="server" Text="Unit Number: #08-04" />
                             <br />
-                            Postal Code: 201123
+                            <asp:Label ID="PostalCode" runat="server" Text="Postal Code: 201123" />
+
                             <br />
                             <br />
-                            Price: $300.000
+                            <asp:Label ID="Price" runat="server" Text="Price: $300,000" />
                             <br />
-                            Size: 1,471 sqft
+                            <asp:Label ID="size" runat="server" Text="Size: 1,471 sqft" />
                         </div>
                     </div>
                 </div>
