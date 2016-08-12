@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>SB Admin - Bootstrap Admin Template</title>
+    <title>First Home Bankers' TASKS Page</title>
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
@@ -30,21 +30,31 @@
 
 <body>
     <div id="wrapper">
+
         <!-- Navigation -->
         <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"><span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
                 <a class="navbar-brand"><span>First</span> Home</a>
             </div>
             <!-- Top Menu Items -->
             <ul class="nav navbar-right top-nav">
-                <li class="dropdown">
+                
+                <!-- MESSAGES -->
+
+                <%--<li class="dropdown">
                     <asp:HyperLink runat="server" href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-envelope"></i> <b class="caret"></b></asp:HyperLink>
                     <ul class="dropdown-menu message-dropdown">
                         <li class="message-preview">
                             <asp:HyperLink runat="server" href="#">
-                                <div class="media"> <span class="pull-left">
+                                <div class="media">
+                                    <span class="pull-left">
                                         <img class="media-object" src="http://placehold.it/50x50" alt="">
                                     </span>
                                     <div class="media-body">
@@ -59,7 +69,8 @@
                         </li>
                         <li class="message-preview">
                             <asp:HyperLink runat="server" href="#">
-                                <div class="media"> <span class="pull-left">
+                                <div class="media">
+                                    <span class="pull-left">
                                         <img class="media-object" src="http://placehold.it/50x50" alt="">
                                     </span>
                                     <div class="media-body">
@@ -74,7 +85,8 @@
                         </li>
                         <li class="message-preview">
                             <asp:HyperLink runat="server" href="#">
-                                <div class="media"> <span class="pull-left">
+                                <div class="media">
+                                    <span class="pull-left">
                                         <img class="media-object" src="http://placehold.it/50x50" alt="">
                                     </span>
                                     <div class="media-body">
@@ -91,8 +103,11 @@
                             <asp:HyperLink runat="server" href="#">Read All New Messages</asp:HyperLink>
                         </li>
                     </ul>
-                </li>
-                <li class="dropdown">
+                </li>--%>
+
+                <!-- ALERTS -->
+
+                <%--<li class="dropdown">
                     <asp:HyperLink runat="server" href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell"></i> <b class="caret"></b></asp:HyperLink>
                     <ul class="dropdown-menu alert-dropdown">
                         <li>
@@ -118,7 +133,10 @@
                             <asp:HyperLink runat="server" href="#">View All</asp:HyperLink>
                         </li>
                     </ul>
-                </li>
+                </li>--%>
+
+                <!-- Profile -->
+
                 <li class="dropdown">
                     <asp:HyperLink runat="server" href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> John Smith <b class="caret"></b></asp:HyperLink>
                     <ul class="dropdown-menu">
@@ -137,6 +155,7 @@
                         </li>
                     </ul>
                 </li>
+
             </ul>
             <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
             <div class="collapse navbar-collapse navbar-ex1-collapse">
@@ -147,6 +166,7 @@
                     <li class="active">
                         <asp:HyperLink runat="server" href="bankersCalendar.aspx"><i class="fa fa-fw fa-calendar"></i> Calendar</asp:HyperLink>
                     </li>
+
                     <li>
                         <asp:HyperLink runat="server" href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> Dropdown <i class="fa fa-fw fa-caret-down"></i></asp:HyperLink>
                         <ul id="demo" class="collapse">
@@ -162,12 +182,14 @@
             </div>
             <!-- /.navbar-collapse -->
         </nav>
+
+
         <div id="page-wrapper">
             <div class="container-fluid">
                 <!-- Page Heading -->
                 <div class="row">
                     <div class="col-lg-12">
-                        <h1 class="page-header">Dashboard
+                        <h1 class="page-header"><i class="fa fa-fw fa-calendar"></i> Calendar
                         </h1>
                         <!--<ol class="breadcrumb">
                             <li>
@@ -254,10 +276,13 @@
                     <div class="col-lg-12">
                         <div class="panel panel-default">
                             <div class="panel-heading">
-                                <h3 class="panel-title"><i class="fa fa-search fa-fw"></i>Buyers' Search Information</h3>
+                                <h3 class="panel-title"><i class="fa fa-search fa-tasks"></i> <b> TASKS</b></h3>
                             </div>
                             <div class="panel-body">
                                 <div class="table-responsive">
+
+                                    <!-- CALENDAR -->
+
                                     <div class="col-lg-6">
                                         <div id="cal01">
                                             <div class="calendar" id="calendar-app">
@@ -306,11 +331,14 @@
                                                     <div class="calendar--view" id="dates"></div>
                                                 </div>
                                                 <div class="footer01">
-                                                    <span><span id="footer-date" class="footer01__link">Today is May 30</span></span>
+                                                    <span><span id="footer-date" class="footer01__link">Today is XXX ##</span></span>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
+
+                                    <!-- TO DO LIST -->
+
                                     <div class="col-lg-6">
                                         <div class="cont_principal">
                                             <div class="cont_centrar">
@@ -324,6 +352,15 @@
                                                     <!--   End cont_todo_list_top  -->
                                                 </div>
                                                 <div class="cont_crear_new">
+
+                                                    <asp:Table runat="server" >
+                                                        <asp:TableHeaderRow>
+                                                            <asp:TableHeaderCell>Action</asp:TableHeaderCell>
+                                                            <asp:TableHeaderCell>Title</asp:TableHeaderCell>
+                                                            <asp:TableHeaderCell>Date</asp:TableHeaderCell>
+                                                        </asp:TableHeaderRow>
+                                                    </asp:Table>
+
                                                     <table class="table01">
                                                         <tr>
                                                             <th>Action</th>
@@ -381,6 +418,7 @@
                                                                 <div class="cont_text_date">
                                                                     <p>TODAY</p>
                                                                 </div>
+
                                                                 <div class="cont_btns_options">
                                                                     <ul>
                                                                         <li>
@@ -389,10 +427,6 @@
                                                                 </div>
                                                             </div>
                                                         </li>
-                                                        <!-- <li class="list_work"></li>
-  <li class="list_sport"></li>
-  <li class="list_music"></li>
- -->
                                                     </ul>
                                                     <!--   End cont_todo_list_top  -->
                                                 </div>

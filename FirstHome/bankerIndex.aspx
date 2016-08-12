@@ -11,7 +11,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin - Bootstrap Admin Template</title>
+    <title>First Home Bankers' Home Page</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -49,7 +49,10 @@
             </div>
             <!-- Top Menu Items -->
             <ul class="nav navbar-right top-nav">
-                <li class="dropdown">
+                
+                <!-- MESSAGES -->
+
+                <%--<li class="dropdown">
                     <asp:HyperLink runat="server" href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-envelope"></i> <b class="caret"></b></asp:HyperLink>
                     <ul class="dropdown-menu message-dropdown">
                         <li class="message-preview">
@@ -104,8 +107,11 @@
                             <asp:HyperLink runat="server" href="#">Read All New Messages</asp:HyperLink>
                         </li>
                     </ul>
-                </li>
-                <li class="dropdown">
+                </li>--%>
+
+                <!-- ALERTS -->
+
+                <%--<li class="dropdown">
                     <asp:HyperLink runat="server" href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell"></i> <b class="caret"></b></asp:HyperLink>
                     <ul class="dropdown-menu alert-dropdown">
                         <li>
@@ -131,7 +137,10 @@
                             <asp:HyperLink runat="server" href="#">View All</asp:HyperLink>
                         </li>
                     </ul>
-                </li>
+                </li>--%>
+
+                <!-- Profile -->
+
                 <li class="dropdown">
                     <asp:HyperLink runat="server" href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> John Smith <b class="caret"></b></asp:HyperLink>
                     <ul class="dropdown-menu">
@@ -150,6 +159,7 @@
                         </li>
                     </ul>
                 </li>
+
             </ul>
             <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
             <div class="collapse navbar-collapse navbar-ex1-collapse">
@@ -186,7 +196,7 @@
                 <!-- Page Heading -->
                 <div class="row">
                     <div class="col-lg-12">
-                        <h1 class="page-header">Dashboard
+                        <h1 class="page-header"><i class="fa fa-fw fa-home"></i> Home Page
                         </h1>
                         <!--<ol class="breadcrumb">
                             <li>
@@ -296,15 +306,58 @@
                             </div>
                             <div class="panel-body">
                                 <div class="table-responsive">
-                                    <table class="table table-bordered table-hover table-striped">
+
+                                    <asp:Table runat="server" class="table table-bordered table-hover table-striped">
+                                        <asp:TableHeaderRow>
+                                            <asp:TableHeaderCell>Buyers ID</asp:TableHeaderCell>
+                                            <asp:TableHeaderCell>Name</asp:TableHeaderCell>
+                                            <asp:TableHeaderCell><i class="glyphicon glyphicon-calendar"></i> Last Search Date</asp:TableHeaderCell>
+                                            <asp:TableHeaderCell><i class="glyphicon glyphicon-eye-open"></i> House seen</asp:TableHeaderCell>
+                                            <asp:TableHeaderCell><i class="glyphicon glyphicon-star"></i> House Favourite</asp:TableHeaderCell>
+                                            <asp:TableHeaderCell>Initiated to buy</asp:TableHeaderCell>
+                                        </asp:TableHeaderRow>
+                                        <asp:TableRow>
+                                            <asp:TableCell>2548</asp:TableCell>
+                                            <asp:TableCell>Mr. Raj</asp:TableCell>
+                                            <asp:TableCell>28/07/2016</asp:TableCell>
+                                            <asp:TableCell>1</asp:TableCell>
+                                            <asp:TableCell>1</asp:TableCell>
+                                            <asp:TableCell>1</asp:TableCell>
+                                        </asp:TableRow>
+                                        <asp:TableRow>
+                                            <asp:TableCell>2894</asp:TableCell>
+                                            <asp:TableCell>Mr. Tan</asp:TableCell>
+                                            <asp:TableCell>28/06/2016</asp:TableCell>
+                                            <asp:TableCell>1</asp:TableCell>
+                                            <asp:TableCell>1</asp:TableCell>
+                                            <asp:TableCell>1</asp:TableCell>
+                                        </asp:TableRow>
+                                        <asp:TableRow>
+                                            <asp:TableCell>2548</asp:TableCell>
+                                            <asp:TableCell>Mr. Koh</asp:TableCell>
+                                            <asp:TableCell>28/06/2016</asp:TableCell>
+                                            <asp:TableCell>1</asp:TableCell>
+                                            <asp:TableCell>1</asp:TableCell>
+                                            <asp:TableCell>1</asp:TableCell>
+                                        </asp:TableRow>
+                                        <asp:TableRow>
+                                            <asp:TableCell>2548</asp:TableCell>
+                                            <asp:TableCell>Mr. Kim</asp:TableCell>
+                                            <asp:TableCell>28/06/2016</asp:TableCell>
+                                            <asp:TableCell>1</asp:TableCell>
+                                            <asp:TableCell>1</asp:TableCell>
+                                            <asp:TableCell>1</asp:TableCell>
+                                        </asp:TableRow>
+                                    </asp:Table>
+
+                                    <%--<table class="table table-bordered table-hover table-striped">
                                         <thead>
                                             <tr>
-                                                <th>Buyers #</th>
+                                                <th>Buyers ID</th>
                                                 <th>Name</th>
-                                                <th><i class="glyphicon glyphicon-calendar"></i>Last Search Date</th>
-                                                <th><i class="glyphicon glyphicon-time"></i>Last Search Time</th>
-                                                <th><i class="glyphicon glyphicon-eye-open"></i>House seen</th>
-                                                <th><i class="glyphicon glyphicon-star"></i>House Favourite</th>
+                                                <th><i class="glyphicon glyphicon-calendar"></i> Last Search Date</th>
+                                                <th><i class="glyphicon glyphicon-eye-open"></i> House seen</th>
+                                                <th><i class="glyphicon glyphicon-star"></i> House Favourite</th>
                                                 <th>Initiated to buy</th>
                                             </tr>
                                         </thead>
@@ -313,7 +366,6 @@
                                                 <td>0008</td>
                                                 <td>Mr. Raj</td>
                                                 <td>28/07/2016</td>
-                                                <td>4:31 PM</td>
                                                 <td>1</td>
                                                 <td>1</td>
                                                 <td>1</td>
@@ -322,7 +374,6 @@
                                                 <td>0007</td>
                                                 <td>Mr. Koh</td>
                                                 <td>28/07/2016</td>
-                                                <td>4:13 PM</td>
                                                 <td>1</td>
                                                 <td>0</td>
                                                 <td>0</td>
@@ -331,7 +382,6 @@
                                                 <td>0006</td>
                                                 <td>Mr. Goh</td>
                                                 <td>28/07/2016</td>
-                                                <td>4:05 PM</td>
                                                 <td>7</td>
                                                 <td>1</td>
                                                 <td>0</td>
@@ -340,7 +390,6 @@
                                                 <td>0005</td>
                                                 <td>Mr. Tay</td>
                                                 <td>28/07/2016</td>
-                                                <td>3:58 PM</td>
                                                 <td>4</td>
                                                 <td>0</td>
                                                 <td>0</td>
@@ -349,7 +398,6 @@
                                                 <td>0004</td>
                                                 <td>Mrs. Yap</td>
                                                 <td>28/07/2016</td>
-                                                <td>3:51 PM</td>
                                                 <td>2</td>
                                                 <td>0</td>
                                                 <td>0</td>
@@ -358,7 +406,6 @@
                                                 <td>0003</td>
                                                 <td>Mr. Yong</td>
                                                 <td>28/07/2016</td>
-                                                <td>3:43 PM</td>
                                                 <td>10</td>
                                                 <td>5</td>
                                                 <td>1</td>
@@ -367,7 +414,6 @@
                                                 <td>0002</td>
                                                 <td>Mr. Tan</td>
                                                 <td>28/07/2016</td>
-                                                <td>3:31 PM</td>
                                                 <td>3</td>
                                                 <td>0</td>
                                                 <td>0</td>
@@ -376,13 +422,12 @@
                                                 <td>0001</td>
                                                 <td>Mr. Lee</td>
                                                 <td>28/07/2016</td>
-                                                <td>3:29 PM</td>
                                                 <td>4</td>
                                                 <td>1</td>
                                                 <td>1</td>
                                             </tr>
                                         </tbody>
-                                    </table>
+                                    </table>--%>
                                 </div>
                                 <div class="text-right">
                                     <asp:HyperLink runat="server" href="#">View All Transactions <i class="fa fa-arrow-circle-right"></i></asp:HyperLink>

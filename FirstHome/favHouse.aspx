@@ -42,7 +42,7 @@
                         <asp:HyperLink href="about.aspx" runat="server">About</asp:HyperLink>
                     </li>
                     <li>
-                        <asp:HyperLink href="contact.aspx" runat="server">Contact</asp:HyperLink>
+                        <asp:HyperLink runat="server" href="contact.<asp:Image runat=" server="">Contact</asp:HyperLink>
                     </li>
                     <li>
                         <asp:HyperLink runat="server" href="hdbLocation.aspx"><span class="fa fa-map-marker"></span> HDB Location</asp:HyperLink>
@@ -78,7 +78,7 @@
     <div class="container">
         <div class="row">
             <div class="sliderBox">
-                <h2><span class="glyphicon glyphicon-eye-open"></span>Previously Seen Properties</h2>
+                <h2><span class="glyphicon glyphicon-eye-open"></span> Previously Seen Properties</h2>
                 <button type="button" class="left fa fa-chevron-left"></button>
                 <div class="sliderWrap">
                     <ul class="sliderContent">
@@ -86,10 +86,14 @@
                             <div id="all">
                                 <div class="view view-seen">
                                     <a href="#">
-                                        <img class="media-object" src="http://placehold.it/361x250" alt="..."></a>
+                                        <asp:Image runat="server" class="media-object" src="http://placehold.it/361x250" alt="..." /></a>
                                     <div class="mask">
                                         <h2>Empire State</h2>
-                                        <p>A cool description of some sort between these tags. I am so cool and awesomely awesome.</p>
+                                        <p style="margin-top:15px; margin-bottom:10px;" >
+                                            asasd
+                                            <br />
+                                            adadasda
+                                        </p>
                                         <a href="#" class="info">Read More</a>
                                     </div>
                                 </div>
@@ -97,29 +101,149 @@
                             </div>
                         </li>
                         <li>
-                            <a href="#">
-                                <img class="media-object" src="http://placehold.it/361x250" alt="..."></a> </li>
+                            <div id="all">
+                                <div class="view view-seen">
+                                    <a href="#">
+                                        <asp:Image runat="server" class="media-object" src="http://placehold.it/361x250" alt="..." /></a>
+                                    <div class="mask">
+                                        <h2>Empire State</h2>
+                                        <p style="margin-top:15px; margin-bottom:10px;" >
+                                            asasd
+                                            <br />
+                                            adadasda
+                                        </p>
+                                        <a href="#" class="info">Read More</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li>
                         <li>
-                            <a href="#">
-                                <img class="media-object" src="http://placehold.it/361x250" alt="..."></a> </li>
+                            <div id="all">
+                                <div class="view view-seen">
+                                    <a href="#">
+                                        <asp:Image runat="server" class="media-object" src="http://placehold.it/361x250" alt="..." /></a>
+                                    <div class="mask">
+                                        <h2>Empire State</h2>
+                                        <p style="margin-top:15px; margin-bottom:10px;" >
+                                            asasd
+                                            <br />
+                                            adadasda
+                                        </p>
+                                        <a href="#" class="info">Read More</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li>
                         <li>
-                            <a href="#">
-                                <img class="media-object" src="http://placehold.it/361x250" alt="..."></a> </li>
+                            <div id="all">
+                                <div class="view view-seen">
+                                    <a href="#">
+                                        <asp:Image runat="server" class="media-object" src="http://placehold.it/361x250" alt="..." /></a>
+                                    <div class="mask">
+                                        <h2>Empire State</h2>
+                                        <p style="margin-top:15px; margin-bottom:10px;" >
+                                            asasd
+                                            <br />
+                                            adadasda
+                                        </p>
+                                        <a href="#" class="info">Read More</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li>
                         <li>
-                            <a href="#">
-                                <img class="media-object" src="http://placehold.it/361x250" alt="..."></a> </li>
+                            <div id="all">
+                                <div class="view view-seen">
+                                    <a href="#">
+                                        <asp:Image runat="server" class="media-object" src="http://placehold.it/361x250" alt="..." /></a>
+                                    <div class="mask">
+                                        <h2>Empire State</h2>
+                                        <p style="margin-top:15px; margin-bottom:10px;" >
+                                            asasd
+                                            <br />
+                                            adadasda
+                                        </p>
+                                        <a href="#" class="info">Read More</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li>
                         <li>
-                            <a href="#">
-                                <img class="media-object" src="http://placehold.it/361x250" alt="..."></a> </li>
+                            <div id="all">
+                                <div class="view view-seen">
+                                    <a href="#">
+                                        <asp:Image runat="server" class="media-object" src="http://placehold.it/361x250" alt="..." /></a>
+                                    <div class="mask">
+                                        <h2>Empire State</h2>
+                                        <p style="margin-top:15px; margin-bottom:10px;" >
+                                            asasd
+                                            <br />
+                                            adadasda
+                                        </p>
+                                        <a href="#" class="info">Read More</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li>
                         <li>
-                            <a href="#">
-                                <img class="media-object" src="http://placehold.it/361x250" alt="..."></a> </li>
+                            <div id="all">
+                                <div class="view view-seen">
+                                    <a href="#">
+                                        <asp:Image runat="server" class="media-object" src="http://placehold.it/361x250" alt="..." /></a>
+                                    <div class="mask">
+                                        <h2>Empire State</h2>
+                                        <p style="margin-top:15px; margin-bottom:10px;" >
+                                            asasd
+                                            <br />
+                                            adadasda
+                                        </p>
+                                        <a href="#" class="info">Read More</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li>
                         <li>
-                            <a href="#">
-                                <img class="media-object" src="http://placehold.it/361x250" alt="..."></a> </li>
+                            <div id="all">
+                                <div class="view view-seen">
+                                    <a href="#">
+                                        <asp:Image runat="server" class="media-object" src="http://placehold.it/361x250" alt="..." /></a>
+                                    <div class="mask">
+                                        <h2>Empire State</h2>
+                                        <p style="margin-top:15px; margin-bottom:10px;" >
+                                            asasd
+                                            <br />
+                                            adadasda
+                                        </p>
+                                        <a href="#" class="info">Read More</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li>
                         <li>
-                            <a href="#">
-                                <img class="media-object" src="http://placehold.it/361x250" alt="..."></a> </li>
+                            <div id="all">
+                                <div class="view view-seen">
+                                    <a href="#">
+                                        <asp:Image runat="server" class="media-object" src="http://placehold.it/361x250" alt="..." /></a>
+                                    <div class="mask">
+                                        <h2>Empire State</h2>
+                                        <p style="margin-top:15px; margin-bottom:10px;" >
+                                            asasd
+                                            <br />
+                                            adadasda
+                                        </p>
+                                        <a href="#" class="info">Read More</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li>
                     </ul>
                 </div>
                 <button type="button" class="right fa fa-chevron-right"></button>
@@ -135,14 +259,14 @@
                 </form>
             </div>
         </div>
-        <h2 class="page-header"><span class="glyphicon glyphicon-star"></span>Previously Seen Properties</h2>
+        <h2 class="page-header"><span class="glyphicon glyphicon-star"></span> Favourite Houses</h2>
         <div class="row">
             <div class="col-lg-12">
                 <div class="panel panel-default">
                     <div class="media">
                         <div class="media-left media-middle">
                             <a href="#">
-                                <img class="media-object" src="http://placehold.it/350x250" alt="...">
+                                <img class="media-object" src="http://placehold.it/361x250" alt="...">
                             </a>
                         </div>
                         <div class="media-body">
@@ -171,7 +295,7 @@
                     <div class="media">
                         <div class="media-left media-middle">
                             <a href="#">
-                                <img class="media-object" src="http://placehold.it/350x250" alt="...">
+                                <img class="media-object" src="http://placehold.it/361x250" alt="...">
                             </a>
                         </div>
                         <div class="media-body">
@@ -197,7 +321,7 @@
                     <div class="media">
                         <div class="media-left media-middle">
                             <a href="#">
-                                <img class="media-object" src="http://placehold.it/350x250" alt="...">
+                                <img class="media-object" src="http://placehold.it/361x250" alt="...">
                             </a>
                         </div>
                         <div class="media-body">
@@ -223,7 +347,7 @@
                     <div class="media">
                         <div class="media-left media-middle">
                             <a href="#">
-                                <img class="media-object" src="http://placehold.it/350x250" alt="...">
+                                <img class="media-object" src="http://placehold.it/361x250" alt="...">
                             </a>
                         </div>
                         <div class="media-body">
@@ -249,7 +373,7 @@
                     <div class="media">
                         <div class="media-left media-middle">
                             <a href="#">
-                                <img class="media-object" src="http://placehold.it/350x250" alt="...">
+                                <img class="media-object" src="http://placehold.it/361x250" alt="...">
                             </a>
                         </div>
                         <div class="media-body">
@@ -275,7 +399,7 @@
                     <div class="media">
                         <div class="media-left media-middle">
                             <a href="#">
-                                <img class="media-object" src="http://placehold.it/350x250" alt="...">
+                                <img class="media-object" src="http://placehold.it/361x250" alt="...">
                             </a>
                         </div>
                         <div class="media-body">
