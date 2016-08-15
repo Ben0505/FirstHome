@@ -132,18 +132,13 @@
                 <h3>
                     <ul>
                         <li>$335,000.00</li>
-                        <li><i class="glyphicon glyphicon-bed"></i>3 Bedrooms</li>
+                        <li>3 Bedrooms</li>
                         <li>2 Bathrooms</li>
                         <li>1,571 sqft</li>
                         <li>S$213.29 psf</li>
                     </ul>
                 </h3>
-
-                <br />
-
-                <button class="btn btn-primary btn-block" id="button">Click here to show your interest</button>
-
-
+                
             </div>
 
         </div>

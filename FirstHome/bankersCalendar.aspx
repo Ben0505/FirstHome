@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>First Home Bankers' TASKS Page</title>
+    <title>First Home - Bankers' TASKS Page</title>
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
@@ -353,15 +353,53 @@
                                                 </div>
                                                 <div class="cont_crear_new">
 
-                                                    <asp:Table runat="server" >
+                                                    <form runat="server">
+
+                                                    <asp:Table runat="server" CssClass="table01" >
                                                         <asp:TableHeaderRow>
                                                             <asp:TableHeaderCell>Action</asp:TableHeaderCell>
                                                             <asp:TableHeaderCell>Title</asp:TableHeaderCell>
                                                             <asp:TableHeaderCell>Date</asp:TableHeaderCell>
                                                         </asp:TableHeaderRow>
+
+                                                        <asp:TableRow>
+                                                            <asp:TableCell>
+                                                                <asp:DropDownList runat="server" ID="action_select" >
+                                                                    <asp:ListItem Value="APPOINTMENT">APPOINTMENT</asp:ListItem>
+                                                                    <asp:ListItem Value="WORK">WORK</asp:ListItem>
+                                                                    <asp:ListItem Value="OTHERS">OTHERS</asp:ListItem>
+                                                                </asp:DropDownList>
+                                                            </asp:TableCell>
+                                                            <asp:TableCell>
+                                                                <asp:TextBox runat="server" CssClass="input_title_desc" />
+                                                            </asp:TableCell>
+                                                            <asp:TableCell>
+                                                                <asp:DropDownList runat="server" CssClass="input_description_title" ID="date_select">
+                                                                    <asp:ListItem Value="TODAY">TODAY</asp:ListItem>
+                                                                    <asp:ListItem Value="TOMORROW">TOMORROW</asp:ListItem>
+                                                                </asp:DropDownList>
+                                                            </asp:TableCell>
+                                                        </asp:TableRow>
+
+                                                        <asp:TableRow>
+                                                            <asp:TableHeaderCell CssClass="titl_description">Description</asp:TableHeaderCell>
+                                                        </asp:TableRow>
+                                                        <asp:TableRow>
+                                                            <asp:TableCell ColumnSpan="3">
+                                                                <asp:TextBox runat="server" CssClass="input_description" />
+                                                            </asp:TableCell>
+                                                        </asp:TableRow>
+                                                        <asp:TableRow>
+                                                            <asp:TableCell ColumnSpan="3">
+                                                                <%--<asp:Button runat="server" Text="ADD" CssClass="btn_add_fin" />--%>
+                                                                <button class="btn_add_fin" onclick="add_to_list()">ADD</button>
+                                                            </asp:TableCell>
+                                                        </asp:TableRow>
                                                     </asp:Table>
 
-                                                    <table class="table01">
+                                                    </form>
+
+                                                    <%--<table class="table01">
                                                         <tr>
                                                             <th>Action</th>
                                                             <th>Title</th>
@@ -401,7 +439,10 @@
                                                                 <button class="btn_add_fin" onclick="add_to_list()">ADD</button>
                                                             </td>
                                                         </tr>
-                                                    </table>
+                                                    </table>--%>
+
+
+
                                                     <!--   End cont_crear_new  -->
                                                 </div>
                                                 <div class="cont_princ_lists">
@@ -438,7 +479,7 @@
                                     <script src="js/calendar.js"></script>
                                 </div>
                                 <div class="text-right">
-                                    <asp:HyperLink runat="server" href="#">View All Transactions <i class="fa fa-arrow-circle-right"></i></asp:HyperLink>
+                                    <%--<asp:HyperLink runat="server" href="#">View All Transactions <i class="fa fa-arrow-circle-right"></i></asp:HyperLink>--%>
                                 </div>
                             </div>
                         </div>

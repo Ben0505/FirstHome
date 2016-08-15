@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>New Gen - Financial Planning For Housing</title>
+    <title>First Home - User's Profile</title>
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
@@ -46,7 +46,7 @@
                         <asp:HyperLink href="contact.aspx" runat="server">Contact</asp:HyperLink>
                     </li>
                     <li>
-                        <asp:HyperLink runat="server" href="hdbLocation.aspx"><span class="fa fa-map-marker"></span> HDB Location</asp:HyperLink>
+                        <asp:HyperLink runat="server" href="hdbLocation.aspx"><span class="fa fa-map-marker"></span> Property Location</asp:HyperLink>
                     </li>
                     <li>
                         <asp:HyperLink runat="server" href="favHouse.aspx"><span class="glyphicon glyphicon-star"></span> Favourite House</asp:HyperLink>

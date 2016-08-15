@@ -11,5 +11,23 @@ namespace FirstHome {
     
     
     public partial class bankersCalendar {
+        
+        /// <summary>
+        /// action_select control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList action_select;
+        
+        /// <summary>
+        /// date_select control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList date_select;
     }
 }

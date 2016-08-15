@@ -11,7 +11,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin - Bootstrap Admin Template</title>
+    <title>First Home - Buyer's Profile</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -49,11 +49,14 @@
             </div>
             <!-- Top Menu Items -->
             <ul class="nav navbar-right top-nav">
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-envelope"></i><b class="caret"></b></a>
+                
+                <!-- MESSAGES -->
+
+                <%--<li class="dropdown">
+                    <asp:HyperLink runat="server" href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-envelope"></i> <b class="caret"></b></asp:HyperLink>
                     <ul class="dropdown-menu message-dropdown">
                         <li class="message-preview">
-                            <a href="#">
+                            <asp:HyperLink runat="server" href="#">
                                 <div class="media">
                                     <span class="pull-left">
                                         <img class="media-object" src="http://placehold.it/50x50" alt="">
@@ -62,14 +65,14 @@
                                         <h5 class="media-heading">
                                             <strong>John Smith</strong>
                                         </h5>
-                                        <p class="small text-muted"><i class="fa fa-clock-o"></i>Yesterday at 4:32 PM</p>
+                                        <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
                                         <p>Lorem ipsum dolor sit amet, consectetur...</p>
                                     </div>
                                 </div>
-                            </a>
+                            </asp:HyperLink>
                         </li>
                         <li class="message-preview">
-                            <a href="#">
+                            <asp:HyperLink runat="server" href="#">
                                 <div class="media">
                                     <span class="pull-left">
                                         <img class="media-object" src="http://placehold.it/50x50" alt="">
@@ -78,14 +81,14 @@
                                         <h5 class="media-heading">
                                             <strong>John Smith</strong>
                                         </h5>
-                                        <p class="small text-muted"><i class="fa fa-clock-o"></i>Yesterday at 4:32 PM</p>
+                                        <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
                                         <p>Lorem ipsum dolor sit amet, consectetur...</p>
                                     </div>
                                 </div>
-                            </a>
+                            </asp:HyperLink>
                         </li>
                         <li class="message-preview">
-                            <a href="#">
+                            <asp:HyperLink runat="server" href="#">
                                 <div class="media">
                                     <span class="pull-left">
                                         <img class="media-object" src="http://placehold.it/50x50" alt="">
@@ -94,81 +97,88 @@
                                         <h5 class="media-heading">
                                             <strong>John Smith</strong>
                                         </h5>
-                                        <p class="small text-muted"><i class="fa fa-clock-o"></i>Yesterday at 4:32 PM</p>
+                                        <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
                                         <p>Lorem ipsum dolor sit amet, consectetur...</p>
                                     </div>
                                 </div>
-                            </a>
+                            </asp:HyperLink>
                         </li>
                         <li class="message-footer">
-                            <a href="#">Read All New Messages</a>
+                            <asp:HyperLink runat="server" href="#">Read All New Messages</asp:HyperLink>
                         </li>
                     </ul>
-                </li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell"></i><b class="caret"></b></a>
+                </li>--%>
+
+                <!-- ALERTS -->
+
+                <%--<li class="dropdown">
+                    <asp:HyperLink runat="server" href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell"></i> <b class="caret"></b></asp:HyperLink>
                     <ul class="dropdown-menu alert-dropdown">
                         <li>
-                            <a href="#">Alert Name <span class="label label-default">Alert Badge</span></a>
+                            <asp:HyperLink runat="server" href="#">Alert Name <span class="label label-default">Alert Badge</span></asp:HyperLink>
                         </li>
                         <li>
-                            <a href="#">Alert Name <span class="label label-primary">Alert Badge</span></a>
+                            <asp:HyperLink runat="server" href="#">Alert Name <span class="label label-primary">Alert Badge</span></asp:HyperLink>
                         </li>
                         <li>
-                            <a href="#">Alert Name <span class="label label-success">Alert Badge</span></a>
+                            <asp:HyperLink runat="server" href="#">Alert Name <span class="label label-success">Alert Badge</span></asp:HyperLink>
                         </li>
                         <li>
-                            <a href="#">Alert Name <span class="label label-info">Alert Badge</span></a>
+                            <asp:HyperLink runat="server" href="#">Alert Name <span class="label label-info">Alert Badge</span></asp:HyperLink>
                         </li>
                         <li>
-                            <a href="#">Alert Name <span class="label label-warning">Alert Badge</span></a>
+                            <asp:HyperLink runat="server" href="#">Alert Name <span class="label label-warning">Alert Badge</span></asp:HyperLink>
                         </li>
                         <li>
-                            <a href="#">Alert Name <span class="label label-danger">Alert Badge</span></a>
+                            <asp:HyperLink runat="server" href="#">Alert Name <span class="label label-danger">Alert Badge</span></asp:HyperLink>
                         </li>
                         <li class="divider"></li>
                         <li>
-                            <a href="#">View All</a>
+                            <asp:HyperLink runat="server" href="#">View All</asp:HyperLink>
                         </li>
                     </ul>
-                </li>
+                </li>--%>
+
+                <!-- Profile -->
+
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i>John Smith <b class="caret"></b></a>
+                    <asp:HyperLink runat="server" href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> John Smith <b class="caret"></b></asp:HyperLink>
                     <ul class="dropdown-menu">
                         <li>
-                            <a href="#"><i class="fa fa-fw fa-user"></i>Profile</a>
+                            <asp:HyperLink runat="server" href="#"><i class="fa fa-fw fa-user"></i> Profile</asp:HyperLink>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-fw fa-envelope"></i>Inbox</a>
+                            <asp:HyperLink runat="server" href="#"><i class="fa fa-fw fa-envelope"></i> Inbox</asp:HyperLink>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-fw fa-gear"></i>Settings</a>
+                            <asp:HyperLink runat="server" href="#"><i class="fa fa-fw fa-gear"></i> Settings</asp:HyperLink>
                         </li>
                         <li class="divider"></li>
                         <li>
-                            <a href="#"><i class="fa fa-fw fa-power-off"></i>Log Out</a>
+                            <asp:HyperLink runat="server" href="#"><i class="fa fa-fw fa-power-off"></i> Log Out</asp:HyperLink>
                         </li>
                     </ul>
                 </li>
+
             </ul>
             <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav side-nav">
                     <li>
-                        <a href="bankerIndex.aspx"><i class="fa fa-fw fa-home"></i>Home Page</a>
+                        <asp:HyperLink runat="server" href="bankerIndex.aspx"><i class="fa fa-fw fa-home"></i> Home Page</asp:HyperLink>
                     </li>
                     <li>
-                        <a href="bankersCalendar.aspx"><i class="fa fa-fw fa-calendar"></i>Calendar</a>
+                        <asp:HyperLink runat="server" href="bankersCalendar.aspx"><i class="fa fa-fw fa-calendar"></i> Calendar</asp:HyperLink>
                     </li>
 
                     <li>
-                        <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i>Dropdown <i class="fa fa-fw fa-caret-down"></i></a>
+                        <asp:HyperLink runat="server" href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> Dropdown <i class="fa fa-fw fa-caret-down"></i></asp:HyperLink>
                         <ul id="demo" class="collapse">
                             <li>
-                                <a href="#">Dropdown Item</a>
+                                <asp:HyperLink runat="server" href="#">Dropdown Item</asp:HyperLink>
                             </li>
                             <li>
-                                <a href="#">Dropdown Item</a>
+                                <asp:HyperLink runat="server" href="#">Dropdown Item</asp:HyperLink>
                             </li>
                         </ul>
                     </li>
@@ -186,7 +196,7 @@
                 <!-- Page Heading -->
                 <div class="row">
                     <div class="col-lg-12">
-                        <h1 class="page-header">Dashboard
+                        <h1 class="page-header">Buyer's Profile
                         </h1>
                         <!--<ol class="breadcrumb">
                             <li>
@@ -235,13 +245,13 @@
                                     </div>
                                 </div>
                             </div>
-                            <a href="bankersCalendar.aspx">
+                            <asp:HyperLink runat="server" href="bankersCalendar.aspx">
                                 <div class="panel-footer">
                                     <span class="pull-left">View Details</span>
                                     <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
                                     <div class="clearfix"></div>
                                 </div>
-                            </a>
+                            </asp:HyperLink>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
@@ -295,16 +305,16 @@
 
                         <!-- First Blog Post -->
                         <h2>
-                            <a href="#">Mr. Lee's Profile</a>
+                            <asp:HyperLink ID="ProfileName" runat="server" href="#" style="text-decoration:underline" >Mr. Lee's Profile</asp:HyperLink>
                         </h2>
                         <p class="lead">
-                            Main Applicant: <a href="#">Mr. Lee</a>
+                            Main Applicant: <asp:HyperLink ID="MainName" runat="server" href="#">Mr. Lee</asp:HyperLink>
                             <br>
-                            Co-Applicant: <a href="#">Mrs. Lee</a>
+                            Co-Applicant: <asp:HyperLink ID="CoName" runat="server" href="#">Mrs. Lee</asp:HyperLink>
                         </p>
-                        <h5><span class="glyphicon glyphicon-eye-open"></span>Seen: <a>5  Houses</a></h5>
-                        <h5><span class="glyphicon glyphicon-star"></span>Liked: <a>3  Houses</a></h5>
-                        <p><i class="fa fa-clock-o"></i>Last updated on 27 July 2016 at 10:00 PM</p>
+                        <h5><span class="glyphicon glyphicon-eye-open"></span> Seen: <asp:HyperLink runat="server" ID="HouseSeen">5  Houses</asp:HyperLink></h5>
+                        <h5><span class="glyphicon glyphicon-star"></span> Liked: <asp:HyperLink runat="server" ID="HouseFav">3  Houses</asp:HyperLink></h5>
+                        <p><i class="fa fa-clock-o"></i> Last updated on 27 July 2016 at 10:00 PM</p>
                         <hr>
                         <div class="col-lg-12">
                             <div class="panel panel-default">
@@ -313,21 +323,89 @@
                                 </div>
                                 <div class="panel-body">
                                     <div class="table-responsive">
-                                        <table class="table table-bordered table-hover table-striped">
+
+                                        <form runat="server">
+                                            <asp:Table runat="server" class="table table-bordered table-hover table-striped">
+                                                <asp:TableHeaderRow>
+                                                    <asp:TableHeaderCell><i class="glyphicon glyphicon-star" /></asp:TableHeaderCell>
+                                                    <asp:TableHeaderCell>Launch</asp:TableHeaderCell>
+                                                    <asp:TableHeaderCell>Type</asp:TableHeaderCell>
+                                                    <asp:TableHeaderCell>Estate</asp:TableHeaderCell>
+                                                    <asp:TableHeaderCell><i class="glyphicon glyphicon-map-marker"></i> Address</asp:TableHeaderCell>
+                                                    <asp:TableHeaderCell><i class="fa fa-usd"></i> Price</asp:TableHeaderCell>
+                                                    <asp:TableHeaderCell>Bedrooms</asp:TableHeaderCell>
+                                                    <asp:TableHeaderCell>Bathrooms</asp:TableHeaderCell>
+                                                    <asp:TableHeaderCell><i class="glyphicon glyphicon-resize-full"></i> Size (sqft)</asp:TableHeaderCell>
+                                                    <asp:TableHeaderCell><i class="fa fa-usd"></i> Price/sqft</asp:TableHeaderCell>
+                                                    <asp:TableHeaderCell><i class="glyphicon glyphicon-calendar"></i> Search Date</asp:TableHeaderCell>
+                                                    <asp:TableHeaderCell><i class="glyphicon glyphicon-time"></i> Search Time</asp:TableHeaderCell>
+                                                </asp:TableHeaderRow>
+
+                                                <asp:TableRow>
+                                                    <asp:TableCell><i class="fa fa-check" style="color: green"></i></asp:TableCell>
+                                                    <asp:TableCell>BTO</asp:TableCell>
+                                                    <asp:TableCell>HDB</asp:TableCell>
+                                                    <asp:TableCell>Marine Parade</asp:TableCell>
+                                                    <asp:TableCell>Caribbean At Keppel Bay</asp:TableCell>
+                                                    <asp:TableCell>S$3,263,260</asp:TableCell>
+                                                    <asp:TableCell>4</asp:TableCell>
+                                                    <asp:TableCell>2</asp:TableCell>
+                                                    <asp:TableCell>2,282 sqft</asp:TableCell>
+                                                    <asp:TableCell>S$1,430.00 psf</asp:TableCell>
+                                                    <asp:TableCell>28/07/2016</asp:TableCell>
+                                                    <asp:TableCell>4:31 PM</asp:TableCell>
+                                                </asp:TableRow>
+
+                                                <asp:TableRow>
+                                                    <asp:TableCell><i class="fa fa-times" style="color: red"></i></asp:TableCell>
+                                                    <asp:TableCell>BTO</asp:TableCell>
+                                                    <asp:TableCell>HDB</asp:TableCell>
+                                                    <asp:TableCell>Clementi</asp:TableCell>
+                                                    <asp:TableCell>The Orient </asp:TableCell>
+                                                    <asp:TableCell>S$970,000</asp:TableCell>
+                                                    <asp:TableCell>3</asp:TableCell>
+                                                    <asp:TableCell>2</asp:TableCell>
+                                                    <asp:TableCell>581 sqft</asp:TableCell>
+                                                    <asp:TableCell>S$1,669.54 psf</asp:TableCell>
+                                                    <asp:TableCell>28/07/2016</asp:TableCell>
+                                                    <asp:TableCell>4:13 PM</asp:TableCell>
+                                                </asp:TableRow>
+
+                                                <asp:TableRow>
+                                                    <asp:TableCell><i class="fa fa-check" style="color: green"></i></asp:TableCell>
+                                                    <asp:TableCell>BTO</asp:TableCell>
+                                                    <asp:TableCell>HDB</asp:TableCell>
+                                                    <asp:TableCell>Serangoon</asp:TableCell>
+                                                    <asp:TableCell>Sturdee Residences</asp:TableCell>
+                                                    <asp:TableCell>S$1,297,428</asp:TableCell>
+                                                    <asp:TableCell>2</asp:TableCell>
+                                                    <asp:TableCell>2</asp:TableCell>
+                                                    <asp:TableCell>829 sqft</asp:TableCell>
+                                                    <asp:TableCell>S$1,565.05 psf</asp:TableCell>
+                                                    <asp:TableCell>28/07/2016</asp:TableCell>
+                                                    <asp:TableCell>4:05 PM</asp:TableCell>
+                                                </asp:TableRow>
+
+                                            </asp:Table>
+                                        </form>
+
+
+
+                                        <%--<table class="table table-bordered table-hover table-striped">
                                             <thead>
                                                 <tr>
                                                     <th><i class="glyphicon glyphicon-star"></i></th>
                                                     <th>Launch</th>
                                                     <th>Type</th>
                                                     <th>Estate</th>
-                                                    <th><i class="glyphicon glyphicon-map-marker"></i>Address</th>
-                                                    <th><i class="fa fa-usd"></i>Price</th>
-                                                    <th><i class="glyphicon glyphicon-bed"></i>Bedrooms</th>
-                                                    <th><i class="glyphicon glyphicon"></i>Bathrooms</th>
-                                                    <th><i class="glyphicon glyphicon-resize-full"></i>Size (sqft)</th>
-                                                    <th><i class="fa fa-usd"></i>Price/sqft</th>
-                                                    <th><i class="glyphicon glyphicon-calendar"></i>Search Date</th>
-                                                    <th><i class="glyphicon glyphicon-time"></i>Search Time</th>
+                                                    <th><i class="glyphicon glyphicon-map-marker"></i> Address</th>
+                                                    <th><i class="fa fa-usd"></i> Price</th>
+                                                    <th><i class="glyphicon glyphicon"></i> Bedrooms</th>
+                                                    <th><i class="glyphicon glyphicon"></i> Bathrooms</th>
+                                                    <th><i class="glyphicon glyphicon-resize-full"></i> Size (sqft)</th>
+                                                    <th><i class="fa fa-usd"></i> Price/sqft</th>
+                                                    <th><i class="glyphicon glyphicon-calendar"></i> Search Date</th>
+                                                    <th><i class="glyphicon glyphicon-time"></i> Search Time</th>
 
                                                 </tr>
                                             </thead>
@@ -403,10 +481,14 @@
                                                     <td>3:51 PM</td>
                                                 </tr>
                                             </tbody>
-                                        </table>
+                                        </table>--%>
+
+
+
+
                                     </div>
                                     <div class="text-right">
-                                        <a href="#">View All Transactions <i class="fa fa-arrow-circle-right"></i></a>
+                                        <%--<a href="#">View All Transactions <i class="fa fa-arrow-circle-right"></i></a>--%>
                                     </div>
                                 </div>
 
@@ -414,10 +496,9 @@
 
                             </div>
                         </div>
-                        <p>Text123abc</p>
                         <hr>
 
-                        <a class="btn btn-primary" href="bankerSuggest.aspx">Request Information <i class="fa fa-angle-right"></i></a>
+                        <asp:HyperLink runat="server" class="btn btn-primary" href="bankerSuggest.aspx">Request Information <i class="fa fa-angle-right"></i></asp:HyperLink>
 
 
                     </div>

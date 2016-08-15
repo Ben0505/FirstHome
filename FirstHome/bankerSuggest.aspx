@@ -11,7 +11,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin - Bootstrap Admin Template</title>
+    <title>First Home - Buyer's Profile</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -293,44 +293,41 @@
                     <!-- Blog Entries Column -->
                     <div class="col-md-12">
 
+                        <form runat="server">
+
                         <!-- First Blog Post -->
                         <h2>
-                            <a href="#">Mr. Lee's Profile</a>
+                            <asp:HyperLink ID="ProfileName" runat="server" href="#" style="text-decoration:underline" >Mr. Lee's Profile</asp:HyperLink>
                         </h2>
                         <p class="lead">
-                            Main Applicant: <a href="#">Mr. Lee</a>
+                           Main Applicant: <asp:HyperLink ID="MainName" runat="server" href="#">Mr. Lee</asp:HyperLink>
                             <br>
-                            Salary (incl. CPF): <a href="#">S$5,000</a>
+                            Salary (incl. CPF): <asp:HyperLink ID="MainSalary" runat="server" href="#">S$5,000</asp:HyperLink>
                         </p>
                         <p class="lead">
-                            Co-Applicant: <a href="#">Mrs. Lee</a>
+                            Co-Applicant: <asp:HyperLink ID="CoName" runat="server" href="#">Mrs. Lee</asp:HyperLink>
                             <br>
-                            Salary (incl. CPF): <a href="#">S$3,000</a>
+                            Salary (incl. CPF): <asp:HyperLink ID="CoSalary" runat="server" href="#">S$3,000</asp:HyperLink>
                         </p>
                         <div class="lead">
-                            Total Savings: <a href="#">S$120,000</a>
+                            Total Savings: <asp:HyperLink ID="ProfilTotalSavings" runat="server" href="#">S$120,000</asp:HyperLink>
                             <br>
-                            Total Expenses: <a type="button" data-toggle="collapse" data-target="#demo1">S$3,000</a>
-                            <div id="demo1" class="collapse in">
-                                <p>
-                                    <small>- UtilityS$300
-                                <br>
-                                        - Insurance: S$300
-                                <br>
-                                        - Food: S$500
-                                <br>
-                                        - Education: S$900
-                                <br>
-                                        - Taxes: S$1,000
-                                    </small>
-                                </p>
+                            Total Expenses: <asp:HyperLink ID="ProfileTotalExpenses" runat="server" type="button" data-toggle="collapse" data-target="#demo1">S$3,000</asp:HyperLink>
+                            <div>
+                                <asp:ListBox ID="ProfileExpenses" runat="server">
+                                    <asp:ListItem>Utility - S$300</asp:ListItem>
+                                    <asp:ListItem>Insurance - S$300</asp:ListItem>
+                                    <asp:ListItem>Food - S$500</asp:ListItem>
+                                    <asp:ListItem>Education - S$900</asp:ListItem>
+                                    <asp:ListItem>Taxes - S$1,000</asp:ListItem>
+                                </asp:ListBox>
                             </div>
                             <br>
-                            Outstanding Loans: <a>S$1,500 / Month</a>
+                            Outstanding Loans: <asp:HyperLink ID="ProfileOutstandingLoan" runat="server">S$1,500 / Month</asp:HyperLink>
                         </div>
-                        <h5><span class="glyphicon glyphicon-eye-open"></span>Seen: <a>5  Houses</a></h5>
-                        <h5><span class="glyphicon glyphicon-star"></span>Liked: <a>3  Houses</a></h5>
-                        <p><i class="fa fa-clock-o"></i>Last updated on 27 July 2016 at 10:00 PM</p>
+                        <h5><span class="glyphicon glyphicon-eye-open"></span> Seen: <asp:HyperLink runat="server" ID="HouseSeen">5  Houses</asp:HyperLink></h5>
+                        <h5><span class="glyphicon glyphicon-star"></span> Liked: <asp:HyperLink runat="server" ID="HouseFav">3  Houses</asp:HyperLink></h5>
+                        <p><i class="fa fa-clock-o"></i> Last updated on 27 July 2016 at 10:00 PM</p>
                         <hr>
                         <div class="col-lg-12">
                             <div class="panel panel-default">
@@ -339,100 +336,75 @@
                                 </div>
                                 <div class="panel-body">
                                     <div class="table-responsive">
-                                        <table class="table table-bordered table-hover table-striped">
-                                            <thead>
-                                                <tr>
-                                                    <th><i class="glyphicon glyphicon-star"></i></th>
-                                                    <th>Launch</th>
-                                                    <th>Type</th>
-                                                    <th>Estate</th>
-                                                    <th><i class="glyphicon glyphicon-map-marker"></i>Address</th>
-                                                    <th><i class="fa fa-usd"></i>Price</th>
-                                                    <th><i class="glyphicon glyphicon-bed"></i>Bedrooms</th>
-                                                    <th><i class="glyphicon glyphicon"></i>Bathrooms</th>
-                                                    <th><i class="glyphicon glyphicon-resize-full"></i>Size (sqft)</th>
-                                                    <th><i class="fa fa-usd"></i>Price/sqft</th>
-                                                    <th><i class="glyphicon glyphicon-calendar"></i>Search Date</th>
-                                                    <th><i class="glyphicon glyphicon-time"></i>Search Time</th>
+                                        
+                                            <asp:Table runat="server" class="table table-bordered table-hover table-striped">
+                                                <asp:TableHeaderRow>
+                                                    <asp:TableHeaderCell><i class="glyphicon glyphicon-star" /></asp:TableHeaderCell>
+                                                    <asp:TableHeaderCell>Launch</asp:TableHeaderCell>
+                                                    <asp:TableHeaderCell>Type</asp:TableHeaderCell>
+                                                    <asp:TableHeaderCell>Estate</asp:TableHeaderCell>
+                                                    <asp:TableHeaderCell><i class="glyphicon glyphicon-map-marker"></i> Address</asp:TableHeaderCell>
+                                                    <asp:TableHeaderCell><i class="fa fa-usd"></i> Price</asp:TableHeaderCell>
+                                                    <asp:TableHeaderCell>Bedrooms</asp:TableHeaderCell>
+                                                    <asp:TableHeaderCell>Bathrooms</asp:TableHeaderCell>
+                                                    <asp:TableHeaderCell><i class="glyphicon glyphicon-resize-full"></i> Size (sqft)</asp:TableHeaderCell>
+                                                    <asp:TableHeaderCell><i class="fa fa-usd"></i> Price/sqft</asp:TableHeaderCell>
+                                                    <asp:TableHeaderCell><i class="glyphicon glyphicon-calendar"></i> Search Date</asp:TableHeaderCell>
+                                                    <asp:TableHeaderCell><i class="glyphicon glyphicon-time"></i> Search Time</asp:TableHeaderCell>
+                                                </asp:TableHeaderRow>
 
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td><i class="fa fa-check" style="color: green"></i></td>
-                                                    <td>BTO</td>
-                                                    <td>HDB</td>
-                                                    <td>Marine Parade</td>
-                                                    <td>Caribbean At Keppel Bay</td>
-                                                    <td>S$3,263,260</td>
-                                                    <td>4</td>
-                                                    <td>2</td>
-                                                    <td>2,282 sqft</td>
-                                                    <td>S$1,430.00 psf</td>
-                                                    <td>28/07/2016</td>
-                                                    <td>4:31 PM</td>
-                                                </tr>
-                                                <tr>
-                                                    <td><i class="fa fa-times" style="color: red"></i></td>
-                                                    <td>Resale</td>
-                                                    <td>HDB</td>
-                                                    <td>Clementi</td>
-                                                    <td>The Orient </td>
-                                                    <td>S$970,000</td>
-                                                    <td>3</td>
-                                                    <td>2</td>
-                                                    <td>581 sqft</td>
-                                                    <td>S$1,669.54 psf</td>
-                                                    <td>28/07/2016</td>
-                                                    <td>4:13 PM</td>
-                                                </tr>
-                                                <tr>
-                                                    <td><i class="fa fa-check" style="color: green"></i></td>
-                                                    <td>BTO</td>
-                                                    <td>HDB</td>
-                                                    <td>Serangoon</td>
-                                                    <td>Sturdee Residences</td>
-                                                    <td>S$1,297,428</td>
-                                                    <td>2</td>
-                                                    <td>2</td>
-                                                    <td>829 sqft</td>
-                                                    <td>S$1,565.05 psf</td>
-                                                    <td>28/07/2016</td>
-                                                    <td>4:05 PM</td>
-                                                </tr>
-                                                <tr>
-                                                    <td><i class="fa fa-check" style="color: green"></i></td>
-                                                    <td>Resale</td>
-                                                    <td>Condo</td>
-                                                    <td>Tampines</td>
-                                                    <td>Edelweiss Park Condominium</td>
-                                                    <td>S$1,080,000</td>
-                                                    <td>4</td>
-                                                    <td>2</td>
-                                                    <td>1,281 sqft </td>
-                                                    <td>S$843.09 psf</td>
-                                                    <td>28/07/2016</td>
-                                                    <td>3:58 PM</td>
-                                                </tr>
-                                                <tr>
-                                                    <td><i class="fa fa-times" style="color: red"></i></td>
-                                                    <td>Resale</td>
-                                                    <td>HDB</td>
-                                                    <td>Ang Mo Kio</td>
-                                                    <td>Ang Mo Kio Impressions</td>
-                                                    <td>S$1,401,700</td>
-                                                    <td>3</td>
-                                                    <td>2</td>
-                                                    <td>1,055 sqft</td>
-                                                    <td>S$1,328.63 psf</td>
-                                                    <td>28/07/2016</td>
-                                                    <td>3:51 PM</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
+                                                <asp:TableRow>
+                                                    <asp:TableCell><i class="fa fa-check" style="color: green"></i></asp:TableCell>
+                                                    <asp:TableCell>BTO</asp:TableCell>
+                                                    <asp:TableCell>HDB</asp:TableCell>
+                                                    <asp:TableCell>Marine Parade</asp:TableCell>
+                                                    <asp:TableCell>Caribbean At Keppel Bay</asp:TableCell>
+                                                    <asp:TableCell>S$3,263,260</asp:TableCell>
+                                                    <asp:TableCell>4</asp:TableCell>
+                                                    <asp:TableCell>2</asp:TableCell>
+                                                    <asp:TableCell>2,282 sqft</asp:TableCell>
+                                                    <asp:TableCell>S$1,430.00 psf</asp:TableCell>
+                                                    <asp:TableCell>28/07/2016</asp:TableCell>
+                                                    <asp:TableCell>4:31 PM</asp:TableCell>
+                                                </asp:TableRow>
+
+                                                <asp:TableRow>
+                                                    <asp:TableCell><i class="fa fa-times" style="color: red"></i></asp:TableCell>
+                                                    <asp:TableCell>BTO</asp:TableCell>
+                                                    <asp:TableCell>HDB</asp:TableCell>
+                                                    <asp:TableCell>Clementi</asp:TableCell>
+                                                    <asp:TableCell>The Orient </asp:TableCell>
+                                                    <asp:TableCell>S$970,000</asp:TableCell>
+                                                    <asp:TableCell>3</asp:TableCell>
+                                                    <asp:TableCell>2</asp:TableCell>
+                                                    <asp:TableCell>581 sqft</asp:TableCell>
+                                                    <asp:TableCell>S$1,669.54 psf</asp:TableCell>
+                                                    <asp:TableCell>28/07/2016</asp:TableCell>
+                                                    <asp:TableCell>4:13 PM</asp:TableCell>
+                                                </asp:TableRow>
+
+                                                <asp:TableRow>
+                                                    <asp:TableCell><i class="fa fa-check" style="color: green"></i></asp:TableCell>
+                                                    <asp:TableCell>BTO</asp:TableCell>
+                                                    <asp:TableCell>HDB</asp:TableCell>
+                                                    <asp:TableCell>Serangoon</asp:TableCell>
+                                                    <asp:TableCell>Sturdee Residences</asp:TableCell>
+                                                    <asp:TableCell>S$1,297,428</asp:TableCell>
+                                                    <asp:TableCell>2</asp:TableCell>
+                                                    <asp:TableCell>2</asp:TableCell>
+                                                    <asp:TableCell>829 sqft</asp:TableCell>
+                                                    <asp:TableCell>S$1,565.05 psf</asp:TableCell>
+                                                    <asp:TableCell>28/07/2016</asp:TableCell>
+                                                    <asp:TableCell>4:05 PM</asp:TableCell>
+                                                </asp:TableRow>
+
+                                            </asp:Table>
+                                        
+
+
                                     </div>
                                     <div class="text-right">
-                                        <a href="#">View All Transactions <i class="fa fa-arrow-circle-right"></i></a>
+                                        <%--<a href="#">View All Transactions <i class="fa fa-arrow-circle-right"></i></a>--%>
                                     </div>
                                 </div>
 
@@ -440,7 +412,7 @@
 
                             </div>
                         </div>
-                        <p>Text123abc</p>
+                        
                         <label class="control-label">Select File</label>
                         <input id="input-1a" type="file" class="file" data-show-preview="false">
                         <hr>
@@ -455,7 +427,7 @@
                                     <div class="modal-content">
                                         <div class="modal-header">
                                             <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                            <h4 class="modal-title">SENT SUGGESTION</h4>
+                                            <h4 class="modal-title">SUGGESTION SENT</h4>
                                         </div>
                                         <div class="modal-body">
                                             <p>FILE SENT SUCCESSFULLY</p>
@@ -469,10 +441,9 @@
                         </div>
 
                         <!-- Collapse -->
-                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                            asdasd
-                        </div>
+                        
 
+                            </form>
 
                     </div>
 

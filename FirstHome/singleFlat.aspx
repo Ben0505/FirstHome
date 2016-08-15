@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>New Gen - Financial Planning For Housing</title>
+    <title>First Home - House Preview</title>
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
@@ -31,7 +31,7 @@
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"><span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-                <a class="navbar-brand" href="index.aspx">First Home</a>
+                <asp:HyperLink runat="server" class="navbar-brand" href="index.aspx">First Home</asp:HyperLink>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -43,7 +43,7 @@
                         <asp:HyperLink href="contact.aspx" runat="server">Contact</asp:HyperLink>
                     </li>
                     <li>
-                        <asp:HyperLink runat="server" href="hdbLocation.aspx"><span class="fa fa-map-marker"></span> HDB Location</asp:HyperLink>
+                        <asp:HyperLink runat="server" href="hdbLocation.aspx"><span class="fa fa-map-marker"></span> Property Location</asp:HyperLink>
                     </li>
                     <li>
                         <asp:HyperLink runat="server" href="favHouse.aspx"><span class="glyphicon glyphicon-star"></span> Favourite House</asp:HyperLink>
@@ -76,17 +76,21 @@
     <!-- Page Content -->
     <div class="container">
 
+        <form runat="server" >
+
         <!-- Page Heading/Breadcrumbs -->
         <div class="row">
             <div class="col-lg-12">
                 <h1 class="page-header">Property Preview
                     <small></small>
                 </h1>
-                <h2>226 Choa Chu Kang Central 
+                <h2>
+                    <asp:Label ID="PropertyName" runat="server" Text="226 Choa Chu Kang Central"></asp:Label>                     
                     <br>
-                    #08-42
+                    <asp:Label ID="UnitNo" runat="server" Text="#08-04" />
                     <br>
-                    Singapore 570226
+                    <asp:Label ID="HsePostCode" runat="server" Text="Singapore 570226" />
+                    <br />
                     
                 </h2>
             </div>
@@ -108,37 +112,44 @@
                     <!-- Wrapper for slides -->
                     <div class="carousel-inner">
                         <div class="item active">
-                            <img class="img-responsive" src="pics/house1.jpg" alt="">
+                            <asp:Image ID="Preview1" runat="server" class="img-responsive" src="pics/house1.jpg" alt="" />
                         </div>
                         <div class="item">
-                            <img class="img-responsive" src="pics/house2.jpg" alt="">
+                            <asp:Image ID="Preview2" runat="server" class="img-responsive" src="pics/house2.jpg" alt="" />
                         </div>
                         <div class="item">
-                            <img class="img-responsive" src="pics/house3.jpg" alt="">
+                            <asp:Image ID="Preview3" runat="server" class="img-responsive" src="pics/house3.jpg" alt="" />
                         </div>
                     </div>
 
                     <!-- Controls -->
-                    <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                    <asp:HyperLink runat="server" class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
                         <span class="glyphicon glyphicon-chevron-left"></span>
-                    </a>
-                    <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                    </asp:HyperLink>
+                    <asp:HyperLink runat="server" class="right carousel-control" href="#carousel-example-generic" data-slide="next">
                         <span class="glyphicon glyphicon-chevron-right"></span>
-                    </a>
+                    </asp:HyperLink>
                 </div>
             </div>
 
             <div class="col-md-4">
                 <h2>Flat Details</h2>
                 <h3>
-                    <ul>
-                        <li>$335,000.00</li>
-                        <li><i class="glyphicon glyphicon-bed"></i>3 Bedrooms</li>
-                        <li>2 Bathrooms</li>
-                        <li>1,571 sqft</li>
-                        <li>S$213.29 psf</li>
-                    </ul>
+
+                    <asp:BulletedList ID="FlatDetails" runat="server">
+                        <asp:ListItem>S$ 335,000.00</asp:ListItem>
+                        <asp:ListItem>3 Bedrooms</asp:ListItem>
+                        <asp:ListItem>2 Bathrooms</asp:ListItem>
+                        <asp:ListItem>1,571 sqft</asp:ListItem>
+                        <asp:ListItem>S$ 213.29 psf</asp:ListItem>
+                    </asp:BulletedList>
+
                 </h3>
+
+                <hr />
+
+                <asp:Button ID="ShowInterest" runat="server" Text="Click here to show your interest" class="btn btn-primary btn-block" />
+
             </div>
 
         </div>
@@ -154,54 +165,54 @@
                 <div class="comments-list">
                     <div class="media">
                         <p class="pull-right"><small>5 days ago</small></p>
-                        <a class="media-left" href="#">
+                        <asp:HyperLink runat="server" class="media-left" href="#">
                             <img src="http://lorempixel.com/40/40/people/1/">
-                        </a>
+                        </asp:HyperLink>
                         <div class="media-body">
 
                             <h4 class="media-heading user_name">Priya</h4>
                             Wow! this is really great.
 
-                            <p><small><a href="">Like</a> - <a href="">Share</a></small></p>
+                            <p><small><asp:HyperLink runat="server" href="">Like</asp:HyperLink> - <a href="">Share</a></small></p>
                         </div>
                     </div>
                     <div class="media">
                         <p class="pull-right"><small>6 days ago</small></p>
-                        <a class="media-left" href="#">
+                        <asp:HyperLink runat="server" class="media-left" href="#">
                             <img src="http://lorempixel.com/40/40/people/2/">
-                        </a>
+                        </asp:HyperLink>
                         <div class="media-body">
 
                             <h4 class="media-heading user_name">Bryant Tan</h4>
                             Wow! this is really great.
 
-                            <p><small><a href="">Like</a> - <a href="">Share</a></small></p>
+                            <p><small><asp:HyperLink runat="server" href="">Like</asp:HyperLink> - <a href="">Share</a></small></p>
                         </div>
                     </div>
                     <div class="media">
                         <p class="pull-right"><small>8 days ago</small></p>
-                        <a class="media-left" href="#">
+                        <asp:HyperLink runat="server" class="media-left" href="#">
                             <img src="http://lorempixel.com/40/40/people/3/">
-                        </a>
+                        </asp:HyperLink>
                         <div class="media-body">
 
                             <h4 class="media-heading user_name">Baltej Singh</h4>
                             Wow! this is really great.
 
-                            <p><small><a href="">Like</a> - <a href="">Share</a></small></p>
+                            <p><small><asp:HyperLink runat="server" href="">Like</asp:HyperLink> - <a href="">Share</a></small></p>
                         </div>
                     </div>
                     <div class="media">
                         <p class="pull-right"><small>8 days ago</small></p>
-                        <a class="media-left" href="#">
+                        <asp:HyperLink runat="server" class="media-left" href="#">
                             <img src="http://lorempixel.com/40/40/people/4/">
-                        </a>
+                        </asp:HyperLink>
                         <div class="media-body">
 
                             <h4 class="media-heading user_name">Chevenne Tan</h4>
                             Wow! this is really great.
 
-                            <p><small><a href="">Like</a> - <a href="">Share</a></small></p>
+                            <p><small><asp:HyperLink runat="server" href="#">Like</asp:HyperLink> - <a href="">Share</a></small></p>
                         </div>
                     </div>
                 </div>
@@ -210,19 +221,17 @@
         </div>
 
 
-        <form class="form-horizontal">
-
             <h3>Add Comment</h3>
             <div class="col-lg-12">
                 <textarea class="form-control" rows="3" id="textArea"></textarea>
             </div>
+            <br />
             <div class="form-group">
                 <div class="col-lg-12">
-                    <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                    <asp:Button ID="AddComment" runat="server" Text="SUBMIT" class="btn btn-primary btn-block" />
                 </div>
             </div>
 
-        </form>
 
         <!-- Related Projects Row -->
         <div class="row">
@@ -232,27 +241,27 @@
             </div>
 
             <div class="col-sm-3 col-xs-6">
-                <a href="#">
+                <asp:HyperLink runat="server" href="#">
                     <img class="img-responsive img-hover img-related" src="http://placehold.it/500x300" alt="">
-                </a>
+                </asp:HyperLink>
             </div>
 
             <div class="col-sm-3 col-xs-6">
-                <a href="#">
+                <asp:HyperLink runat="server" href="#">
                     <img class="img-responsive img-hover img-related" src="http://placehold.it/500x300" alt="">
-                </a>
+                </asp:HyperLink>
             </div>
 
             <div class="col-sm-3 col-xs-6">
-                <a href="#">
+                <asp:HyperLink runat="server" href="#">
                     <img class="img-responsive img-hover img-related" src="http://placehold.it/500x300" alt="">
-                </a>
+                </asp:HyperLink>
             </div>
 
             <div class="col-sm-3 col-xs-6">
-                <a href="#">
+                <asp:HyperLink runat="server" href="#">
                     <img class="img-responsive img-hover img-related" src="http://placehold.it/500x300" alt="">
-                </a>
+                </asp:HyperLink>
             </div>
 
         </div>
@@ -268,6 +277,8 @@
                 </div>
             </div>
         </footer>
+
+            </form>
 
     </div>
     <!-- /.container -->

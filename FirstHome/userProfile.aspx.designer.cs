@@ -40,21 +40,66 @@ namespace FirstHome {
         protected global::System.Web.UI.WebControls.TextBox expensesVal;
         
         /// <summary>
-        /// TableCell1 control.
+        /// expenses2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TableCell TableCell1;
+        protected global::System.Web.UI.WebControls.TextBox expenses2;
         
         /// <summary>
-        /// TableCell2 control.
+        /// expensesVal2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TableCell TableCell2;
+        protected global::System.Web.UI.WebControls.TextBox expensesVal2;
+        
+        /// <summary>
+        /// outstandingLoan control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Table outstandingLoan;
+        
+        /// <summary>
+        /// loan control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox loan;
+        
+        /// <summary>
+        /// loanVal control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox loanVal;
+        
+        /// <summary>
+        /// loan2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox loan2;
+        
+        /// <summary>
+        /// loanVal2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox loanVal2;
     }
 }

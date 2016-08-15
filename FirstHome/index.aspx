@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>New Gen - Financial Planning For Housing</title>
+    <title>First Home</title>
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
@@ -43,7 +43,7 @@
                         <asp:HyperLink href="contact.aspx" runat="server">Contact</asp:HyperLink>
                     </li>
                     <li>
-                        <asp:HyperLink runat="server" href="hdbLocation.aspx"><span class="fa fa-map-marker"></span> HDB Location</asp:HyperLink>
+                        <asp:HyperLink runat="server" href="hdbLocation.aspx"><span class="fa fa-map-marker"></span> Property Location</asp:HyperLink>
                     </li>
                     <li>
                         <asp:HyperLink runat="server" href="favHouse.aspx"><span class="glyphicon glyphicon-star"></span> Favourite House</asp:HyperLink>
@@ -277,22 +277,22 @@
                         <h2 class="page-header">New BTO around you</h2>
                     </div>
                     <div class="col-md-4 col-sm-6">
-                        <asp:HyperLink runat="server" href="portfolio-item.aspx"> <img class="img-responsive img-portfolio img-hover" src="pics/house1.jpg" alt=""> </asp:HyperLink>
+                        <asp:HyperLink runat="server" href="singleFlat.aspx"> <img class="img-responsive img-portfolio img-hover" src="pics/house1.jpg" alt=""> </asp:HyperLink>
                     </div>
                     <div class="col-md-4 col-sm-6">
-                        <asp:HyperLink runat="server" href="portfolio-item.aspx"> <img class="img-responsive img-portfolio img-hover" src="pics/house2.jpg" alt=""> </asp:HyperLink>
+                        <asp:HyperLink runat="server" href="singleFlat.aspx"> <img class="img-responsive img-portfolio img-hover" src="pics/house2.jpg" alt=""> </asp:HyperLink>
                     </div>
                     <div class="col-md-4 col-sm-6">
-                        <asp:HyperLink runat="server" href="portfolio-item.aspx"> <img class="img-responsive img-portfolio img-hover" src="pics/house3.jpg" alt=""> </asp:HyperLink>
+                        <asp:HyperLink runat="server" href="singleFlat.aspx"> <img class="img-responsive img-portfolio img-hover" src="pics/house3.jpg" alt=""> </asp:HyperLink>
                     </div>
                     <div class="col-md-4 col-sm-6">
-                        <asp:HyperLink runat="server" href="portfolio-item.aspx"> <img class="img-responsive img-portfolio img-hover" src="pics/house4.jpg" alt=""> </asp:HyperLink>
+                        <asp:HyperLink runat="server" href="singleFlat.aspx"> <img class="img-responsive img-portfolio img-hover" src="pics/house4.jpg" alt=""> </asp:HyperLink>
                     </div>
                     <div class="col-md-4 col-sm-6">
-                        <asp:HyperLink runat="server" href="portfolio-item.aspx"> <img class="img-responsive img-portfolio img-hover" src="pics/house5.jpg" alt=""> </asp:HyperLink>
+                        <asp:HyperLink runat="server" href="singleFlat.aspx"> <img class="img-responsive img-portfolio img-hover" src="pics/house5.jpg" alt=""> </asp:HyperLink>
                     </div>
                     <div class="col-md-4 col-sm-6">
-                        <asp:HyperLink runat="server" href="portfolio-item.aspx"> <img class="img-responsive img-portfolio img-hover" src="pics/house6.jpg" alt=""> </asp:HyperLink>
+                        <asp:HyperLink runat="server" href="singleFlat.aspx"> <img class="img-responsive img-portfolio img-hover" src="pics/house6.jpg" alt=""> </asp:HyperLink>
                     </div>
                 </div>
                 <!-- /.row -->
