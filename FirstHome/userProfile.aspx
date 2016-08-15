@@ -148,9 +148,24 @@
                             <p>
                                 <label for="address" style="display: block; text-align: center;">Total Expenses:</label>
                                 <label class="$sign">S$</label>
-                                <asp:TextBox runat="server" class="input02" type="text" value="300" />
+                                <asp:TextBox runat="server" class="input02" type="text" value="" ReadOnly="true" />
                             </p>
-                            <div id="table" class="table-editable">
+
+                            <div class="col-md-4">
+                                <asp:TextBox runat="server" ID="addExpenseName" />
+                            </div>
+                            <div class="col-md-4">
+                                <asp:TextBox runat="server" ID="addExpenseVal" />
+                            </div>
+                            <div class="col-md-3">
+                                <asp:HyperLink ID="addExpenses01" runat="server" class="btn btn-default btn-lg" Text="ADD" />
+                            </div>
+
+                            <br />
+
+                            <asp:ListBox ID="ExpensesLists" runat="server"></asp:ListBox>
+
+                            <%--<div id="table" class="table-editable">
                                 <span class="table-add glyphicon glyphicon-plus"></span>
                                 <asp:Table ID="totalExpenses" runat="server" class="table">
                                     <asp:TableRow>
@@ -178,7 +193,7 @@
                                         <asp:TableCell><span class="table-remove glyphicon glyphicon-remove"></span></asp:TableCell>
                                     </asp:TableRow>
                                 </asp:Table>
-                            </div>
+                            </div>--%>
                             <!--<button id="export-btn" class="btn btn-primary">Export Data</button>
                             <p id="export"></p>-->
                         </div>
@@ -186,9 +201,24 @@
                             <p>
                                 <label for="address" style="display: block; text-align: center;">Outstanding Loans:</label>
                                 <label class="$sign">S$</label>
-                                <asp:TextBox runat="server" class="input02" type="text" value="1,000" />
+                                <asp:TextBox runat="server" class="input02" type="text" value="" ReadOnly="true" />
                             </p>
-                            <div id="table" class="table-editable">
+
+                            <div class="col-md-4">
+                                <asp:TextBox runat="server" ID="addLoanName" />
+                            </div>
+                            <div class="col-md-4">
+                                <asp:TextBox runat="server" ID="addLoanVal" />
+                            </div>
+                            <div class="col-md-3">
+                                <asp:HyperLink ID="addLoans01" runat="server" class="btn btn-default btn-lg" Text="ADD" />
+                            </div>
+
+                            <br />
+
+                            <asp:ListBox ID="OutstandingLoanLists" runat="server"></asp:ListBox>
+
+                            <%--<div id="table" class="table-editable">
                                 <span class="table-add glyphicon glyphicon-plus"></span>
                                 <asp:Table ID="outstandingLoan" runat="server" class="table">
                                     <asp:TableRow>
@@ -216,7 +246,7 @@
                                         <asp:TableCell><span class="table-remove glyphicon glyphicon-remove"></span></asp:TableCell>
                                     </asp:TableRow>
                                 </asp:Table>
-                            </div>
+                            </div>--%>
                             <!--<button id="export-btn" class="btn btn-primary">Export Data</button>
                             <p id="export"></p>-->
                         </div>

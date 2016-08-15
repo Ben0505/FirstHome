@@ -13,93 +13,75 @@ namespace FirstHome {
     public partial class userProfile {
         
         /// <summary>
-        /// totalExpenses control.
+        /// addExpenseName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Table totalExpenses;
+        protected global::System.Web.UI.WebControls.TextBox addExpenseName;
         
         /// <summary>
-        /// expenses control.
+        /// addExpenseVal control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox expenses;
+        protected global::System.Web.UI.WebControls.TextBox addExpenseVal;
         
         /// <summary>
-        /// expensesVal control.
+        /// addExpenses01 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox expensesVal;
+        protected global::System.Web.UI.WebControls.HyperLink addExpenses01;
         
         /// <summary>
-        /// expenses2 control.
+        /// ExpensesLists control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox expenses2;
+        protected global::System.Web.UI.WebControls.ListBox ExpensesLists;
         
         /// <summary>
-        /// expensesVal2 control.
+        /// addLoanName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox expensesVal2;
+        protected global::System.Web.UI.WebControls.TextBox addLoanName;
         
         /// <summary>
-        /// outstandingLoan control.
+        /// addLoanVal control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Table outstandingLoan;
+        protected global::System.Web.UI.WebControls.TextBox addLoanVal;
         
         /// <summary>
-        /// loan control.
+        /// addLoans01 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox loan;
+        protected global::System.Web.UI.WebControls.HyperLink addLoans01;
         
         /// <summary>
-        /// loanVal control.
+        /// OutstandingLoanLists control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox loanVal;
-        
-        /// <summary>
-        /// loan2 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox loan2;
-        
-        /// <summary>
-        /// loanVal2 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox loanVal2;
+        protected global::System.Web.UI.WebControls.ListBox OutstandingLoanLists;
     }
 }
