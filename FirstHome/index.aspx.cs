@@ -13,5 +13,10 @@ namespace FirstHome
         {
 
         }
+
+        protected void FinPlanBtn_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("userProfile.aspx");
+        }
     }
 }

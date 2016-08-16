@@ -114,6 +114,9 @@
     </header>
     <!-- Page Content -->
     <div class="container">
+
+        <form class="form-horizontal" role="form" runat="server">
+
         <!-- Marketing Icons Section -->
         <div class="row">
             <div class="col-lg-12">
@@ -136,7 +139,7 @@
                                 and we will match you the Properties according to your Financial Health</small>
                         </h2>
                         <br>
-                        <asp:HyperLink runat="server" href="userProfile.aspx" type="button" class="btn btn-default btn-lg btn-block">PLAN NOW !</asp:HyperLink>
+                            <asp:Button ID="FinPlanBtn" runat="server" Text="PLAN NOW !" class="btn btn-default btn-lg btn-block" OnClick="FinPlanBtn_Click" />
                         <br>
                         <asp:HyperLink runat="server" href="searchProperty.aspx" type="button" class="btn btn-default btn-lg btn-block">Find Matched House</asp:HyperLink>
                     </div>
@@ -146,7 +149,6 @@
                         <h4><i class="fa fa-fw fa-search"></i>Quick Search</h4>
                     </div>
                     <div class="panel-body">
-                        <form class="form-horizontal" role="form" runat="server">
                             <div class="col-lg-4">
                                 <label for="btoorresale">Launch:</label>
                                 <div>
@@ -234,7 +236,7 @@
                                 <label></label>
                                 <asp:HyperLink runat="server" href="searchProperty.aspx" type="button" class="btn btn-default btn-lg btn-block">Search</asp:HyperLink>
                             </div>
-                        </form>
+                        
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -311,6 +313,8 @@
                 </div>
             </div>
         </footer>
+
+            </form>
 
     </div>
     <!-- /.container -->

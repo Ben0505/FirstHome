@@ -7,7 +7,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>NewGen Signin</title>
+    <title>First Home - Login</title>
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom styles for this template -->
@@ -28,22 +28,15 @@
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"><span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-                <a class="navbar-brand" href="index.aspx">New Gen</a>
+                <asp:HyperLink runat="server" class="navbar-brand" href="index.aspx">First Home</asp:HyperLink>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="about.aspx">About</a> </li>
-                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Services <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="blog-home-1.aspx">Service 1</a> </li>
-                            <li><a href="blog-home-2.aspx">Service 2</a> </li>
-                            <li><a href="blog-post.aspx">Service 3</a> </li>
-                        </ul>
-                    </li>
-                    <li><a href="contact.aspx">Contact</a> </li>
-                    <li><a href="Sign Up.aspx">Sign Up</a> </li>
-                    <li><a href="login.aspx">Log in</a> </li>
+                    <li><asp:HyperLink runat="server" href="about.aspx">About</asp:HyperLink> </li>
+                    <li><asp:HyperLink runat="server" href="contact.aspx">Contact</asp:HyperLink> </li>
+                    <li><asp:HyperLink runat="server" href="registration.aspx">Sign Up</asp:HyperLink> </li>
+                    <li><asp:HyperLink runat="server" href="login.aspx">Log in</asp:HyperLink> </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -51,24 +44,27 @@
         <!-- /.container -->
     </nav>
     <div class="container">
-        <form class="form-signin">
-            <h2 class="form-signin-heading">Please sign in</h2>
+        <form class="form-signin" runat="server">
+            <h2 class="form-signin-heading">Please Log In</h2>
             <label for="inputEmail" class="sr-only">Email address</label>
-            <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+            <asp:TextBox ID="loginTextbox" runat="server" class="form-control" placeholder="Username" ></asp:TextBox>
+            <%--<input type="email" class="form-control" placeholder="Email address" required autofocus>--%>
             <label for="inputPassword" class="sr-only">Password</label>
-            <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+            <asp:TextBox ID="passwordTextBox" runat="server" type="password" class="form-control" placeholder="Password" />
+            <%--<input type="password" class="form-control" placeholder="Password" required>--%>
             <div class="checkbox">
                 <label>
-                    <input type="checkbox" value="remember-me">
+                    <asp:TextBox ID="rememberMe" runat="server" type="checkbox" value="remember-me" />
+                    <%--<input type="checkbox" value="remember-me"> --%>
                     Remember me
                 </label>
             </div>
-            <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+            <asp:Button ID="SignInBtn" runat="server" Text="Sign In" class="btn btn-lg btn-primary btn-block" type="submit" OnClick="SignInBtn_Click" />
+            <%--<button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>--%>
         </form>
     </div>
     <!-- /container -->
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
 </body>
 
 
