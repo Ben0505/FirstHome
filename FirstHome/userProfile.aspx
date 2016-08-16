@@ -94,19 +94,19 @@
                         </legend>
                         <p>
                             <label for="username">Name:</label>
-                            <asp:TextBox runat="server" type="text" value="John Smith" ReadOnly="true"></asp:TextBox>
+                            <asp:TextBox ID="UserName" runat="server" type="text" value="John Smith" ReadOnly="true"></asp:TextBox>
                         </p>
                         <p>
                             <label for="mobile">Mobile:</label>
-                            <asp:TextBox runat="server" type="text" value="9083 3082" ReadOnly="true"></asp:TextBox>
+                            <asp:TextBox ID="Mobile" runat="server" type="text" value="9083 3082" ReadOnly="true"></asp:TextBox>
                         </p>
                         <p>
                             <label for="email">Email:</label>
-                            <asp:TextBox runat="server" type="email" value="andrew.lee@gmail.com" ReadOnly="true"></asp:TextBox>
+                            <asp:TextBox ID="Email" runat="server" type="email" value="andrew.lee@gmail.com" ReadOnly="true"></asp:TextBox>
                         </p>
                         <p>
                             <label for="address">Address:</label>
-                            <asp:TextBox runat="server" type="text" value="21 Jalan Raja Udang, #05-04" ReadOnly="true"></asp:TextBox>
+                            <asp:TextBox ID="Address" runat="server" type="text" value="21 Jalan Raja Udang, #05-04" ReadOnly="true"></asp:TextBox>
                         </p>
                     </div>
                 </div>
@@ -118,40 +118,40 @@
                         <div class="col-md-6">
                             <p>
                                 <label for="main-applicant">Main Applicant:</label>
-                                <asp:TextBox runat="server" type="text" value="John Smith" />
+                                <asp:TextBox ID="MainApplicantName" runat="server" type="text" value="John Smith" />
                             </p>
                             <p>
-                                <label for="main-applicant">Salary (incl CPF):</label>
+                                <label for="main-applicant_salary">Salary (incl CPF):</label>
                                 <br>
                                 <label class="$sign">S$</label>
-                                <asp:TextBox runat="server" class="salary" type="text" value="5,000" />
+                                <asp:TextBox ID="MainApplicantSalary" runat="server" class="salary" type="text" value="5,000" />
                             </p>
                         </div>
                         <div class="col-md-6">
                             <p>
                                 <label for="co-applicant">Co-Applicant:</label>
-                                <asp:TextBox runat="server" type="text" value="Casey Lee" />
+                                <asp:TextBox ID="CoApplicantName" runat="server" type="text" value="Casey Lee" />
                             </p>
                             <p>
-                                <label for="main-applicant">Salary (incl CPF):</label>
+                                <label for="co-applicant_salary">Salary (incl CPF):</label>
                                 <br />
                                 <label class="$sign">S$</label>
-                                <asp:TextBox runat="server" class="salary" type="text" value="3,000" />
+                                <asp:TextBox ID="CoApplicantSalary" runat="server" class="salary" type="text" value="3,000" />
                             </p>
                         </div>
                         <p>
-                            <label for="address" style="display: block; text-align: center;">Total Savings:</label>
+                            <label style="display: block; text-align: center;">Total Savings:</label>
                             <label class="$sign">S$</label>
-                            <asp:TextBox runat="server" class="input01" type="text" value="120,000" />
+                            <asp:TextBox ID="TotalSavings" runat="server" class="input01" type="text" value="120,000" />
                         </p>
                         <div class="col-md-6">
                             <p>
                                 <label for="address" style="display: block; text-align: center;">Total Expenses:</label>
                                 <label class="$sign">S$</label>
-                                <asp:TextBox runat="server" class="input02" type="text" value="" ReadOnly="true" />
+                                <asp:TextBox ID="TotalExpense01" runat="server" class="input02" type="text" value="" ReadOnly="true" />
                             </p>
 
-                            <div class="col-md-4">
+                            <%--<div class="col-md-4">
                                 <asp:TextBox runat="server" ID="addExpenseName" />
                             </div>
                             <div class="col-md-4">
@@ -161,13 +161,12 @@
                                 <asp:HyperLink ID="addExpenses01" runat="server" class="btn btn-default btn-lg" Text="ADD" />
                             </div>
 
-                            <br />
+                            <br />--%>
 
-                            <asp:ListBox ID="ExpensesLists" runat="server"></asp:ListBox>
 
-                            <%--<div id="table" class="table-editable">
+                            <div id="table" class="table-editable">
                                 <span class="table-add glyphicon glyphicon-plus"></span>
-                                <asp:Table ID="totalExpenses" runat="server" class="table">
+                                <asp:Table ID="addExpenses" runat="server" class="table">
                                     <asp:TableRow>
                                         <asp:TableHeaderCell>Name</asp:TableHeaderCell>
                                         <asp:TableHeaderCell>S$</asp:TableHeaderCell>
@@ -175,36 +174,29 @@
                                     </asp:TableRow>
                                     <asp:TableRow>
                                         <asp:TableCell>
-                                            <asp:TextBox ID="expenses" runat="server">Utilities</asp:TextBox>
+                                            <asp:TextBox ID="expenses" runat="server" ></asp:TextBox>
                                         </asp:TableCell>
                                         <asp:TableCell>
-                                            <asp:TextBox ID="expensesVal" runat="server">300</asp:TextBox>
+                                            <asp:TextBox ID="expensesVal" runat="server" ></asp:TextBox>
                                         </asp:TableCell>
-                                        <asp:TableCell><span class="table-remove glyphicon glyphicon-remove"></span></asp:TableCell>
-                                    </asp:TableRow>
-
-                                    <asp:TableRow CssClass="hide">
-                                        <asp:TableCell>
-                                            <asp:TextBox ID="expenses2" runat="server">Untitled</asp:TextBox>
-                                        </asp:TableCell>
-                                        <asp:TableCell>
-                                            <asp:TextBox ID="expensesVal2" runat="server">Undefined</asp:TextBox>
-                                        </asp:TableCell>
-                                        <asp:TableCell><span class="table-remove glyphicon glyphicon-remove"></span></asp:TableCell>
                                     </asp:TableRow>
                                 </asp:Table>
-                            </div>--%>
+                            </div>
+
+                            <label style="display: block;">Expenses List:</label>
+                            <asp:ListBox ID="ExpensesLists" runat="server"></asp:ListBox>
+
                             <!--<button id="export-btn" class="btn btn-primary">Export Data</button>
                             <p id="export"></p>-->
                         </div>
                         <div class="col-md-6">
                             <p>
-                                <label for="address" style="display: block; text-align: center;">Outstanding Loans:</label>
+                                <label style="display: block; text-align: center;">Outstanding Loans:</label>
                                 <label class="$sign">S$</label>
-                                <asp:TextBox runat="server" class="input02" type="text" value="" ReadOnly="true" />
+                                <asp:TextBox ID="OutstandingLoans01" runat="server" class="input02" type="text" value="" ReadOnly="true" />
                             </p>
 
-                            <div class="col-md-4">
+                            <%--<div class="col-md-4">
                                 <asp:TextBox runat="server" ID="addLoanName" />
                             </div>
                             <div class="col-md-4">
@@ -214,13 +206,11 @@
                                 <asp:HyperLink ID="addLoans01" runat="server" class="btn btn-default btn-lg" Text="ADD" />
                             </div>
 
-                            <br />
+                            <br />--%>
 
-                            <asp:ListBox ID="OutstandingLoanLists" runat="server"></asp:ListBox>
-
-                            <%--<div id="table" class="table-editable">
+                            <div id="table" class="table-editable">
                                 <span class="table-add glyphicon glyphicon-plus"></span>
-                                <asp:Table ID="outstandingLoan" runat="server" class="table">
+                                <asp:Table ID="addLoans" runat="server" class="table">
                                     <asp:TableRow>
                                         <asp:TableHeaderCell>Name</asp:TableHeaderCell>
                                         <asp:TableHeaderCell>S$</asp:TableHeaderCell>
@@ -228,25 +218,18 @@
                                     </asp:TableRow>
                                     <asp:TableRow>
                                         <asp:TableCell>
-                                            <asp:TextBox ID="loan" runat="server">Auto Loan</asp:TextBox>
+                                            <asp:TextBox ID="loan" runat="server"></asp:TextBox>
                                         </asp:TableCell>
                                         <asp:TableCell>
-                                            <asp:TextBox ID="loanVal" runat="server">400</asp:TextBox>
+                                            <asp:TextBox ID="loanVal" runat="server"></asp:TextBox>
                                         </asp:TableCell>
-                                        <asp:TableCell><span class="table-remove glyphicon glyphicon-remove"></span></asp:TableCell>
-                                    </asp:TableRow>
-
-                                    <asp:TableRow CssClass="hide">
-                                        <asp:TableCell>
-                                            <asp:TextBox ID="loan2" runat="server">Untitled</asp:TextBox>
-                                        </asp:TableCell>
-                                        <asp:TableCell>
-                                            <asp:TextBox ID="loanVal2" runat="server">Undefined</asp:TextBox>
-                                        </asp:TableCell>
-                                        <asp:TableCell><span class="table-remove glyphicon glyphicon-remove"></span></asp:TableCell>
                                     </asp:TableRow>
                                 </asp:Table>
-                            </div>--%>
+                            </div>
+
+                            <label style="display: block;">Loan List:</label>
+                            <asp:ListBox ID="OutstandingLoanLists" runat="server"></asp:ListBox>
+
                             <!--<button id="export-btn" class="btn btn-primary">Export Data</button>
                             <p id="export"></p>-->
                         </div>
@@ -258,11 +241,11 @@
                     </legend>
                     <p>
                         <label for="upfront-payment">Budget for Upfront Payment: S$ </label>
-                        <asp:TextBox runat="server" class="input02" type="text" value="3,000" Style="width: 20%;" />
+                        <asp:TextBox ID="UpfrontPaymentBudget" runat="server" class="input02" type="text" value="3,000" Style="width: 20%;" />
                     </p>
                     <p>
                         <label for="main-applicant">How long would you prefer to service your Loan? (5-30 Years): </label>
-                        <asp:TextBox runat="server" type="number" value="5" Style="width: 10%;" />
+                        <asp:TextBox ID="LoanServicePeriod" runat="server" type="number" value="5" Style="width: 10%;" />
                         <label>Years</label>
                     </p>
                     <div class="col-md-12">
@@ -280,7 +263,7 @@
 
                 <div id="formular" class="col-md-12">
                     <br>
-                    <a href="index.aspx" type="button" class="btn btn-default btn-lg btn-block">SUBMIT!</a>
+                    <asp:HyperLink runat="server" href="index.aspx" type="button" class="btn btn-default btn-lg btn-block">SUBMIT!</asp:HyperLink>
 
                 </div>
 
@@ -331,7 +314,6 @@
     <script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
     <%--<script src='http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js'></script>--%>
     <script src='http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.6.0/underscore.js'></script>
-    <script src="js/addlist.js"></script>
 
 </body>
 

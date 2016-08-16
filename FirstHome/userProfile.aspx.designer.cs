@@ -13,31 +13,121 @@ namespace FirstHome {
     public partial class userProfile {
         
         /// <summary>
-        /// addExpenseName control.
+        /// UserName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox addExpenseName;
+        protected global::System.Web.UI.WebControls.TextBox UserName;
         
         /// <summary>
-        /// addExpenseVal control.
+        /// Mobile control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox addExpenseVal;
+        protected global::System.Web.UI.WebControls.TextBox Mobile;
         
         /// <summary>
-        /// addExpenses01 control.
+        /// Email control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink addExpenses01;
+        protected global::System.Web.UI.WebControls.TextBox Email;
+        
+        /// <summary>
+        /// Address control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Address;
+        
+        /// <summary>
+        /// MainApplicantName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox MainApplicantName;
+        
+        /// <summary>
+        /// MainApplicantSalary control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox MainApplicantSalary;
+        
+        /// <summary>
+        /// CoApplicantName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox CoApplicantName;
+        
+        /// <summary>
+        /// CoApplicantSalary control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox CoApplicantSalary;
+        
+        /// <summary>
+        /// TotalSavings control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TotalSavings;
+        
+        /// <summary>
+        /// TotalExpense01 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TotalExpense01;
+        
+        /// <summary>
+        /// addExpenses control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Table addExpenses;
+        
+        /// <summary>
+        /// expenses control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox expenses;
+        
+        /// <summary>
+        /// expensesVal control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox expensesVal;
         
         /// <summary>
         /// ExpensesLists control.
@@ -49,31 +139,40 @@ namespace FirstHome {
         protected global::System.Web.UI.WebControls.ListBox ExpensesLists;
         
         /// <summary>
-        /// addLoanName control.
+        /// OutstandingLoans01 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox addLoanName;
+        protected global::System.Web.UI.WebControls.TextBox OutstandingLoans01;
         
         /// <summary>
-        /// addLoanVal control.
+        /// addLoans control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox addLoanVal;
+        protected global::System.Web.UI.WebControls.Table addLoans;
         
         /// <summary>
-        /// addLoans01 control.
+        /// loan control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink addLoans01;
+        protected global::System.Web.UI.WebControls.TextBox loan;
+        
+        /// <summary>
+        /// loanVal control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox loanVal;
         
         /// <summary>
         /// OutstandingLoanLists control.
@@ -83,5 +182,23 @@ namespace FirstHome {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.ListBox OutstandingLoanLists;
+        
+        /// <summary>
+        /// UpfrontPaymentBudget control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox UpfrontPaymentBudget;
+        
+        /// <summary>
+        /// LoanServicePeriod control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox LoanServicePeriod;
     }
 }
