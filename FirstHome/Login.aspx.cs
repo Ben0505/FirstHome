@@ -11,6 +11,7 @@ using FirstHome.App_Code.BLL;
 using System.Data.SqlClient;
 using System.Configuration;
 using System.Data;
+using FirstHome.App_Code.DAL;
 
 namespace FirstHome
 {
@@ -27,33 +28,42 @@ namespace FirstHome
         protected void SignInBtn_Click(object sender, EventArgs e)
         {
 
-            SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["MYDBConnection"].ConnectionString);
-            conn.Open();
-            SqlDataAdapter aid = new SqlDataAdapter("SELECT * FROM Accounts", conn);
-            DataTable dt = new System.Data.DataTable();
-            aid.Fill(dt);
-
             string username = loginTextbox.Text.Trim();
             string password = passwordTextBox.Text.Trim();
+            
 
             AccountsBLL user = new AccountsBLL();
+            AccountsDAL p = user.retrieveUser(username, password);
+
+            string accType = p.accType;
+
             BuyerBLL buyer = new BuyerBLL();
-            if (user.retrieveUserLogin(accId) )
+
+            if (user.retrieveUserByLogin(username, password) == true)
             {
-                if (patient.EmailConfirmed(username) == true)
+                Session["Logged"] = username;
+
+                if(accType.Equals("Buyer"))
                 {
-                    Response.Redirect("registered.aspx", false);
+                    Response.Redirect("index.aspx");
                 }
-                else
+                else if (accType.Equals("Reseller"))
                 {
-                    Response.Redirect("confirmEmail.aspx?verified=false", false);
+                    Response.Redirect("reseller.aspx");
                 }
+                else if (accType.Equals("Banker"))
+                {
+                    Response.Redirect("bankerIndex.aspx");
+                }
+
 
             }
             else
             {
-                Response.Redirect("error.aspx", false);
+                Response.Write("<script>alert('Please enter valid Username and Password')</script>");
             }
+            
+
 
 
             //SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["MYDBConnection"].ConnectionString);

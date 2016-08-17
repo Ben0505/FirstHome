@@ -33,30 +33,41 @@ namespace FirstHome.App_Code.BLL
             return result;
         }
 
-        public String retrieveUserLogin(int accId)
+
+        public bool retrieveUserByLogin(string username, string password)
         {
             bool result = false;
 
             AccountsDAL p = new AccountsDAL();
-            AccountsDAL p2 = p.retrieveByAccId(accId);
-            return p.userName;
+            AccountsDAL p2 = p.retrieveUser(username, password);
+
+            if (p2 != null)
+            {
+                result = true;
+            }
 
 
 
-            // string userPasswordHash = generatePasswordHash(password, p2.Salt);
-
-            //if (userPasswordHash.Equals(p2.PasswordHash))
-            //{
-            //    result = true;
-            //}
-            //else
-            //{
-            //    result = false;
-            //}
-
-
-            //return result;
+            return result;
         }
+
+        public AccountsDAL retrieveUser(string username, string password)
+        {
+
+            AccountsDAL p = new AccountsDAL();
+            AccountsDAL p2 = p.retrieveUser(username, password);
+
+            return p2;
+        }
+
+        public string retrieveAccType(string accType)
+        {
+
+            AccountsDAL p = new AccountsDAL();
+            AccountsDAL p2 = p.retrieveAccType(accType);
+            return p.accType;
+        }
+
 
     }
 }

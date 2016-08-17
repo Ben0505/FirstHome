@@ -164,49 +164,96 @@ namespace FirstHome.App_Code.DAL
         }
 
 
-        //public AccountsDAL retrieveUser(string uName)
-        //{
-        //    AccountsDAL p = null;
-        //    string strCommandText = "SELECT * FROM Accounts WHERE userName = @uName";
-        //    string accId, pwd, fullNm, mobileNo, emailAdd, add, accountType;
-        //   // bool emailconfirmed;
+        public AccountsDAL retrieveAccType(string accountType)
+        {
+            AccountsDAL p = null;
+            string strCommandText = "SELECT * FROM Accounts WHERE accType = @accountType";
 
-        //    SqlConnection myConnection = new SqlConnection(strConnectionString);
-        //    SqlCommand cmd = new SqlCommand(strCommandText, myConnection);
-        //    cmd.Parameters.AddWithValue("@uName", uName);
+            string uName, pwd, fullNm, mobileNo, emailAdd, add;
+            int accId;
 
-
-        //    try
-        //    {
-        //        myConnection.Open();
-        //        SqlDataReader reader = cmd.ExecuteReader();
-
-        //        while (reader.Read())
-        //        {
-        //            accId = reader["AccountId"].ToString();
-        //            pwd = reader["password"].ToString();
-        //            fullNm = reader["fullName"].ToString();
-        //            mobileNo = reader["mobile"].ToString();
-        //            emailAdd = reader["email"].ToString();
-        //            add = reader["address"].ToString();
-        //            accountType = reader["accType"].ToString();
-
-        //            p = new AccountsDAL(uName, pwd, fullNm, mobileNo, emailAdd, add, accountType);
-        //            p.uName = uName;
-        //            p.fullNm = fullNm;
-        //            p.accountType = accountType; 
+            SqlConnection myConnection = new SqlConnection(strConnectionString);
+            SqlCommand cmd = new SqlCommand(strCommandText, myConnection);
+            cmd.Parameters.AddWithValue("@accountType", accountType);
 
 
-        //        }
+            try
+            {
+                myConnection.Open();
+                SqlDataReader reader = cmd.ExecuteReader();
 
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        throw new Exception(ex.ToString());
-        //    }
-        //    finally { myConnection.Close(); }
-        //    return p;
-        //}
+                while (reader.Read())
+                {
+                    accId = (int)reader["AccountID"];
+                    uName = reader["userName"].ToString();
+                    pwd = reader["password"].ToString();
+                    fullNm = reader["fullName"].ToString();
+                    mobileNo = reader["mobile"].ToString();
+                    emailAdd = reader["email"].ToString();
+                    add = reader["address"].ToString();
+                    accountType = reader["accType"].ToString();
+
+                    p = new AccountsDAL(accId, uName, pwd, fullNm, mobileNo, emailAdd, add, accountType);
+                    p.accId = accId;
+                    p.uName = uName;
+                    p.fullNm = fullNm;
+
+
+                }
+
+            }
+            catch (Exception ex)
+            {
+                p = null;
+            }
+            finally { myConnection.Close(); }
+            return p;
+        }
+
+
+        public AccountsDAL retrieveUser(string uName, string pwd)
+        {
+            AccountsDAL p = null;
+            string strCommandText = "SELECT * FROM Accounts WHERE userName = @uName AND password = @pwd";
+
+            string   fullNm, mobileNo, emailAdd, add, accountType;
+            int accId;
+
+            SqlConnection myConnection = new SqlConnection(strConnectionString);
+            SqlCommand cmd = new SqlCommand(strCommandText, myConnection);
+            cmd.Parameters.AddWithValue("@uName", uName);
+            cmd.Parameters.AddWithValue("@pwd", pwd);
+
+
+            try
+            {
+                myConnection.Open();
+                SqlDataReader reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    accId = (int)reader["AccountID"];
+                    uName = reader["userName"].ToString();
+                    pwd = reader["password"].ToString();
+                    fullNm = reader["fullName"].ToString();
+                    mobileNo = reader["mobile"].ToString();
+                    emailAdd = reader["email"].ToString();
+                    add = reader["address"].ToString();
+                    accountType = reader["accType"].ToString();
+
+                    p = new AccountsDAL(accId, uName, pwd, fullNm, mobileNo, emailAdd, add, accountType);
+
+
+                }
+
+            }
+            catch (Exception ex)
+            {
+                p = null;
+            }
+            finally { myConnection.Close(); }
+            return p;
+        }
 
         public AccountsDAL retrieveByAccId(int accId)
         {
@@ -253,6 +300,8 @@ namespace FirstHome.App_Code.DAL
             finally { myConnection.Close(); }
             return p;
         }
+
+        
 
     }
 }
