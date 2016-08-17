@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="index.aspx.cs" Inherits="FirstHome.index" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="indexNotLogged.aspx.cs" Inherits="FirstHome.indexNotLogged" %>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -31,41 +31,13 @@
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"><span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-                <a class="navbar-brand" href="index.aspx">First Home</a>
+                <asp:HyperLink id="logo" runat="server" class="navbar-brand" NavigateUrl="indexNotLogged.aspx" Text="First Home" ></asp:HyperLink>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <asp:HyperLink href="about.aspx" runat="server">About</asp:HyperLink>
-                    </li>
-                    <li>
-                        <asp:HyperLink href="contact.aspx" runat="server">Contact</asp:HyperLink>
-                    </li>
-                    <li>
-                        <asp:HyperLink runat="server" href="hdbLocation.aspx"><span class="fa fa-map-marker"></span> Property Location</asp:HyperLink>
-                    </li>
-                    <li>
-                        <asp:HyperLink runat="server" href="favHouse.aspx"><span class="glyphicon glyphicon-star"></span> Favourite House</asp:HyperLink>
-                    </li>
-                    <li class="dropdown">
-                        <asp:HyperLink ID="userNameIndex" runat="server" href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i><asp:Label ID="theName" runat="server"></asp:Label><b class="caret"></b></asp:HyperLink>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <asp:HyperLink runat="server" href="userProfile.aspx"><i class="fa fa-fw fa-user"></i> Profile</asp:HyperLink>
-                            </li>
-                            <li>
-                                <asp:HyperLink runat="server" href="#"><i class="fa fa-fw fa-envelope"></i> Inbox</asp:HyperLink>
-                            </li>
-                            <li>
-                                <asp:HyperLink runat="server" href="#"><i class="fa fa-fw fa-gear"></i> Settings</asp:HyperLink>
-                            </li>
-                            <li class="divider"></li>
-                            <li>
-                                <asp:HyperLink runat="server" href="#"><i class="fa fa-fw fa-power-off"></i> Log Out</asp:HyperLink>
-                            </li>
-                        </ul>
-                    </li>
+                    <li><asp:HyperLink runat="server" NavigateUrl="registration.aspx" Text="Sign Up"></asp:HyperLink> </li>
+                    <li><asp:HyperLink runat="server" NavigateUrl="login.aspx" Text="Log in"></asp:HyperLink> </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -141,7 +113,7 @@
                         <br>
                             <asp:Button ID="FinPlanBtn" runat="server" Text="PLAN NOW !" class="btn btn-default btn-lg btn-block" OnClick="FinPlanBtn_Click" />
                         <br>
-                        <asp:Button ID="FindMatchedHouse" runat="server" Text="Find Matched House" class="btn btn-default btn-lg btn-block"  />
+                        <asp:Button ID="FindMatchedHouse" runat="server" Text="Find Matched House" class="btn btn-default btn-lg btn-block" OnClick="FindMatchedHouse_Click"  />
                     </div>
                 </div>
                 <div class="panel panel-default">
@@ -234,7 +206,7 @@
                             </div>
                             <div class="col-lg-12">
                                 <label></label>
-                                <asp:HyperLink runat="server" href="searchProperty.aspx" type="button" class="btn btn-default btn-lg btn-block">Search</asp:HyperLink>
+                                <asp:Button ID="SearchPropertyBtn" runat="server" Text="SEARCH" class="btn btn-default btn-lg btn-block"  />
                             </div>
                         
                     </div>
@@ -331,3 +303,4 @@
 </body>
 
 </html>
+

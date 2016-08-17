@@ -10,7 +10,7 @@
 namespace FirstHome {
     
     
-    public partial class Login {
+    public partial class indexNotLogged {
         
         /// <summary>
         /// logo control.
@@ -22,48 +22,66 @@ namespace FirstHome {
         protected global::System.Web.UI.WebControls.HyperLink logo;
         
         /// <summary>
-        /// loginForm control.
+        /// FinPlanBtn control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm loginForm;
+        protected global::System.Web.UI.WebControls.Button FinPlanBtn;
         
         /// <summary>
-        /// loginTextbox control.
+        /// FindMatchedHouse control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox loginTextbox;
+        protected global::System.Web.UI.WebControls.Button FindMatchedHouse;
         
         /// <summary>
-        /// passwordTextBox control.
+        /// error control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox passwordTextBox;
+        protected global::System.Web.UI.WebControls.DropDownList error;
         
         /// <summary>
-        /// rememberMe control.
+        /// type control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox rememberMe;
+        protected global::System.Web.UI.WebControls.DropDownList type;
         
         /// <summary>
-        /// SignInBtn control.
+        /// estate control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button SignInBtn;
+        protected global::System.Web.UI.WebControls.DropDownList estate;
+        
+        /// <summary>
+        /// addLine1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox addLine1;
+        
+        /// <summary>
+        /// SearchPropertyBtn control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button SearchPropertyBtn;
     }
 }

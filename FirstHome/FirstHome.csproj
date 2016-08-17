@@ -110,6 +110,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="HDBindex.aspx" />
     <Content Include="hdblocation.aspx" />
+    <Content Include="indexNotLogged.aspx" />
     <Content Include="js\material.min.js.map" />
     <Content Include="js\ripples.min.js.map" />
     <Content Include="js\slidingButton.js" />
@@ -212,6 +213,10 @@
     <Compile Include="about.aspx.designer.cs">
       <DependentUpon>about.aspx</DependentUpon>
     </Compile>
+    <Compile Include="App_Code\BLL\BuyerBLL.cs" />
+    <Compile Include="App_Code\DAL\AccountsDAL.cs" />
+    <Compile Include="App_Code\BLL\AccountsBLL.cs" />
+    <Compile Include="App_Code\DAL\BuyerDAL.cs" />
     <Compile Include="bankerIndex.aspx.cs">
       <DependentUpon>bankerIndex.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -284,6 +289,13 @@
     </Compile>
     <Compile Include="index.aspx.designer.cs">
       <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="indexNotLogged.aspx.cs">
+      <DependentUpon>indexNotLogged.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="indexNotLogged.aspx.designer.cs">
+      <DependentUpon>indexNotLogged.aspx</DependentUpon>
     </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>

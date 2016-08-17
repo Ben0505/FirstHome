@@ -13,6 +13,15 @@ namespace FirstHome {
     public partial class userProfile {
         
         /// <summary>
+        /// theName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label theName;
+        
+        /// <summary>
         /// UserName control.
         /// </summary>
         /// <remarks>
@@ -130,6 +139,15 @@ namespace FirstHome {
         protected global::System.Web.UI.WebControls.TextBox expensesVal;
         
         /// <summary>
+        /// addExpenseBtn control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button addExpenseBtn;
+        
+        /// <summary>
         /// ExpensesLists control.
         /// </summary>
         /// <remarks>
@@ -173,6 +191,15 @@ namespace FirstHome {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox loanVal;
+        
+        /// <summary>
+        /// addLoanBtn control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button addLoanBtn;
         
         /// <summary>
         /// OutstandingLoanLists control.

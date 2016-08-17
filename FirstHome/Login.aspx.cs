@@ -4,14 +4,21 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using System.Configuration;
+using System.Net;
+using System.Net.Mail;
+using System.Threading.Tasks;
+using FirstHome.App_Code.BLL;
 using System.Data.SqlClient;
+using System.Configuration;
 using System.Data;
 
 namespace FirstHome
 {
     public partial class Login : System.Web.UI.Page
     {
+
+        public string utype;
+
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -20,38 +27,64 @@ namespace FirstHome
         protected void SignInBtn_Click(object sender, EventArgs e)
         {
 
+            SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["MYDBConnection"].ConnectionString);
+            conn.Open();
+            SqlDataAdapter aid = new SqlDataAdapter("SELECT * FROM Accounts", conn);
+            DataTable dt = new System.Data.DataTable();
+            aid.Fill(dt);
+
+            string username = loginTextbox.Text.Trim();
+            string password = passwordTextBox.Text.Trim();
+
+            AccountsBLL user = new AccountsBLL();
+            BuyerBLL buyer = new BuyerBLL();
+            if (user.retrieveUserLogin(accId) )
+            {
+                if (patient.EmailConfirmed(username) == true)
+                {
+                    Response.Redirect("registered.aspx", false);
+                }
+                else
+                {
+                    Response.Redirect("confirmEmail.aspx?verified=false", false);
+                }
+
+            }
+            else
+            {
+                Response.Redirect("error.aspx", false);
+            }
 
 
-            //SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["MYDBConnectionString"].ConnectionString);
+            //SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["MYDBConnection"].ConnectionString);
             //conn.Open();
-            //string checkUsers = "SELECT * FROM Accounts WHERE userName = '" + loginTextbox.Text + "'";
-            //SqlCommand cmd = new SqlCommand(checkUsers, conn);
-            //int temp = Convert.ToInt32(cmd.ExecuteScalar().ToString());
-            //conn.Close();
-            //if (temp == 1)
+            //SqlDataAdapter sda = new SqlDataAdapter("SELECT * FROM Accounts WHERE userName ='" + loginTextbox.Text + "' AND password = '" + passwordTextBox.Text + "'" , conn);
+            //SqlDataAdapter sdaa = new SqlDataAdapter("SELECT * FROM Accounts WHERE accType ='Buyer'", conn);
+            //DataTable dt = new System.Data.DataTable();
+            //sda.Fill(dt);
+            //if(dt.Rows.Count == 1 )
             //{
-            //    conn.Open();
-            //    string checkPasswordQuery = "SELECT password FROM Accounts WHERE userName ='" + loginTextbox.Text + "'";
-            //    SqlCommand passComm = new SqlCommand(checkPasswordQuery, conn);
-            //    string password = passComm.ExecuteScalar().ToString();
-            //    if (password == passwordTextBox.Text)
+            //    utype = dt.Rows[0][7].ToString();
+            //    if (utype == "Buyer")
             //    {
-            //        Session["New"] = loginTextbox.Text;
-            //        Response.Write("Log In is Successful");
+            //        Server.Transfer("index.aspx");
             //    }
-            //    else
+            //    else if (utype == "Reseller")
             //    {
-            //        Response.Write("Password is Incorrect");
+            //        Server.Transfer("reseller.aspx");
             //    }
+            //    else if (utype == "Banker")
+            //    {
+            //        Server.Transfer("bankerIndex.aspx");
+            //    }
+                
             //}
             //else
             //{
-            //    Response.Write("Username is Incorrect");
+            //    Response.Write("<script>alert('Please enter valid Username and Password')</script>");
             //}
-            //SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["MYDBConnectionString"].ConnectionString);
-            //conn.Open();
-            //string mysql = "SELECT * FROM Accounts";
-            //SqlCommand cmd = new SqlCommand(mysql, conn);
+            //conn.Close();
+
             
         }
 

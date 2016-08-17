@@ -28,13 +28,11 @@
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"><span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-                <asp:HyperLink id="logo" runat="server" class="navbar-brand" NavigateUrl="index.aspx" Text="First Home" ></asp:HyperLink>
+                <asp:HyperLink id="logo" runat="server" class="navbar-brand" NavigateUrl="indexNotLogged.aspx" Text="First Home" ></asp:HyperLink>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><asp:HyperLink runat="server" NavigateUrl="about.aspx" Text="About"></asp:HyperLink> </li>
-                    <li><asp:HyperLink runat="server" NavigateUrl="contact.aspx" Text="Contact"></asp:HyperLink> </li>
                     <li><asp:HyperLink runat="server" NavigateUrl="registration.aspx" Text="Sign Up"></asp:HyperLink> </li>
                     <li><asp:HyperLink runat="server" NavigateUrl="login.aspx" Text="Log in"></asp:HyperLink> </li>
                 </ul>
@@ -46,8 +44,7 @@
     <div class="container">
         <form id="loginForm" class="form-signin" runat="server">
             <h2 class="form-signin-heading">Please Log In</h2>
-            <label for="inputEmail" class="sr-only">Email address</label>
-            <asp:Login ID = "Login1" runat = "server" OnAuthenticate= "ValidateUser"></asp:Login>            
+            <label for="inputEmail" class="sr-only">Email address</label>            
             <asp:TextBox ID="loginTextbox" runat="server" class="form-control" placeholder="Username" ></asp:TextBox>
             <%--<input type="email" class="form-control" placeholder="Email address" required autofocus>--%>
             <label for="inputPassword" class="sr-only">Password</label>

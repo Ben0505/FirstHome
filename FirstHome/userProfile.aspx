@@ -40,32 +40,33 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <asp:HyperLink href="about.aspx" runat="server">About</asp:HyperLink>
+                        <asp:HyperLink NavigationUrl="about.aspx" runat="server">About</asp:HyperLink>
                     </li>
                     <li>
-                        <asp:HyperLink href="contact.aspx" runat="server">Contact</asp:HyperLink>
+                        <asp:HyperLink NavigationUrl="contact.aspx" runat="server">Contact</asp:HyperLink>
                     </li>
                     <li>
-                        <asp:HyperLink runat="server" href="hdbLocation.aspx"><span class="fa fa-map-marker"></span> Property Location</asp:HyperLink>
+                        <asp:HyperLink runat="server" NavigationUrl="hdbLocation.aspx"><span class="fa fa-map-marker"></span> Property Location</asp:HyperLink>
                     </li>
                     <li>
-                        <asp:HyperLink runat="server" href="favHouse.aspx"><span class="glyphicon glyphicon-star"></span> Favourite House</asp:HyperLink>
+                        <asp:HyperLink runat="server" NavigationUrl="favHouse.aspx"><span class="glyphicon glyphicon-star"></span> Favourite House</asp:HyperLink>
                     </li>
                     <li class="dropdown">
-                        <asp:HyperLink runat="server" href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> John Smith <b class="caret"></b></asp:HyperLink>
+                        <asp:HyperLink runat="server" href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i>
+                            <asp:Label ID="theName" runat="server" ></asp:Label> <b class="caret"></b></asp:HyperLink>
                         <ul class="dropdown-menu">
                             <li>
-                                <asp:HyperLink runat="server" href="userProfile.aspx"><i class="fa fa-fw fa-user"></i> Profile</asp:HyperLink>
+                                <asp:HyperLink runat="server" NavigationUrl="userProfile.aspx"><i class="fa fa-fw fa-user"></i> Profile</asp:HyperLink>
                             </li>
                             <li>
-                                <asp:HyperLink runat="server" href="#"><i class="fa fa-fw fa-envelope"></i> Inbox</asp:HyperLink>
+                                <asp:HyperLink runat="server" NavigationUrl="#"><i class="fa fa-fw fa-envelope"></i> Inbox</asp:HyperLink>
                             </li>
                             <li>
-                                <asp:HyperLink runat="server" href="#"><i class="fa fa-fw fa-gear"></i> Settings</asp:HyperLink>
+                                <asp:HyperLink runat="server" NavigationUrl="#"><i class="fa fa-fw fa-gear"></i> Settings</asp:HyperLink>
                             </li>
                             <li class="divider"></li>
                             <li>
-                                <asp:HyperLink runat="server" href="#"><i class="fa fa-fw fa-power-off"></i> Log Out</asp:HyperLink>
+                                <asp:HyperLink runat="server" NavigationUrl="indexNotLogged.aspx" ><i class="fa fa-fw fa-power-off"></i> Log Out</asp:HyperLink>
                             </li>
                         </ul>
                     </li>
@@ -118,37 +119,40 @@
                         <div class="col-md-6">
                             <p>
                                 <label for="main-applicant">Main Applicant:</label>
-                                <asp:TextBox ID="MainApplicantName" runat="server" type="text" value="John Smith" />
+                                <asp:TextBox ID="MainApplicantName" runat="server" type="text" />
                             </p>
                             <p>
                                 <label for="main-applicant_salary">Salary (incl CPF):</label>
                                 <br>
                                 <label class="$sign">S$</label>
-                                <asp:TextBox ID="MainApplicantSalary" runat="server" class="salary" type="text" value="5,000" />
+                                <asp:TextBox ID="MainApplicantSalary" runat="server" class="salary" type="text" />
                             </p>
                         </div>
                         <div class="col-md-6">
                             <p>
                                 <label for="co-applicant">Co-Applicant:</label>
-                                <asp:TextBox ID="CoApplicantName" runat="server" type="text" value="Casey Lee" />
+                                <asp:TextBox ID="CoApplicantName" runat="server" type="text" />
                             </p>
                             <p>
                                 <label for="co-applicant_salary">Salary (incl CPF):</label>
                                 <br />
                                 <label class="$sign">S$</label>
-                                <asp:TextBox ID="CoApplicantSalary" runat="server" class="salary" type="text" value="3,000" />
+                                <asp:TextBox ID="CoApplicantSalary" runat="server" class="salary" type="text" />
                             </p>
                         </div>
                         <p>
                             <label style="display: block; text-align: center;">Total Savings:</label>
                             <label class="$sign">S$</label>
-                            <asp:TextBox ID="TotalSavings" runat="server" class="input01" type="text" value="120,000" />
+                            <asp:TextBox ID="TotalSavings" runat="server" class="input01" type="text" />
                         </p>
+
+                        <hr />
+
                         <div class="col-md-6">
                             <p>
                                 <label for="address" style="display: block; text-align: center;">Total Expenses:</label>
                                 <label class="$sign">S$</label>
-                                <asp:TextBox ID="TotalExpense01" runat="server" class="input02" type="text" value="" ReadOnly="true" />
+                                <asp:TextBox ID="TotalExpense01" runat="server" class="input02" type="text" ReadOnly="true" />
                             </p>
 
                             <%--<div class="col-md-4">
@@ -165,7 +169,6 @@
 
 
                             <div id="table" class="table-editable">
-                                <span class="table-add glyphicon glyphicon-plus"></span>
                                 <asp:Table ID="addExpenses" runat="server" class="table">
                                     <asp:TableRow>
                                         <asp:TableHeaderCell>Name</asp:TableHeaderCell>
@@ -178,6 +181,11 @@
                                         </asp:TableCell>
                                         <asp:TableCell>
                                             <asp:TextBox ID="expensesVal" runat="server" ></asp:TextBox>
+                                        </asp:TableCell>
+                                    </asp:TableRow>
+                                    <asp:TableRow>
+                                        <asp:TableCell ColumnSpan="3">
+                                            <asp:Button ID="addExpenseBtn" runat="server" Text="ADD" class="btn btn-default btn-lg btn-block" />
                                         </asp:TableCell>
                                     </asp:TableRow>
                                 </asp:Table>
@@ -209,7 +217,6 @@
                             <br />--%>
 
                             <div id="table" class="table-editable">
-                                <span class="table-add glyphicon glyphicon-plus"></span>
                                 <asp:Table ID="addLoans" runat="server" class="table">
                                     <asp:TableRow>
                                         <asp:TableHeaderCell>Name</asp:TableHeaderCell>
@@ -222,6 +229,12 @@
                                         </asp:TableCell>
                                         <asp:TableCell>
                                             <asp:TextBox ID="loanVal" runat="server"></asp:TextBox>
+                                        </asp:TableCell>
+                                    </asp:TableRow>
+                                    
+                                    <asp:TableRow>
+                                        <asp:TableCell ColumnSpan="3">
+                                            <asp:Button ID="addLoanBtn" runat="server" Text="ADD" class="btn btn-default btn-lg btn-block" />
                                         </asp:TableCell>
                                     </asp:TableRow>
                                 </asp:Table>
@@ -241,20 +254,20 @@
                     </legend>
                     <p>
                         <label for="upfront-payment">Budget for Upfront Payment: S$ </label>
-                        <asp:TextBox ID="UpfrontPaymentBudget" runat="server" class="input02" type="text" value="3,000" Style="width: 20%;" />
+                        <asp:TextBox ID="UpfrontPaymentBudget" runat="server" class="input02" type="text"  Style="width: 20%;" />
                     </p>
                     <p>
                         <label for="main-applicant">How long would you prefer to service your Loan? (5-30 Years): </label>
-                        <asp:TextBox ID="LoanServicePeriod" runat="server" type="number" value="5" Style="width: 10%;" />
+                        <asp:TextBox ID="LoanServicePeriod" runat="server" type="number" Style="width: 10%;" />
                         <label>Years</label>
                     </p>
                     <div class="col-md-12">
                         <label for="upfront-payment">Use CPF to Service Loan? </label>
                         <div class="switch switch-yellow">
                             <input type="radio" class="switch-input" name="view3" value="week3" id="week3" checked>
-                            <label for="week3" class="switch-label switch-label-off">YES</label>
+                            <label for="week3" class="switch-label switch-label-off">NO</label>
                             <input type="radio" class="switch-input" name="view3" value="month3" id="month3">
-                            <label for="month3" class="switch-label switch-label-on">NO</label>
+                            <label for="month3" class="switch-label switch-label-on">YES</label>
                             <span class="switch-selection"></span>
                         </div>
                     </div>

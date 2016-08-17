@@ -13,6 +13,24 @@ namespace FirstHome {
     public partial class index {
         
         /// <summary>
+        /// userNameIndex control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink userNameIndex;
+        
+        /// <summary>
+        /// theName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label theName;
+        
+        /// <summary>
         /// FinPlanBtn control.
         /// </summary>
         /// <remarks>
@@ -20,6 +38,15 @@ namespace FirstHome {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button FinPlanBtn;
+        
+        /// <summary>
+        /// FindMatchedHouse control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button FindMatchedHouse;
         
         /// <summary>
         /// error control.
