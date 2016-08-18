@@ -36,12 +36,14 @@ namespace FirstHome
             AccountsDAL p = user.retrieveUser(username, password);
 
             string accType = p.accType;
+            int accId = p.AccountID;
 
-            BuyerBLL buyer = new BuyerBLL();
 
             if (user.retrieveUserByLogin(username, password) == true)
             {
                 Session["Logged"] = username;
+                Session["lPwd"] = password;
+                Session["accId"] = accId;
 
                 if(accType.Equals("Buyer"))
                 {

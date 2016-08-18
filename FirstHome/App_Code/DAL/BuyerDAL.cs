@@ -13,13 +13,13 @@ namespace FirstHome.App_Code.DAL
 
         private int accId;
         private string mainName;
-        private double mainSalary;
+        private decimal mainSalary;
         private string coName;
-        private double coSalary;
-        private double totSavings;
-        private double upfrontPayment;
+        private decimal coSalary;
+        private decimal totSavings;
+        private decimal upfrontPayment;
         private int loanServicePeriod;
-        private char useCpf;
+        private string useCpf;
 
         public int AccountID
         {
@@ -45,7 +45,7 @@ namespace FirstHome.App_Code.DAL
             }
         }
 
-        public double MainApplicantSalary
+        public decimal MainApplicantSalary
         {
             get
             {
@@ -69,7 +69,7 @@ namespace FirstHome.App_Code.DAL
             }
         }
 
-        public double CoApplicantSalary
+        public decimal CoApplicantSalary
         {
             get
             {
@@ -81,7 +81,7 @@ namespace FirstHome.App_Code.DAL
             }
         }
 
-        public double totalSavings
+        public decimal totalSavings
         {
             get
             {
@@ -93,7 +93,7 @@ namespace FirstHome.App_Code.DAL
             }
         }
 
-        public double upfrontPaymentBudget
+        public decimal upfrontPaymentBudget
         {
             get
             {
@@ -117,7 +117,7 @@ namespace FirstHome.App_Code.DAL
             }
         }
 
-        public char userCpfToService
+        public string userCpfToService
         {
             get
             {
@@ -134,7 +134,7 @@ namespace FirstHome.App_Code.DAL
 
         public BuyerDAL() { }
 
-        public BuyerDAL(int accId, string mainName, double mainSalary, string coName, double coSalary, double totSavings, double upfrontPayment, int loanServicePeriod, char useCpf)
+        public BuyerDAL(int accId, string mainName, decimal mainSalary, string coName, decimal coSalary, decimal totSavings, decimal upfrontPayment, int loanServicePeriod, string useCpf)
         {
             this.accId = accId;
             this.mainName = mainName;
@@ -147,7 +147,7 @@ namespace FirstHome.App_Code.DAL
             this.useCpf = useCpf;
         }
 
-        public BuyerDAL(int accId, int loanServicePeriod, char useCpf)
+        public BuyerDAL(int accId, int loanServicePeriod, string useCpf)
         {
             this.accId = accId;
             this.loanServicePeriod = loanServicePeriod;
@@ -155,7 +155,7 @@ namespace FirstHome.App_Code.DAL
         }
 
 
-        public int createFinPlan(int accId, int loanServicePeriod, char useCpf)
+        public int createFinPlan(int accId, int loanServicePeriod, string useCpf)
         {
 
             int result = 0;
@@ -182,12 +182,11 @@ namespace FirstHome.App_Code.DAL
         public BuyerDAL retrieveFinPlan(int accId)
         {
             BuyerDAL p = null;
-            string strCommandText = "SELECT * FROM BuyerFinPlan where AccountID = @accId";
+            string strCommandText = "SELECT * FROM BuyerFinPlan WHERE AccountID = @accId";
             string mainName, coName;
-            double mainSalary, coSalary, totSavings, upfrontPayment;
+            decimal mainSalary, coSalary, totSavings, upfrontPayment;
             int loanServicePeriod;
-            char useCpf;
-            // bool accIdConfirmed;
+            string useCpf;
 
             SqlConnection myConnection = new SqlConnection(strConnectionString);
             SqlCommand cmd = new SqlCommand(strCommandText, myConnection);
@@ -203,13 +202,13 @@ namespace FirstHome.App_Code.DAL
                 {
                     accId = (int)reader["AccountID"];
                     mainName = reader["MainApplicantName"].ToString();
-                    mainSalary = (double)reader["MainApplicantSalary"];
+                    mainSalary = (decimal)reader["MainApplicantSalary"];
                     coName = reader["CoApplicantName"].ToString();
-                    coSalary = (double)reader["CoApplicantSalary"];
-                    totSavings = (double)reader["totalSavings"];
-                    upfrontPayment = (double)reader["upfrontPaymentBudget"];
+                    coSalary = (decimal)reader["CoApplicantSalary"];
+                    totSavings = (decimal)reader["totalSavings"];
+                    upfrontPayment = (decimal)reader["upfrontPaymentBudget"];
                     loanServicePeriod = (int)reader["loanServicingPeriod"];
-                    useCpf = (char)reader["userCpfToService"];
+                    useCpf = reader["userCpfToService"].ToString();
 
                     p = new BuyerDAL(accId, mainName, mainSalary, coName, coSalary, totSavings, upfrontPayment, loanServicePeriod, useCpf);
                     //p.uName = uName;

@@ -210,7 +210,7 @@
                 <!-- /.row -->
 
                 <div class="row">
-                    <div class="col-lg-3 col-md-6">
+                    <div class="col-lg-6 col-md-6">
                         <div class="panel panel-primary">
                             <div class="panel-heading">
                                 <div class="row">
@@ -232,7 +232,7 @@
                             </asp:HyperLink>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6">
+                    <div class="col-lg-6 col-md-6">
                         <div class="panel panel-green">
                             <div class="panel-heading">
                                 <div class="row">
@@ -254,50 +254,6 @@
                             </asp:HyperLink>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="panel panel-yellow">
-                            <div class="panel-heading">
-                                <div class="row">
-                                    <div class="col-xs-3">
-                                        <i class="fa fa-shopping-cart fa-5x"></i>
-                                    </div>
-                                    <div class="col-xs-9 text-right">
-                                        <div class="huge">124</div>
-                                        <div>New Orders!</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <asp:HyperLink runat="server" href="#">
-                                <div class="panel-footer">
-                                    <span class="pull-left">View Details</span>
-                                    <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                                    <div class="clearfix"></div>
-                                </div>
-                            </asp:HyperLink>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="panel panel-red">
-                            <div class="panel-heading">
-                                <div class="row">
-                                    <div class="col-xs-3">
-                                        <i class="fa fa-support fa-5x"></i>
-                                    </div>
-                                    <div class="col-xs-9 text-right">
-                                        <div class="huge">13</div>
-                                        <div>Support Tickets!</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <asp:HyperLink runat="server" href="#">
-                                <div class="panel-footer">
-                                    <span class="pull-left">View Details</span>
-                                    <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                                    <div class="clearfix"></div>
-                                </div>
-                            </asp:HyperLink>
-                        </div>
-                    </div>
 
                     <div class="col-lg-12">
                         <div class="panel panel-default">
@@ -307,43 +263,20 @@
                             <div class="panel-body">
                                 <div class="table-responsive">
 
+                                    <asp:ListView ID="ListView1" runat="server">
+                                    </asp:ListView>
+
                                     <asp:Table runat="server" class="table table-bordered table-hover table-striped">
                                         <asp:TableHeaderRow>
                                             <asp:TableHeaderCell>Buyers ID</asp:TableHeaderCell>
                                             <asp:TableHeaderCell>Name</asp:TableHeaderCell>
-                                            <asp:TableHeaderCell><i class="glyphicon glyphicon-calendar"></i> Last Search Date</asp:TableHeaderCell>
                                             <asp:TableHeaderCell><i class="glyphicon glyphicon-eye-open"></i> House seen</asp:TableHeaderCell>
                                             <asp:TableHeaderCell><i class="glyphicon glyphicon-star"></i> House Favourite</asp:TableHeaderCell>
                                             <asp:TableHeaderCell>Initiated to buy</asp:TableHeaderCell>
                                         </asp:TableHeaderRow>
                                         <asp:TableRow>
-                                            <asp:TableCell>2548</asp:TableCell>
-                                            <asp:TableCell>Mr. Raj</asp:TableCell>
-                                            <asp:TableCell>28/07/2016</asp:TableCell>
-                                            <asp:TableCell>1</asp:TableCell>
-                                            <asp:TableCell>1</asp:TableCell>
-                                            <asp:TableCell>1</asp:TableCell>
-                                        </asp:TableRow>
-                                        <asp:TableRow>
-                                            <asp:TableCell>2894</asp:TableCell>
-                                            <asp:TableCell>Mr. Tan</asp:TableCell>
-                                            <asp:TableCell>28/06/2016</asp:TableCell>
-                                            <asp:TableCell>1</asp:TableCell>
-                                            <asp:TableCell>1</asp:TableCell>
-                                            <asp:TableCell>1</asp:TableCell>
-                                        </asp:TableRow>
-                                        <asp:TableRow>
-                                            <asp:TableCell>2548</asp:TableCell>
-                                            <asp:TableCell>Mr. Koh</asp:TableCell>
-                                            <asp:TableCell>28/06/2016</asp:TableCell>
-                                            <asp:TableCell>1</asp:TableCell>
-                                            <asp:TableCell>1</asp:TableCell>
-                                            <asp:TableCell>1</asp:TableCell>
-                                        </asp:TableRow>
-                                        <asp:TableRow>
-                                            <asp:TableCell>2548</asp:TableCell>
-                                            <asp:TableCell>Mr. Kim</asp:TableCell>
-                                            <asp:TableCell>28/06/2016</asp:TableCell>
+                                            <asp:TableCell>45219</asp:TableCell>
+                                            <asp:TableCell>Benny Tandio Kusuma</asp:TableCell>
                                             <asp:TableCell>1</asp:TableCell>
                                             <asp:TableCell>1</asp:TableCell>
                                             <asp:TableCell>1</asp:TableCell>

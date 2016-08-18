@@ -95,19 +95,19 @@
                         </legend>
                         <p>
                             <label for="username">Name:</label>
-                            <asp:TextBox ID="UserName" runat="server" type="text" value="John Smith" ReadOnly="true"></asp:TextBox>
+                            <asp:TextBox ID="UserName" runat="server" type="text"  ReadOnly="true"></asp:TextBox>
                         </p>
                         <p>
                             <label for="mobile">Mobile:</label>
-                            <asp:TextBox ID="Mobile" runat="server" type="text" value="9083 3082" ReadOnly="true"></asp:TextBox>
+                            <asp:TextBox ID="Mobile" runat="server" type="text"  ReadOnly="true"></asp:TextBox>
                         </p>
                         <p>
                             <label for="email">Email:</label>
-                            <asp:TextBox ID="Email" runat="server" type="email" value="andrew.lee@gmail.com" ReadOnly="true"></asp:TextBox>
+                            <asp:TextBox ID="Email" runat="server" type="email"  ReadOnly="true"></asp:TextBox>
                         </p>
                         <p>
                             <label for="address">Address:</label>
-                            <asp:TextBox ID="Address" runat="server" type="text" value="21 Jalan Raja Udang, #05-04" ReadOnly="true"></asp:TextBox>
+                            <asp:TextBox ID="Address" runat="server" type="text"  ReadOnly="true"></asp:TextBox>
                         </p>
                     </div>
                 </div>
@@ -119,31 +119,31 @@
                         <div class="col-md-6">
                             <p>
                                 <label for="main-applicant">Main Applicant:</label>
-                                <asp:TextBox ID="MainApplicantName" runat="server" type="text" />
+                                <asp:TextBox ID="theMainApplicantName" runat="server" type="text" />
                             </p>
                             <p>
                                 <label for="main-applicant_salary">Salary (incl CPF):</label>
                                 <br>
                                 <label class="$sign">S$</label>
-                                <asp:TextBox ID="MainApplicantSalary" runat="server" class="salary" type="text" />
+                                <asp:TextBox ID="theMainApplicantSalary" runat="server" class="salary" type="text" />
                             </p>
                         </div>
                         <div class="col-md-6">
                             <p>
                                 <label for="co-applicant">Co-Applicant:</label>
-                                <asp:TextBox ID="CoApplicantName" runat="server" type="text" />
+                                <asp:TextBox ID="theCoApplicantName" runat="server" type="text" />
                             </p>
                             <p>
                                 <label for="co-applicant_salary">Salary (incl CPF):</label>
                                 <br />
                                 <label class="$sign">S$</label>
-                                <asp:TextBox ID="CoApplicantSalary" runat="server" class="salary" type="text" />
+                                <asp:TextBox ID="theCoApplicantSalary" runat="server" class="salary" type="text" />
                             </p>
                         </div>
                         <p>
                             <label style="display: block; text-align: center;">Total Savings:</label>
                             <label class="$sign">S$</label>
-                            <asp:TextBox ID="TotalSavings" runat="server" class="input01" type="text" />
+                            <asp:TextBox ID="theTotalSavings" runat="server" class="input01" type="text" />
                         </p>
 
                         <hr />
@@ -254,11 +254,11 @@
                     </legend>
                     <p>
                         <label for="upfront-payment">Budget for Upfront Payment: S$ </label>
-                        <asp:TextBox ID="UpfrontPaymentBudget" runat="server" class="input02" type="text"  Style="width: 20%;" />
+                        <asp:TextBox ID="theUpfrontPaymentBudget" runat="server" class="input02" type="text"  Style="width: 20%;" />
                     </p>
                     <p>
                         <label for="main-applicant">How long would you prefer to service your Loan? (5-30 Years): </label>
-                        <asp:TextBox ID="LoanServicePeriod" runat="server" type="number" Style="width: 10%;" />
+                        <asp:TextBox ID="theLoanServicePeriod" runat="server" type="number" Style="width: 10%;" />
                         <label>Years</label>
                     </p>
                     <div class="col-md-12">
@@ -276,7 +276,11 @@
 
                 <div id="formular" class="col-md-12">
                     <br>
-                    <asp:HyperLink runat="server" href="index.aspx" type="button" class="btn btn-default btn-lg btn-block">SUBMIT!</asp:HyperLink>
+                    <asp:Button ID="SubmitBtn" runat="server" Text="SUBMIT!" class="btn btn-default btn-lg btn-block" OnClick="SubmitBtn_Click" />
+
+                    <br />
+
+                    <asp:Label ID="Label1" runat="server" style="display: block; text-align: center;" Text="" ></asp:Label>
 
                 </div>
 

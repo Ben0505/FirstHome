@@ -62,7 +62,7 @@ namespace FirstHome
 
                 
                 int loanServicePeriod = 5;
-                char useCpf = 'n';
+                string useCpf = "n";
 
                 AccountsBLL user = new AccountsBLL();
                 BuyerBLL buyer = new BuyerBLL();

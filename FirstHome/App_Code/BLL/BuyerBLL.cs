@@ -11,7 +11,7 @@ namespace FirstHome.App_Code.BLL
     public class BuyerBLL
     {
 
-        public bool createFinPlan(int accId, int loanServicePeriod, char useCpf)
+        public bool createFinPlan(int accId, int loanServicePeriod, string useCpf)
         {
             bool result = false;
             // string passwordHash = generatePasswordHash(password, salt);
@@ -33,26 +33,12 @@ namespace FirstHome.App_Code.BLL
 
         public BuyerDAL retrieveFinPlan(int accId)
         {
-            bool result = false;
-
+           
             BuyerDAL p = new BuyerDAL();
-            return p = p.retrieveFinPlan(accId);
+            BuyerDAL p1 = p.retrieveFinPlan(accId);
+            return p1;
 
 
-
-            // string userPasswordHash = generatePasswordHash(password, p2.Salt);
-
-            //if (userPasswordHash.Equals(p2.PasswordHash))
-            //{
-            //    result = true;
-            //}
-            //else
-            //{
-            //    result = false;
-            //}
-
-
-            //return result;
         }
 
 

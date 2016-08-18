@@ -58,49 +58,49 @@ namespace FirstHome {
         protected global::System.Web.UI.WebControls.TextBox Address;
         
         /// <summary>
-        /// MainApplicantName control.
+        /// theMainApplicantName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox MainApplicantName;
+        protected global::System.Web.UI.WebControls.TextBox theMainApplicantName;
         
         /// <summary>
-        /// MainApplicantSalary control.
+        /// theMainApplicantSalary control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox MainApplicantSalary;
+        protected global::System.Web.UI.WebControls.TextBox theMainApplicantSalary;
         
         /// <summary>
-        /// CoApplicantName control.
+        /// theCoApplicantName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox CoApplicantName;
+        protected global::System.Web.UI.WebControls.TextBox theCoApplicantName;
         
         /// <summary>
-        /// CoApplicantSalary control.
+        /// theCoApplicantSalary control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox CoApplicantSalary;
+        protected global::System.Web.UI.WebControls.TextBox theCoApplicantSalary;
         
         /// <summary>
-        /// TotalSavings control.
+        /// theTotalSavings control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TotalSavings;
+        protected global::System.Web.UI.WebControls.TextBox theTotalSavings;
         
         /// <summary>
         /// TotalExpense01 control.
@@ -211,21 +211,39 @@ namespace FirstHome {
         protected global::System.Web.UI.WebControls.ListBox OutstandingLoanLists;
         
         /// <summary>
-        /// UpfrontPaymentBudget control.
+        /// theUpfrontPaymentBudget control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox UpfrontPaymentBudget;
+        protected global::System.Web.UI.WebControls.TextBox theUpfrontPaymentBudget;
         
         /// <summary>
-        /// LoanServicePeriod control.
+        /// theLoanServicePeriod control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox LoanServicePeriod;
+        protected global::System.Web.UI.WebControls.TextBox theLoanServicePeriod;
+        
+        /// <summary>
+        /// SubmitBtn control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button SubmitBtn;
+        
+        /// <summary>
+        /// Label1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label1;
     }
 }
